@@ -1,0 +1,2 @@
+abc -> efg
+akg <-> zxc 

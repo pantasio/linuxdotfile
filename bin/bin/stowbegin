@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# VScode: 2 files
+# $HOME/.config/Code/User/settings.json
+# $HOME/.config/Code/User/keybindings.json
+stow --adopt -vt vscode
+
+
+# bin: 1 files
+# $HOME/bin/stowbegin
+stow -adopt -vt bin
+
