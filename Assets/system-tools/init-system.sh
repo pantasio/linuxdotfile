@@ -11,6 +11,7 @@ yay -S polybar siji-git ttf-unifont
 sudo pacman -S xorg-fonts-misc
 
 # copy defualt polybar config
+mkdir -p $HOME/.config/polybar
 sudo cp /usr/share/doc/polybar/config ~/.config/polybar/
 sudo chown bungbu:bungbu ~/.config/polybar/
 
