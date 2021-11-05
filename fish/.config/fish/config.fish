@@ -1,3 +1,6 @@
+# make terminal clear when load form bash
+clear
+
 if status is-interactive
     # Commands to run in interactive sessions can go here
 end
@@ -218,13 +221,7 @@ alias .4='cd ../../../..'
 alias .5='cd ../../../../..'
 
 # vim and emacs
-alias vim='nvim'
-alias em='/usr/bin/emacs -nw'
-alias emacs="emacsclient -c -a 'emacs'"
-alias doomsync="~/.emacs.d/bin/doom sync"
-alias doomdoctor="~/.emacs.d/bin/doom doctor"
-alias doomupgrade="~/.emacs.d/bin/doom upgrade"
-alias doompurge="~/.emacs.d/bin/doom purge"
+# alias vim='nvim'
 
 # Changing "ls" to "exa"
 alias ls='exa -al --color=always --group-directories-first' # my preferred listing
@@ -335,7 +332,7 @@ alias dtosbackup='cp -Rf /etc/dtos ~/dtos-backup-(date +%Y.%m.%d-%H.%M.%S)'
 ### RANDOM COLOR SCRIPT ###
 # Get this script from my GitLab: gitlab.com/dwt1/shell-color-scripts
 # Or install it from the Arch User Repository: shell-color-scripts
-colorscript random
+# colorscript random
 
 # Load Git alias to fish
 source ~/.config/fish/alias/git.fish
@@ -345,3 +342,4 @@ source ~/.config/fish/alias/mics.fish
 starship init fish | source
 export STARSHIP_CONFIG=$HOME/.config/starship/config.toml
 export STARSHIP_CACHE=$HOME/.config/starship/cache
+

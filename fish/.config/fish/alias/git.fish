@@ -6,7 +6,7 @@ abbr -a gaa git add .
 abbr -a gau git add -u
 abbr -a gc  git commit
 abbr -a gcm git commit -m
-abbr -a gca git commit --amend
+abbr -a gamend git commit --amend
 abbr -a gcl git clone
 abbr -a gco git checkout
 abbr -a gp  git push
