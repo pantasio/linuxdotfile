@@ -17,25 +17,32 @@
 ;==========================================================
 
 [colors]
-background = #282A2E
-background-alt = #373B41
+;background = ${xrdb:color0:#282A2E}
+background = #33282A2E
+background-alt = #bf373B41
+#foreground = ${xrdb:color7:#282A2E}
 foreground = #C5C8C6
-primary = #F0C674
-secondary = #8ABEB7
+primary = #ffefb7
+secondary = #ffffff
 alert = #A54242
 disabled = #707880
 
 [bar/example]
+;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-height = 2.5%
-radius = 6
+height = 20
+;offset-x = 1%
+;offset-y = 1%
+radius = 0.0
+fixed-center = false
 
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 3
+line-size = 4
+line-color = #ffefb7
 
-border-size = 4
+border-size = 1
 border-color = #00000000
 
 padding-left = 0
@@ -46,10 +53,18 @@ module-margin = 1
 separator = |
 separator-foreground = ${colors.disabled}
 
-font-0 = monospace;2
+;https://github.com/jaagr/polybar/wiki/Fonts
+;font-0 = fixfont:pixelsize=10;1
+font-0 = "CaskaydiaCove Nerd Font:pixelsize=10;2"
+font-1 = "unifont:fontformat=truetype:size=8:antialias=false;0"
+font-2 = siji:pixelsize=10;1
+font-3 = Font Awesome 5 Free:pixelsize=11;2
+font-4 = Font Awesome 5 Free Solid:pixelsize=11;2
+font-5 = Font Awesome 5 Free Brands:pixelsize=11;2
 
-modules-left = xworkspaces xwindow
-modules-right = filesystem pulseaudio xkeyboard memory cpu wlan eth date
+modules-left = xworkspaces 
+modules-center = pacman-updates
+modules-right = filesystem pulseaudio xkeyboard memory cpu wlan eth date powermenu
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -63,6 +78,98 @@ enable-ipc = true
 ; wm-restack = i3
 
 ; override-redirect = true
+
+[module/pacman-updates]
+type = custom/script
+exec = checkupdates | wc -l
+interval = 1000
+label = Updates: %output%
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+format-prefix = " "
+format-prefix-foreground = #ffbb00
+# format-prefix-background = #ffbb00
+
+
+
+[module/i3]
+type = internal/i3
+format = <label-state> <label-mode>
+index-sort = true
+wrapping-scroll = false
+
+; Only show workspaces on the same output as the bar
+pin-workspaces = true
+
+; This will split the workspace name on ':'
+; Default: false
+strip-wsnumbers = false
+
+;extra icons to choose from
+;http://fontawesome.io/cheatsheet/
+;       v     
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
+ws-icon-5 = 6;
+ws-icon-6 = 7;
+ws-icon-7 = 8;
+ws-icon-8 = 9;
+ws-icon-9 = 10;
+ws-icon-default = " "
+
+
+label-mode-padding = 2
+label-mode-foreground = #000
+label-mode-background = ${colors.primary}
+
+; Available tokens:
+;   %name%
+;   %icon%
+;   %index%
+;   %output%
+; Default: %icon%  %name%
+; focused = Active workspace on focused monitor
+label-focused =%icon%
+label-focused-background = ${colors.background-alt}
+label-focused-underline= ${colors.primary}
+label-focused-padding = 1
+
+; Available tokens:
+;   %name%
+;   %icon%
+;   %index%
+; Default: %icon%  %name%
+; unfocused = Inactive workspace on any monitor
+label-unfocused = %icon%
+label-unfocused-padding = 1
+
+; visible = Active workspace on unfocused monitor
+label-visible = %icon%
+label-visible-background = ${self.label-focused-background}
+label-visible-underline = ${self.label-focused-underline}
+label-visible-padding = ${self.label-focused-padding}
+
+; Available tokens:
+;   %name%
+;   %icon%
+;   %index%
+; Default: %icon%  %name%
+; urgent = Workspace with urgency hint set
+label-urgent = %icon%
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 1
+
+#i3: Make the bar appear below windows
+;wm-restack = i3
+;override-redirect = true
+
+
+
+; Separator in between workspaces
+; label-separator = |
 
 [module/xworkspaces]
 type = internal/xworkspaces
@@ -93,7 +200,7 @@ interval = 25
 
 mount-0 = /
 
-label-mounted = %{F#F0C674}%mountpoint%%{F-} %percentage_used%%
+label-mounted =   %{F#F0C674}%mountpoint%%{F-} %percentage_used%%
 
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.disabled}
@@ -114,8 +221,13 @@ label-muted-foreground = ${colors.disabled}
 type = internal/xkeyboard
 blacklist-0 = num lock
 
+format-prefix = "  "
+format-prefix-foreground = ${colors.foreground-alt}
+format-prefix-underline = ${colors.secondary}
+
 label-layout = %layout%
-label-layout-foreground = ${colors.primary}
+label-layout-underline = ${colors.secondary}
+; label-layout-foreground = ${colors.primary}
 
 label-indicator-padding = 2
 label-indicator-margin = 1
@@ -132,7 +244,7 @@ label = %percentage_used:2%%
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = "CPU "
+format-prefix = " CPU "
 format-prefix-foreground = ${colors.primary}
 label = %percentage:2%%
 
@@ -146,11 +258,13 @@ label-disconnected = %{F#F0C674}%ifname%%{F#707880} disconnected
 [module/wlan]
 inherit = network-base
 interface-type = wireless
+format-connected-prefix = "  "
 label-connected = %{F#F0C674}%ifname%%{F-} %essid% %local_ip%
 
 [module/eth]
 inherit = network-base
 interface-type = wired
+format-connected-prefix = "ﯴ "
 label-connected = %{F#F0C674}%ifname%%{F-} %local_ip%
 
 [module/date]
@@ -162,9 +276,18 @@ date-alt = %Y-%m-%d %H:%M:%S
 
 label = %date%
 label-foreground = ${colors.primary}
+format-prefix = " "
 
 [settings]
 screenchange-reload = true
-pseudo-transparency = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+;pseudo-transparency = false
+
+[global/wm]
+margin-top = 5
+margin-bottom = 5
 
 ; vim:ft=dosini
