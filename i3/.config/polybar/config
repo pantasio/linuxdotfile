@@ -26,6 +26,22 @@ primary = #ffefb7
 secondary = #ffffff
 alert = #A54242
 disabled = #707880
+test = #f34b7d
+
+
+bg = #f34b7d
+fg = #f34b7d
+fs-bg = #f34b7d
+fs-fg = #f34b7d
+
+
+
+
+
+
+
+
+
 
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
@@ -197,13 +213,16 @@ label = %title:0:60:...%
 [module/filesystem]
 type = internal/fs
 interval = 25
-
 mount-0 = /
 
-label-mounted =   %{F#F0C674}%mountpoint%%{F-} %percentage_used%%
+label-mounted =  free %free%/used %percentage_used%%
+label-mounted-foreground = ${colors.test}
+; label-mounted-background = ${colors.test}
 
 label-unmounted = %mountpoint% not mounted
-label-unmounted-foreground = ${colors.disabled}
+label-unmounted-foreground = ${colors.test}
+format-foreground = ${colors.test}
+format-background = ${colors.test}
 
 [module/pulseaudio]
 type = internal/pulseaudio
