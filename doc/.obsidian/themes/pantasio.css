@@ -6,8 +6,8 @@
 
      :root
      {
-     --font-monospace: "CaskaydiaCove NF", "Source Code Pro", monospace; /* "SauceCodePro NF" */
-	   --font-family-editor: "CaskaydiaCove NF", "Source Code Pro", monospace;
+     --font-monospace: "CaskaydiaCove Nerd Font Mono", "Source Code Pro", monospace; /* "SauceCodePro NF" */
+	   --font-family-editor: "CaskaydiaCove Nerd Font", "Source Code Pro", monospace;
      }
 
      .theme-dark
