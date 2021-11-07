@@ -1,0 +1,73 @@
+[global_config]
+  hide_from_taskbar = True
+  title_hide_sizetext = True
+  title_inactive_bg_color = "#c0bfbc"
+  always_split_with_profile = True
+  title_use_system_font = False
+  title_font = CaskaydiaCove Nerd Font Mono Italic 11
+  line_height = 1.2
+[keybindings]
+[profiles]
+  [[default]]
+    icon_bell = False
+    background_color = "#090811"
+    background_darkness = 0.88
+    background_type = transparent
+    cursor_shape = ibeam
+    cursor_color = "#ffd921"
+    font = CaskaydiaCove Nerd Font Mono 11
+    foreground_color = "#f0e68d"
+    show_titlebar = False
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    use_system_font = False
+  [[myter]]
+    icon_bell = False
+    background_color = "#090811"
+    background_darkness = 0.9
+    background_type = transparent
+    cursor_shape = ibeam
+    cursor_color = "#ffd921"
+    cursor_color_fg = False
+    font = CaskaydiaCove Nerd Font Mono 10
+    foreground_color = "#f0e68d"
+    show_titlebar = False
+    use_system_font = False
+    copy_on_selection = True
+[layouts]
+  [[default]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 0:0
+      maximised = False
+      fullscreen = False
+      size = 956, 1034
+      title = bungbu@Prothemeus:~
+      last_active_term = 0013a872-34fd-4541-970f-869998a90ac1
+      last_active_window = False
+    [[[terminal1]]]
+      type = Terminal
+      profile = myter
+      parent = child0
+      order = 0
+      uuid = 0013a872-34fd-4541-970f-869998a90ac1
+    [[[child2]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 0:44
+      maximised = False
+      fullscreen = False
+      size = 956, 1034
+      profile = myter
+      title = bungbu@Prothemeus:~
+      last_active_term = 4237bb17-886f-4b12-abd0-65f8ff7121c2
+      last_active_window = True
+    [[[terminal3]]]
+      type = Terminal
+      parent = child2
+      order = 0
+      profile = myter
+      uuid = 4237bb17-886f-4b12-abd0-65f8ff7121c2
+[plugins]
