@@ -1,3 +1,16 @@
+# This is all my daily driver System
+OS base system: ArchLinux 
+What apps I use daily:
+- Terminal: I use terminator, bash + fish shell, Starship theme for fish
+- Code editor: VScode + pkit theme + keyboard shortcut
+- Taking note: Obsidian + pantasio theme
+- Brower: FireFox with "picture in picture" sticking all workspace.
+  - maybe in fureture I try Brave
+- 
+## Changelog:
+
+
+
 ### swap Cap <-> ESC in i3 config
 ### fix swap caps <-> ESC in VScode: setting keyboard form `code` to `keycode`
 ### Assign Programs to workspaces
