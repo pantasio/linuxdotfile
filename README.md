@@ -10,7 +10,7 @@ What apps I use daily:
   - [Flamshot](https://github.com/flameshot-org/flameshot): screen-shot with more buildin tools -> Make your Obsidan so good to read.
   - [Peek](https://github.com/phw/peek): screen-record as gif -> Another tool for Obsidian.
   - Git
-  - Fonts
+  - Fonts: CaskaydiaCove Nerd Font, JetBrains 
   - Mouse cursor-theme, icon-theme In-Progress
   - 
 ## Changelog:
