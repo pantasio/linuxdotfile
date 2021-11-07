@@ -1,12 +1,18 @@
 # This is all my daily driver System
-OS base system: ArchLinux 
-What apps I use daily:
-- Terminal: I use terminator, bash + fish shell, Starship theme for fish
-- Code editor: VScode + pkit theme + keyboard shortcut
-- Taking note: Obsidian + pantasio theme
+OS base system: ArchLinux  
+What apps I use daily: 
+- Terminal: I use [terminator](https://terminator-gtk3.readthedocs.io/en/latest/), bash + fish shell, [Starship](https://starship.rs/) theme for fish
+- Code editor: VScode + pkit theme + keyboard shortcut, fast edit: Neovim + swap Caps to ESC for better edit
+- Taking note: [Obsidian](https://obsidian.md/) + pantasio theme
 - Brower: FireFox with "picture in picture" sticking all workspace.
-  - maybe in fureture I try Brave
-- 
+  - Maybe in fureture I try Brave
+- Utils:
+  - [Flamshot](https://github.com/flameshot-org/flameshot): screen-shot with more buildin tools -> Make your Obsidan so good to read.
+  - [Peek](https://github.com/phw/peek): screen-record as gif -> Another tool for Obsidian.
+  - Git
+  - Fonts
+  - Mouse cursor-theme, icon-theme In-Progress
+  - 
 ## Changelog:
 
 
