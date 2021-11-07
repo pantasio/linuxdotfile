@@ -229,6 +229,15 @@ for_window [class="Terminator"] move to workspace $ws4
 for_window [class="Pcmanfm"] move to workspace $ws5
 for_window [class="Spotify"] move to workspace $ws8
 
+# Make Picture In Picture Browser Window Visible On All Workspaces in i3 
+for_window [title="Picture-in-Picture"] sticky enable
+for_window [title="Picture-in-Picture"] sticky enable
+# for Terminator setting
+for_window [title="Terminator Preferences"] floating enable;
+
+# Peek Gif screen record
+for_window [title="Peek"] sticky enable
+
 
 # Window Compositor
 exec_always picom -f 

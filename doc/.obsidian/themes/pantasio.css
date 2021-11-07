@@ -1,8 +1,4 @@
-<<<<<<< HEAD
      /* This Theme is called "Pkit" and Obsidian Theme created by Pantasio Le */
-=======
-/* This Theme is called "Pkit" and Obsidian Theme created by Pantasio Le */
->>>>>>> 4f22c4f3041f16e43fa01c9087c9824b3ca75235
 
      /* Last Update:
         2021-08-05 16:48
@@ -10,8 +6,8 @@
 
      :root
      {
-     --font-monospace: "CaskaydiaCove NF", "Source Code Pro", monospace; /* "SauceCodePro NF" */
-	   --font-family-editor: "CaskaydiaCove NF", "Source Code Pro", monospace;
+     --font-monospace: "CaskaydiaCove Nerd Font Mono", "Source Code Pro", monospace; /* "SauceCodePro NF" */
+	   --font-family-editor: "CaskaydiaCove Nerd Font", "Source Code Pro", monospace;
      }
 
      .theme-dark
@@ -724,8 +720,4 @@ border-left-color: transparent!important
 .plugin-tabs .theme-dark .mod-root.workspace-split.mod-vertical > div.workspace-leaf.mod-active {
 border: 0!important;
 border-radius: 0px 0px 0px 0px!important;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 4f22c4f3041f16e43fa01c9087c9824b3ca75235
