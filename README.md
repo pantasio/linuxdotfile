@@ -25,8 +25,12 @@ What apps I use daily:
 - Install base app: i3-wm VScode Obsidian Fish Terminator  
 `yay -Sy visual-studio-bin obsidian-appimage && sudo pacman -Sy stow fish starship terminator pcmanfm xarchiver unzip unrar p7zip tar gzip bzip2 i3-wm i3clock i3status rofi xorg xorg-ultis polybar`
 
-**Audio**
-sudo pacman -S pavucontrol
+**Audio**  
+`sudo pacman -S pavucontrol`  
+Reboot pc and then run: `pavucontrol` to control volume  
+
+## KeyShortcut:
+
 
 ## Changelog:
 

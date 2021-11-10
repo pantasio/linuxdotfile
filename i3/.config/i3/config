@@ -223,18 +223,28 @@ exec_always /home/bungbu/.screenlayout/a.sh
 # setting wallpaper
 exec_always feh --bg-fill /home/bungbu/Downloads/bg.jpg
 
-# Assign Programs to Workspaces
+# Assign Programs to Workspaces+1  
 for_window [class="firefox"] move to workspace $ws2
-for_window [class="Terminator"] move to workspace $ws4
+for_window [class="obsidian"] move to workspace $ws3
+#for_window [class="Terminator"] move to workspace $ws4
+for_window [class="Pcmanfm"] move to workspace $ws5
+#for_window [class="Terminator"] move to workspace $ws4
 for_window [class="Pcmanfm"] move to workspace $ws5
 for_window [class="Spotify"] move to workspace $ws8
+for_window [class="Pavucontrol"] move to workspace $ws9
 
 # Make Picture In Picture Browser Window Visible On All Workspaces in i3 
-for_window [title="Picture-in-Picture"] sticky enable
 for_window [title="Picture-in-Picture"] sticky enable
 # for Terminator setting
 for_window [title="Terminator Preferences"] floating enable;
 
+# For Android studio
+for_window [title="Terminator Preferences"] floating enable;
+for_window [title="Android Virtual Device Manager"] floating enable;
+for_window [title="Android Emulator - Pixel_4_android10_API_29:5554"] floating enable
+
+# Audio 
+for_window [title="Volume Control"] floating enable
 # Peek Gif screen record
 for_window [title="Peek"] sticky enable
 
