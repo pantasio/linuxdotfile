@@ -2,8 +2,8 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/bungbu/.gtkrc-2.0.mine"
-gtk-theme-name="Materia-dark-compact"
-gtk-icon-theme-name="Tela-noctis-dark"
+gtk-theme-name="Graphite-dark"
+gtk-icon-theme-name="elementary"
 gtk-font-name="CaskaydiaCove Nerd Font Mono Italic 11"
 gtk-cursor-theme-name="Bibata-Modern-Amber"
 gtk-cursor-theme-size=0

@@ -1,0 +1,21 @@
+[global_config]
+[keybindings]
+[profiles]
+  [[default]]
+    background_darkness = 0.89
+    background_type = transparent
+    cursor_shape = ibeam
+    cursor_color = "#f5c211"
+    cursor_color_fg = False
+    font = CaskaydiaCove Nerd Font Bold Italic 10
+    scrollback_lines = 1000
+    use_system_font = False
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+[plugins]

@@ -224,7 +224,9 @@ exec_always /home/bungbu/.screenlayout/a.sh
 exec_always feh --bg-fill /home/bungbu/Downloads/bg.jpg
 
 # Assign Programs to Workspaces+1  
-for_window [class="firefox"] move to workspace $ws2
+for_window [class="firefox"] move to workspace $ws1
+for_window [class="Code"] move to workspace $ws2
+for_window [class="code"] move to workspace $ws2
 for_window [class="obsidian"] move to workspace $ws3
 #for_window [class="Terminator"] move to workspace $ws4
 for_window [class="Pcmanfm"] move to workspace $ws5

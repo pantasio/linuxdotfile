@@ -14,6 +14,14 @@ What apps I use daily:
   - Mouse cursor-theme, icon-theme In-Progress
   - 
 
+
+- Themes:
+  - Install Graphite-gtk-theme:  
+`mkdir -p ~/.themes && tar -xvf ~/linuxdotfile/Assets/Graphite-gtk-theme-2021-09-17.tar.gz -C ~/.themes && cd ~/.themes/Graphite-gtk-theme-2021-09-17 && ./install.sh -d ~/.themes/ && cd .. && rm -rf ./Graphite-gtk-theme-2021-09-17`  
+`sudo pacman -S gtk2 gtk3`    # I dont know this pkg needed or not, try dont install, if error so you install gtk.  
+`yay -S elementary-icon-theme`
+  - 
+
 ## How can I do?
 - Install yay: Run this cli  
 `cd ~ && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si && cd ~ && rm -rf yay`
