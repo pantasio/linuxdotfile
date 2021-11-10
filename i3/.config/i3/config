@@ -37,9 +37,12 @@ exec --no-startup-id nm-applet
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +3% && $refresh_i3status 
+bindsym Ctrl+Up exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +3% && $refresh_i3status  
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -3% && $refresh_i3status
+bindsym Ctrl+Down exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -3% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+bindsym Ctrl+m exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -54,6 +57,17 @@ bindsym $mod+Shift+q kill
 # start dmenu (a program launcher)
 # bindsym $mod+d exec --no-startup-id dmenu_run
 bindsym $mod+d exec rofi -show run 
+bindsym $mod+c exec code # Vscode
+bindsym $mod+f exec firefox # Firefox
+#bindsym $mod+c exec  # 
+bindsym $mod+o exec obsidian # Obsidian
+bindsym $ exec pcmanfm # Terminator
+
+
+# Switch to workspace with urgent window automatially
+for_window [urgent=latest] focus
+
+
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -91,12 +105,12 @@ bindsym $mod+h split h
 bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
+bindsym $mod+Ctrl+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+Ctrl+s layout stacking
+bindsym $mod+Ctrl+w layout tabbed
+bindsym $mod+Ctrl+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -148,11 +162,11 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # reload the configuration file
-bindsym $mod+Shift+c reload
+bindsym $mod+Ctrl+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
+bindsym $mod+Ctrl+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Ctrl+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -215,9 +229,7 @@ bindsym $mod+r mode "resize"
 exec_always setxkbmap us 
 exec_always setxkbmap -option caps:swapescape 
 
-# set display resolution
-# exec_always xrandr --output Virtual-1 --primary --mode 1920x1080 #--pos 0x0 --rotate normal
-exec_always /home/bungbu/.screenlayout/a.sh 
+
 
 
 # setting wallpaper
@@ -257,5 +269,8 @@ exec_always picom -f
 # Polybar launch script
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
-
-
+# Arandr autoload
+exec_always --no-startup-id $HOME/.local/bin/displayinit
+# set display resolution
+# exec_always xrandr --output Virtual-1 --primary --mode 1920x1080 #--pos 0x0 --rotate normal
+# exec_always /home/bungbu/.screenlayout/a.sh 

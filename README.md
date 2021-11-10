@@ -36,8 +36,11 @@ What apps I use daily:
 **Audio**  
 `sudo pacman -S pavucontrol`  
 Reboot pc and then run: `pavucontrol` to control volume  
-
+  Keyshortcut: Ctrl + Up/Down; Ctrl + m: mute; 1 
 ## KeyShortcut:
+
+**Firefox theme**  
+link: [firefox theme](https://color.firefox.com/?theme=XQAAAAIkAQAAAAAAAABBqYhm849SCia2CaaEGccwS-xMDPrwkxcr_nLBnA2qMBs0vZSwj6ZMf6J9CTBIw8tFRBPdZu2vxUpdb0qhLAJ9WSV30Tdg0UZMWuoGdPbnwkfU5p8hsmo10h-Q0tAeT1lBVrQY3nSG2AC08h1zPHAeDnpev_DKzhXX-YtHWjBM_T-ibTSmR2zrkM3LI-aZ6UFiZDbEJ71UYDONYvEieiRob8Ub22SFcYoGCSAkFrUh2GyWUm_QGzDjAJQ9uA55ARMMmrirDdxuCiq7QXHSIf70pl7A)  
 
 
 ## Changelog:
