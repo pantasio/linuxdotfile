@@ -13,6 +13,21 @@ What apps I use daily:
   - Fonts: CaskaydiaCove Nerd Font, JetBrains 
   - Mouse cursor-theme, icon-theme In-Progress
   - 
+
+## How can I do?
+- Install yay: Run this cli  
+`cd ~ && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si && cd ~ && rm -rf yay`
+- Stow all:  
+`stow -vSt ~ fish fonts git i3 obsidian Terminator vscode`
+- Copy Mouse-theme: Run   
+`cd $HOME/linuxdotfile-main/Assets/cursor-themes && sudo tar -xvf cursor-themes.tar.gz -C / && cd ~`
+
+- Install base app: i3-wm VScode Obsidian Fish Terminator  
+`yay -Sy visual-studio-bin obsidian-appimage && sudo pacman -Sy stow fish starship terminator pcmanfm xarchiver unzip unrar p7zip tar gzip bzip2 i3-wm i3clock i3status rofi xorg xorg-ultis polybar`
+
+**Audio**
+sudo pacman -S pavucontrol
+
 ## Changelog:
 
 
@@ -27,6 +42,7 @@ What apps I use daily:
 
 
 ### Fontawesome 
+```
 firefox 
 firefox 
 Terminal   
@@ -46,3 +62,4 @@ ws-icon-7 = 8;
 ws-icon-8 = 9;
 ws-icon-9 = 10;
 ws-icon-default = " "
+```

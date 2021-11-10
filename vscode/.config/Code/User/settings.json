@@ -273,7 +273,11 @@
     "diffEditor.renderSideBySide": false,
     "settingsSync.ignoredSettings": [
         "github.gitAuthentication"
-    ]
+    ],
+    "keyboard.dispatch": "keyCode",
+    "markdown.preview.fontFamily": "'CaskaydiaCove Nerd Font', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif",
+    "editor.fontSize": 13,
+    "terminal.integrated.fontSize": 13
     /* Evondev settings.jsona
     "editor.fontFamily": "SF Mono, Source Code Pro, Input Mono, Inconsolata,  Arial, Helvetica, sans-serif",
     "editor.wordWrap": "on",
