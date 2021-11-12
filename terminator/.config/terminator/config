@@ -1,4 +1,7 @@
 [global_config]
+  focus = mouse
+  title_use_system_font = False
+  title_font = CaskaydiaCove Nerd Font Mono 9
 [keybindings]
 [profiles]
   [[default]]

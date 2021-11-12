@@ -346,3 +346,33 @@ export STARSHIP_CACHE=$HOME/.config/starship/cache
 
 ### Flutter setting
 
+######################
+# Theme
+######################
+
+# Cursor ----------
+function set_mode_pre_execution --on-event fish_preexec
+    set command (expr $argv : '\([^ ]*\).*')
+    set -g __last_fish_bind_mode $fish_bind_mode
+    if test $command = 'node'
+        or test $command = 'nesh'
+        or test $command = 'bash'
+        or test $command = 'funced'
+        or echo $command | grep 'python' >/dev/null ^/dev/null
+        set -g fish_bind_mode insert
+    else
+        set -g fish_bind_mode default
+    end
+    fish_vi_cursor
+end
+function set_mode_post_execution --on-event fish_postexec
+    set temp $__last_fish_bind_mode
+    set -e __last_fish_bind_mode
+    set -g fish_bind_mode $temp
+    fish_vi_cursor
+end
+set -x fish_cursor_default block
+set -x fish_cursor_visual block
+set -x fish_cursor_insert line
+set -x fish_cursor_replace_one underscore
+# ---------------------------------------------------------------

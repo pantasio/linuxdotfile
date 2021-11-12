@@ -53,6 +53,8 @@ bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
+# kill all windown
+bindsym $mod+Ctrl+Shift+q [class=".*"] kill
 
 # start dmenu (a program launcher)
 # bindsym $mod+d exec --no-startup-id dmenu_run
@@ -61,7 +63,7 @@ bindsym $mod+c exec code # Vscode
 bindsym $mod+f exec firefox # Firefox
 #bindsym $mod+c exec  # 
 bindsym $mod+o exec obsidian # Obsidian
-bindsym $ exec pcmanfm # Terminator
+bindsym $mod+e exec pcmanfm # Terminator
 
 
 # Switch to workspace with urgent window automatially
@@ -226,20 +228,20 @@ bindsym $mod+r mode "resize"
 # }
 
 # set keyboard layout and swap caps <-> ESC
-exec_always setxkbmap us 
-exec_always setxkbmap -option caps:swapescape 
+exec_always --no-startup-id setxkbmap us 
+exec_always --no-startup-id setxkbmap -option caps:swapescape 
 
 
 
 
 # setting wallpaper
-exec_always feh --bg-fill /home/bungbu/Downloads/bg.jpg
+exec_always feh --bg-fill /home/bungbu/Downloads/wallpaper/bg.jpg
 
 # Assign Programs to Workspaces+1  
 for_window [class="firefox"] move to workspace $ws1
-for_window [class="Code"] move to workspace $ws2
-for_window [class="code"] move to workspace $ws2
-for_window [class="obsidian"] move to workspace $ws3
+# for_window [class="Code"] move to workspace $ws2
+# for_window [class="code"] move to workspace $ws2
+# for_window [class="obsidian"] move to workspace $ws3
 #for_window [class="Terminator"] move to workspace $ws4
 for_window [class="Pcmanfm"] move to workspace $ws5
 #for_window [class="Terminator"] move to workspace $ws4
