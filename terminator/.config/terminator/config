@@ -1,5 +1,4 @@
 [global_config]
-  focus = mouse
   borderless = True
   extra_styling = False
   title_use_system_font = False
@@ -10,7 +9,6 @@
   switch_to_tab_1 = <Alt>1
   switch_to_tab_2 = <Alt>2
   switch_to_tab_3 = <Alt>3
-  switch_to_tab_10 = <Alt>0
 [profiles]
   [[default]]
     allow_bold = False

@@ -11,8 +11,8 @@
     //
     //
     //@ArchLinux
-    "editor.fontFamily": "'Caskaydia Cove Nerd Font', Consolas, 'Courier New', monospace",
-    "terminal.integrated.fontFamily": "'Caskaydia Cove Nerd Font', Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "'CaskaydiaCove Nerd Font', Consolas, 'Courier New', monospace",
+    "terminal.integrated.fontFamily": "'CaskaydiaCove Nerd Font', Consolas, 'Courier New', monospace",
     //
     //
     //@Win10

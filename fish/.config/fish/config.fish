@@ -275,7 +275,7 @@ function set_mode_pre_execution --on-event fish_preexec
         or test $command = 'nesh'
         or test $command = 'bash'
         or test $command = 'funced'
-        or echo $command | grep 'python' >/dev/null ^/dev/null
+        or echo $command | grep 'python' >/dev/null #^/dev/null
         set -g fish_bind_mode insert
     else
         set -g fish_bind_mode default
