@@ -1,0 +1,2 @@
+[ERROR] - (starship::config): Unable to parse the config file: redefinition of table `package` for key `package` at line 80 column 1
+[ERROR] - (starship::config): Unable to parse the config file: redefinition of table `package` for key `package` at line 80 column 1

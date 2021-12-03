@@ -1,18 +1,31 @@
 [global_config]
   focus = mouse
+  borderless = True
+  extra_styling = False
   title_use_system_font = False
-  title_font = CaskaydiaCove Nerd Font Mono 9
+  title_font = FiraCode Nerd Font weight=450 10
 [keybindings]
+  split_horiz = <Alt>b
+  split_vert = <Alt>v
+  switch_to_tab_1 = <Alt>1
+  switch_to_tab_2 = <Alt>2
+  switch_to_tab_3 = <Alt>3
+  switch_to_tab_10 = <Alt>0
 [profiles]
   [[default]]
+    allow_bold = False
+    background_color = "#030916"
     background_darkness = 0.89
-    background_type = transparent
+    backspace_binding = automatic
     cursor_shape = ibeam
     cursor_color = "#f5c211"
     cursor_color_fg = False
-    font = CaskaydiaCove Nerd Font Bold Italic 10
+    font = FiraCode Nerd Font weight=450 10
+    foreground_color = "#dadec8"
+    show_titlebar = False
     scrollback_lines = 1000
     use_system_font = False
+    copy_on_selection = True
 [layouts]
   [[default]]
     [[[window0]]]

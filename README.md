@@ -1,5 +1,7 @@
 # This is all my daily driver System
 OS base system: ArchLinux  
+## System app:
+
 What apps I use daily: 
 - Terminal: I use [terminator](https://terminator-gtk3.readthedocs.io/en/latest/), bash + fish shell, [Starship](https://starship.rs/) theme for fish
 - Code editor: VScode + pkit theme + keyboard shortcut, fast edit: Neovim + swap Caps to ESC for better edit
