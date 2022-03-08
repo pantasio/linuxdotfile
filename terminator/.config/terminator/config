@@ -2,7 +2,7 @@
   borderless = True
   extra_styling = False
   title_use_system_font = False
-  title_font = FiraCode Nerd Font weight=450 10
+  title_font = CaskaydiaCove Nerd Font 10
 [keybindings]
   split_horiz = <Alt>b
   split_vert = <Alt>v
@@ -18,7 +18,7 @@
     cursor_shape = ibeam
     cursor_color = "#f5c211"
     cursor_color_fg = False
-    font = FiraCode Nerd Font weight=450 10
+    font = CaskaydiaCove Nerd Font 10
     foreground_color = "#dadec8"
     show_titlebar = False
     scrollback_lines = 1000
@@ -32,4 +32,5 @@
     [[[child1]]]
       type = Terminal
       parent = window0
+      profile = default
 [plugins]

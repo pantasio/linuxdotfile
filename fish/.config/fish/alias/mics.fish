@@ -41,6 +41,9 @@ alias mirrord="sudo reflector --latest 50 --number 20 --sort delay --save /etc/p
 alias mirrors="sudo reflector --latest 50 --number 20 --sort score --save /etc/pacman.d/mirrorlist"
 alias mirrora="sudo reflector --latest 50 --number 20 --sort age --save /etc/pacman.d/mirrorlist"
 
+# Wget
+# sudo wget -P /var/lib/libvirt/isos https://mirrors.mit.edu/ubuntu-releases/20.04/ubuntu-20.04.3-live-server-amd64.iso
+
 # Colorize grep output (good for log files)
 # alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
