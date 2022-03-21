@@ -44,6 +44,7 @@ Reboot pc and then run: `pavucontrol` to control volume
 **Firefox theme**  
 link: [firefox theme](https://color.firefox.com/?theme=XQAAAAIkAQAAAAAAAABBqYhm849SCia2CaaEGccwS-xMDPrwkxcr_nLBnA2qMBs0vZSwj6ZMf6J9CTBIw8tFRBPdZu2vxUpdb0qhLAJ9WSV30Tdg0UZMWuoGdPbnwkfU5p8hsmo10h-Q0tAeT1lBVrQY3nSG2AC08h1zPHAeDnpev_DKzhXX-YtHWjBM_T-ibTSmR2zrkM3LI-aZ6UFiZDbEJ71UYDONYvEieiRob8Ub22SFcYoGCSAkFrUh2GyWUm_QGzDjAJQ9uA55ARMMmrirDdxuCiq7QXHSIf70pl7A)  
 
+[Another Firefox theme](https://color.firefox.com/?theme=XQAAAAIWAQAAAAAAAABBqYhm849SCia2CaaEGccwS-xMDPrxiv6JAUjdCaAX7OF0ZKvtB6ZVHDZE5kgGZbIei0SFn_Yxe3GGnTjKhAZR9B7rwNIsNtP6O2TkpGMBF9FaWJKWuOFcW8Wq7AdKlICmGR8QiJJQDk068YMqF1sBES9yukVZLwmtqwaSjf0TWLAWn9yo3Y0FHTWqn0_mxW0sYoL2ljGvfj--bGa_0nhxvbJrtdChDbJnZzrXevMhYYFKGsSFc_zg-kY)
 
 ## Changelog:
 
@@ -68,6 +69,7 @@ Spotify 阮 阮
 Spotify 阮 阮
 ;http://fontawesome.io/cheatsheet/
 ;       v     
+;          "     
 ws-icon-0 = 1;
 ws-icon-1 = 2;
 ws-icon-2 = 3;
@@ -80,3 +82,7 @@ ws-icon-8 = 9;
 ws-icon-9 = 10;
 ws-icon-default = " "
 ```
+"🐍 "
+"📐"
+"💎 "
+

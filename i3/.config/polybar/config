@@ -1,9 +1,13 @@
 ;=====================================================
 ;
 ;   To learn more about how to configure Polybar
-;   go to https://github.com/polybar/polybar
+;   go to https://github.com/jaagr/polybar
 ;
-;   The README contains a lot of information
+;   The README contains alot of information
+;	Themes : https://github.com/jaagr/dots/tree/master/.local/etc/themer/themes
+;   https://github.com/jaagr/polybar/wiki/
+;   https://github.com/jaagr/polybar/wiki/Configuration
+;   https://github.com/jaagr/polybar/wiki/Formatting
 ;
 ;=====================================================
 
@@ -122,9 +126,9 @@ font-2 = "Noto Sans:size=10;0"
 font-3 = "Noto Sans Mono:size=10;0"
 
 modules-left = i3 kernel xwindow
-modules-center = temperature1 date
-modules-right = networkspeeddown networkspeedup wireless-network xkeyboard volume memory2 cpu2
-; networkspeeddown didnot work
+modules-center = date
+modules-right = networkspeeddown networkspeedup wireless-network xkeyboard pulseaudio-control memory2 cpu2
+; temporary1-2 didnot work
 
 separator = |
 
@@ -183,7 +187,7 @@ override-redirect = false
 bottom = true
 fixed-center = true
 width = 100%
-height = 20
+height = 30
 ;offset-x = 1%
 ;offset-y = 1%
 
@@ -282,8 +286,8 @@ separator = |
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 3
-line-color = #ffefb7
+line-size = 2
+line-color = #f00
 
 ;border-size = 2
 ;border-left-size = 25
@@ -425,7 +429,6 @@ border-color = #00000000
 padding-left = 0
 padding-right = 1
 
-# module-margin = 1
 module-margin-left = 3
 module-margin-right = 3
 
@@ -1677,6 +1680,7 @@ fuzzy-match = false
 ;http://fontawesome.io/cheatsheet/
 ;       v     
 
+;nameworkspace
 ws-icon-0 = 1;
 ws-icon-1 = 2;
 ws-icon-2 = 3;
@@ -1687,6 +1691,16 @@ ws-icon-6 = 7;
 ws-icon-7 = 8;
 ws-icon-8 = 9;
 ws-icon-9 = 10;
+ws-icon-10 = 11; 
+ws-icon-11 = 12; 
+ws-icon-12 = 13; 
+ws-icon-13 = 14; 
+ws-icon-14 = 15; 
+ws-icon-15 = 16; 
+ws-icon-16 = 17; 
+ws-icon-17 = 18; 
+ws-icon-18 = 19; 
+ws-icon-19 = 20; 
 ws-icon-default = " "
 
 ; Available tags:
@@ -1963,7 +1977,7 @@ format-padding = 2
 ;   %percentage-cores% - load percentage for each core
 ;   %percentage-core[1-9]% - load percentage for specific core
 label-font = 3
-label = Cpu %percentage:3%%
+label = CPU %percentage:3%%
 ramp-coreload-0 = ▁
 ramp-coreload-0-font = 3
 ramp-coreload-0-foreground = #aaff77
@@ -2018,7 +2032,7 @@ format-padding = 2
 ;   %percentage% (default) - total cpu load
 ;   %percentage-cores% - load percentage for each core
 ;   %percentage-core[1-9]% - load percentage for specific core
-label = Cpu %percentage:3%%
+label = CPU %percentage:3%%
 
 ################################################################################
 
@@ -2029,8 +2043,8 @@ type = internal/date
 interval = 5
 ; See "http://en.cppreference.com/w/cpp/io/manip/put_time" for details on how to format the date string
 ; NOTE: if you want to use syntax tags here you need to use %%{...}
-date = " %Y-%m-%d%"
-date-alt = " %d-%m-%Y"
+date-alt = " %A, %Y-%m-%d%"
+date = " %A, %d-%m-%Y"
 time = %H:%M
 time-alt = %H:%M
 format-prefix = " "
@@ -2283,7 +2297,7 @@ interval = 1
 ;   %mb_total%
 label = %percentage_used%%
 
-format = Mem <label>
+format = RAM <label>
 format-prefix = "  "
 format-prefix-foreground = #3384d0
 format-underline = #3384d0
@@ -2444,6 +2458,7 @@ tail = true
 format-underline = ${colors.cyan}
 label-padding = 2
 label-foreground = ${colors.foreground}
+label-background = ${colors.background}
 
 # Icons mixed from Font Awesome 5 and Material Icons
 # You can copy-paste your options for each possible action, which is more

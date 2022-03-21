@@ -106,3 +106,13 @@ alias tofish="sudo chsh $USER -s /bin/fish && echo 'Now log out.'"
 # Unlock LBRY tips
 # alias tips="lbrynet txo spend --type=support --is_not_my_input --blocking"
 
+##########
+# Ping
+# Br -> ER -> Wifi
+alias pinghelp="echo 'pingg          google.com' && echo 'pinger         router ER' && echo 'pingbr         Bright from Internet'"
+alias pingg="ping -c 5 1.1.1.1"
+# alias pinger="ping -c 5 192.168.100.1"
+alias pinger="ping 192.168.100.1"
+alias pingbr="ping 192.168.50.1"
+
+############################

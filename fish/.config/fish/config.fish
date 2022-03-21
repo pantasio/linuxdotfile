@@ -1,7 +1,6 @@
 # <=> 
-########## make terminal clear when load form bash
-clear
-neofetch
+
+
 ########## Set swap Caplock and ESC
 setxkbmap -option caps:swapescape 
 
@@ -297,3 +296,5 @@ set -x fish_cursor_visual block
 set -x fish_cursor_insert line
 set -x fish_cursor_replace_one underscore
 # ---------------------------------------------------------------
+########## make terminal clear when load form bash
+cl

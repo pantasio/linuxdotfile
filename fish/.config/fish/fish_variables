@@ -1,6 +1,11 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR __fish_initialized:3100
+SETUVAR ZO_CMD:zo
+SETUVAR Z_CMD:z
+SETUVAR Z_DATA:/home/bungbu/\x2elocal/share/z/data
+SETUVAR Z_DATA_DIR:/home/bungbu/\x2elocal/share/z
+SETUVAR Z_EXCLUDE:\x5e/home/bungbu\x24
+SETUVAR __fish_initialized:3400
 SETUVAR _fish_abbr_ga:git\x20add
 SETUVAR _fish_abbr_gaa:git\x20add\x20\x2e
 SETUVAR _fish_abbr_gamend:git\x20commit\x20\x2d\x2damend
@@ -20,6 +25,8 @@ SETUVAR _fish_abbr_gp:git\x20push
 SETUVAR _fish_abbr_gpl:git\x20pull
 SETUVAR _fish_abbr_gr:git\x20rebase\x20\x2di\x20HEAD\x7e15
 SETUVAR _fish_abbr_gs:git\x20status
+SETUVAR _fisher_jethrokuan_2F_z_files:/home/bungbu/\x2econfig/fish/functions/__z\x2efish\x1e/home/bungbu/\x2econfig/fish/functions/__z_add\x2efish\x1e/home/bungbu/\x2econfig/fish/functions/__z_clean\x2efish\x1e/home/bungbu/\x2econfig/fish/functions/__z_complete\x2efish\x1e/home/bungbu/\x2econfig/fish/conf\x2ed/z\x2efish
+SETUVAR _fisher_plugins:jethrokuan/z
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_comment:990000
 SETUVAR fish_color_cwd:green
@@ -43,4 +50,5 @@ SETUVAR fish_pager_color_completion:\x1d
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
+SETUVAR fish_pager_color_selected_background:\x2dr
 SETUVAR fish_user_paths:/home/bungbu/\x2elocal/bin\x1e/home/bungbu/Applications\x1e/home/bungbu/Flutter\x2dsdk/bin
