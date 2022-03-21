@@ -1,18 +1,14 @@
 {
-    // Common Settings
+    // Common Settings A-> B
     "files.autoSave": "onFocusChange",
     "editor.wordWrap": "on",
     "editor.lineHeight": 24,
     "editor.cursorWidth": 2,
     "explorer.confirmDelete": false,
     "editor.minimap.renderCharacters": false,
-    // "editor.fontSize": 14,
     "terminal.integrated.lineHeight": 1.2,
-    //
-    //
-    //@ArchLinux
-    "editor.fontFamily": "'CaskaydiaCove Nerd Font', Consolas, 'Courier New', monospace",
-    "terminal.integrated.fontFamily": "'CaskaydiaCove Nerd Font', Consolas, 'Courier New', monospace",
+    "editor.fontSize": 13,
+    "terminal.integrated.fontSize": 13,
     //
     //
     //@Win10
@@ -20,7 +16,17 @@
     // "terminal.integrated.fontFamily": "'CaskaydiaCove NF', Consolas, 'Courier New', monospace",
     //
     //
+    //@ArchLinux
+    // "editor.fontFamily": "'FiraCode Nerd Font', 'CaskaydiaCove Nerd Font', 'Source Code Pro', Consolas, 'Courier New', monospace",
+    // "terminal.integrated.fontFamily": "'FiraCode Nerd Font', 'CaskaydiaCove Nerd Font', 'Source Code Pro', Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "'Source Code Pro', 'FiraCode Nerd Font', 'CaskaydiaCove Nerd Font', Consolas, 'Courier New', monospace",
+    "terminal.integrated.fontFamily": "'Source Code Pro', 'FiraCode Nerd Font', 'CaskaydiaCove Nerd Font', 'Source Code Pro', Consolas, 'Courier New', monospace",
+    //
+    //
     // @MacOS
+    // "editor.fontFamily": "'CaskaydiaCove Nerd Font', Consolas, 'Courier New', monospace",
+    // "terminal.integrated.fontFamily": "'CaskaydiaCove Nerd Font', Consolas, 'Courier New', monospace",
+    //
     // 
     // VScode Terminal settings
     // "terminal.integrated.fontFamily": "'FiraCode Nerd Font Mono', Consolas, 'Courier New', monospace",
@@ -41,7 +47,6 @@
     "sync.quietSync": true,
     "json.maxItemsComputed": 50000,
     "liveServer.settings.donotShowInfoMsg": true,
-    //#####Begin{
     // Better commend setting
     "better-comments.multilineComments": true,
     "better-comments.highlightPlainText": false,
@@ -92,7 +97,6 @@
             "italic": false
         }
     ],
-    //##################################################END}
     /**
     * Vim settings
     **/
@@ -231,26 +235,7 @@
             "commands": [
                 "workbench.action.toggleSidebarVisibility"
             ]
-        },
-        // {
-        //     "before": [
-        //         "<leader>",
-        //         "f"
-        //     ],
-        //     "commands": [
-        //         "revealInExplorer"
-        //     ],
-        // },
-        // {
-        //     "before": [
-        //         "<leader>",
-        //         "r",
-        //         "f"
-        //     ],
-        //     "commands": [
-        //         "fileutils.renameFile"
-        //     ]
-        // }
+        }
     ],
     // Setting color theme
     "workbench.colorTheme": "pantasio",
@@ -271,14 +256,9 @@
         "*.ps1": "default"
     },
     "diffEditor.renderSideBySide": false,
-    "settingsSync.ignoredSettings": [
-        "github.gitAuthentication"
-    ],
-    "keyboard.dispatch": "keyCode",
-    "markdown.preview.fontFamily": "'CaskaydiaCove Nerd Font', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif",
-    "editor.fontSize": 13,
-    "terminal.integrated.fontSize": 13,
-    "bracket-pair-colorizer-2.depreciation-notice": false
+    "bracket-pair-colorizer-2.depreciation-notice": false,
+    "bracketPairColorizer.depreciation-notice": false,
+    "keyboard.dispatch": "keyCode"
     /* Evondev settings.jsona
     "editor.fontFamily": "SF Mono, Source Code Pro, Input Mono, Inconsolata,  Arial, Helvetica, sans-serif",
     "editor.wordWrap": "on",

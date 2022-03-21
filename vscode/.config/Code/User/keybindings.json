@@ -1,4 +1,12 @@
 // Place your key bindings in this file to override the defaults
+/*
+    In Visual mode:    
+    - Ctrl+ j  Move line down
+    - Ctrl+ k  Move line up
+
+
+
+*/
 [
     //#####Begin{
     // In Visual mode only
@@ -47,8 +55,6 @@
         "when": "listFocus && !inputFocus"
     },
     //#################################################################End}
-    //
-    //
     //#####BEGIN{
     {
         "key": "ctrl+h",
@@ -101,8 +107,31 @@
         "command": "workbench.action.toggleMaximizedPanel"
     },
     {
-        "key": "ctrl+f2",
-        "command": "-editor.action.changeAll",
-        "when": "editorTextFocus && !editorReadonly"
+        "key": "ctrl+shift+c",
+        "command": "editor.action.clipboardCopyAction"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "-editor.action.clipboardCopyAction"
+    },
+    {
+        "key": "ctrl+shift+v",
+        "command": "editor.action.clipboardPasteAction"
+    },
+    {
+        "key": "ctrl+v",
+        "command": "-editor.action.clipboardPasteAction"
+    },
+    {
+        "key": "shift+insert",
+        "command": "-editor.action.clipboardPasteAction"
+    },
+    {
+        "key": "ctrl+shift+x",
+        "command": "editor.action.clipboardCutAction"
+    },
+    {
+        "key": "ctrl+x",
+        "command": "-editor.action.clipboardCutAction"
     }
 ]

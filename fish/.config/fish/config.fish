@@ -1,6 +1,10 @@
 # <=> 
-# make terminal clear when load form bash
+########## make terminal clear when load form bash
 clear
+neofetch
+########## Set swap Caplock and ESC
+setxkbmap -option caps:swapescape 
+
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
