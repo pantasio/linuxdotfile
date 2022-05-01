@@ -1,0 +1,38 @@
+{
+	"name": "pkit",
+	"displayName": "Pkit VScode dark theme",
+	"description": "The VScode theme I working all day",
+	"version": "0.0.3",
+	"publisher": "pantasio",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/pantasio/pkit-VScode-theme.git"
+	},
+	"keywords": [
+		"theme",
+		"pantasio",
+		"pkit theme",
+		"dark theme"
+	],
+	"engines": {
+		"vscode": "^1.59.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "pantasio",
+				"uiTheme": "vs-dark",
+				"path": "./themes/pantasio-color-theme.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "0a628e71-4ca7-4940-8c49-54640576d701",
+		"publisherId": "35552e18-9501-4607-8e8e-0f5525e34dc2",
+		"publisherDisplayName": "pantasio",
+		"installedTimestamp": 1636479517989
+	}
+}
