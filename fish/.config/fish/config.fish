@@ -298,3 +298,6 @@ set -x fish_cursor_replace_one underscore
 # ---------------------------------------------------------------
 ########## make terminal clear when load form bash
 cl
+# ⛔
+# 👍 
+# 🔴

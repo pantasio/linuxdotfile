@@ -95,11 +95,11 @@ URxvt.background:   [80]#222222
 
 ! fonts
 URxvt.letterSpace: 	    		-1
-URxvt.font:                 	xft:Monospace:regular:size=11
-URxvt.imFont:               	xft:Monospace:regular:size=11
-URxvt.italicFont:           	xft:Monospace:italic:size=11
-URxvt.boldFont:             	xft:Monospace:bold:size=11
-URxvt.boldItalicFont:     		xft:Monospace:regular:size=11
+URxvt.font:                 	xft:CaskaydiaCove Nerd Font Mono:regular:size=11
+URxvt.imFont:               	xft:CaskaydiaCove Nerd Font Mono:regular:size=11
+URxvt.italicFont:           	xft:CaskaydiaCove Nerd Font Mono:italic:size=11
+URxvt.boldFont:             	xft:CaskaydiaCove Nerd Font Mono:bold:size=11
+URxvt.boldItalicFont:     		xft:CaskaydiaCove Nerd Font Mono:regular:size=11
 ! run :.!fc-list | grep <font-name>
 
 ! perl extensions

@@ -109,10 +109,14 @@ alias tofish="sudo chsh $USER -s /bin/fish && echo 'Now log out.'"
 ##########
 # Ping
 # Br -> ER -> Wifi
-alias pinghelp="echo 'pingg          google.com' && echo 'pinger         router ER' && echo 'pingbr         Bright from Internet'"
-alias pingg="ping -c 5 1.1.1.1"
-# alias pinger="ping -c 5 192.168.100.1"
-alias pinger="ping 192.168.100.1"
-alias pingbr="ping 192.168.50.1"
+alias p-help="\
+echo 'pingg          google.com' && \
+echo 'pinger         router ER' && \
+echo 'pingwifi       your wifi mercusys AC10' && \
+echo 'pingbr         Bright from Internet'"
+alias p-g="ping -c 5 1.1.1.1"
+alias p-wifi="echo '👍 ping you wifi' && ping -c 5 192.168.100.2"
+alias p-er="ping 192.168.100.1"
+alias p-br="ping 192.168.50.1"
 
 ############################

@@ -19,9 +19,9 @@
     //@ArchLinux
     // "editor.fontFamily": "'FiraCode Nerd Font', 'CaskaydiaCove Nerd Font', 'Source Code Pro', Consolas, 'Courier New', monospace",
     // "terminal.integrated.fontFamily": "'FiraCode Nerd Font', 'CaskaydiaCove Nerd Font', 'Source Code Pro', Consolas, 'Courier New', monospace",
-    "editor.fontFamily": "'Source Code Pro', 'FiraCode Nerd Font', 'CaskaydiaCove Nerd Font', Consolas, 'Courier New', monospace",
-    "terminal.integrated.fontFamily": "'Source Code Pro', 'FiraCode Nerd Font', 'CaskaydiaCove Nerd Font', 'Source Code Pro', Consolas, 'Courier New', monospace",
-    //
+    "editor.fontFamily": "'Caskaydia Cove Nerd Font', 'SauceCodePro Nerd Font', 'FiraCode Nerd Font', Consolas, 'Courier New', monospace",
+    "terminal.integrated.fontFamily": "'Caskaydia Cove Nerd Font', 'SauceCodePro Nerd Font', 'FiraCode Nerd Font', 'Source Code Pro', Consolas, 'Courier New', monospace",
+    // 
     //
     // @MacOS
     // "editor.fontFamily": "'CaskaydiaCove Nerd Font', Consolas, 'Courier New', monospace",
@@ -258,7 +258,8 @@
     "diffEditor.renderSideBySide": false,
     "bracket-pair-colorizer-2.depreciation-notice": false,
     "bracketPairColorizer.depreciation-notice": false,
-    "keyboard.dispatch": "keyCode"
+    "keyboard.dispatch": "keyCode",
+    "settingsSync.ignoredExtensions": []
     /* Evondev settings.jsona
     "editor.fontFamily": "SF Mono, Source Code Pro, Input Mono, Inconsolata,  Arial, Helvetica, sans-serif",
     "editor.wordWrap": "on",
