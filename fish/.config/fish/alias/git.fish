@@ -19,3 +19,6 @@ abbr -a gf  git fetch
 abbr -a gfc git findcommit
 abbr -a gfm git findmessage
 abbr -a gco git checkout
+
+# git log
+abbr -a gadog git log --all --decorate --oneline --graph

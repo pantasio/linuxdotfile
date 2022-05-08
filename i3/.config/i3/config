@@ -16,9 +16,17 @@
 
 ################# what key binding in config
 # Super + s/b/z
+# Super+Control+ 
+# 533   Super+Control+ o == Obsidian
+# 534   Super+Control+ c == VScode
+# 534   Super+Control+ b == bluebery
 
 ################# Define the $mod variable/key
-
+# Disable autostart picom
+# 775   Ctrl+Alt+o       == Picom Toogle
+# A
+# b
+# c
 # Key to rule them all : Super(Windows) or Alt key - see definition above
 # set Super key
 set $mod Mod4
@@ -82,11 +90,11 @@ workspace 8 output $BenQMonitor
 workspace 9 output $BenQMonitor
 workspace 10 output $BenQMonitor
 
-workspace 11 output $PhilipsMonitor
-workspace 12 output $PhilipsMonitor
-workspace 13 output $PhilipsMonitor
-workspace 14 output $PhilipsMonitor
-workspace 15 output $PhilipsMonitor
+workspace 11 output $BenQMonitor
+workspace 12 output $BenQMonitor
+workspace 13 output $BenQMonitor
+workspace 14 output $BenQMonitor
+workspace 15 output $BenQMonitor
 workspace 16 output $PhilipsMonitor
 workspace 17 output $PhilipsMonitor
 workspace 18 output $PhilipsMonitor
@@ -523,12 +531,15 @@ bindsym control+mod1+g exec --no-startup-id chromium;focus
 
 # Text Editor
 # bindsym $mod+F2 exec --no-startup-id geany;focus
-bindsym $mod+F2 exec --no-startup-id code;focus
-bindsym $mod+c exec --no-startup-id code;focus
+bindsym $mod+control+F2 exec --no-startup-id code;focus
+bindsym $mod+control+c exec --no-startup-id code;focus
 
 #Obsidian 
-bindsym $mod+F3 exec --no-startup-id obsidian;focus
-bindsym $mod+o exec --no-startup-id obsidian;focus
+bindsym $mod+control+F3 exec --no-startup-id obsidian;focus
+bindsym $mod+control+o exec --no-startup-id obsidian;focus
+
+# Bluetooth
+bindsym $mod+control+b exec --no-startup-id blueberry;focus
 
 # Basic Draw Tool
 # bindsym $mod+F3 exec --no-startup-id inkscape;focus
@@ -762,7 +773,7 @@ mode "$mode_gaps_outer" {
 ################# picom of i3wm                  
 
 # if you want transparency on non-focused windows, ...
-exec_always --no-startup-id picom --config ~/.config/i3/picom.conf
+# exec_always --no-startup-id picom --config ~/.config/i3/picom.conf
 
 bindsym control+mod1+o exec --no-startup-id ~/.config/i3/scripts/picom-toggle.sh
 
