@@ -59,8 +59,8 @@ exec --no-startup-id xrandr --output DisplayPort-0 --off --output DisplayPort-1 
 
 # current setup
 
-set $BenQMonitor HDMI-A-0
-set $PhilipsMonitor HDMI-A-1
+set $BenQMonitor HDMI-A-1
+set $PhilipsMonitor HDMI-A-0
 
 # Other Examples
 
@@ -79,27 +79,27 @@ set $PhilipsMonitor HDMI-A-1
 #set $firstMonitor HDMI-1
 #set $secondMonitor HDMI-2
 
-workspace 1 output $BenQMonitor
-workspace 2 output $BenQMonitor
-workspace 3 output $BenQMonitor
-workspace 4 output $BenQMonitor
-workspace 5 output $BenQMonitor
-workspace 6 output $BenQMonitor
-workspace 7 output $BenQMonitor
-workspace 8 output $BenQMonitor
-workspace 9 output $BenQMonitor
-workspace 10 output $BenQMonitor
+workspace 1 output $PhilipsMonitor
+workspace 2 output $PhilipsMonitor
+workspace 3 output $PhilipsMonitor
+workspace 4 output $PhilipsMonitor
+workspace 5 output $PhilipsMonitor
+workspace 6 output $PhilipsMonitor
+workspace 7 output $PhilipsMonitor
+workspace 8 output $PhilipsMonitor
+workspace 9 output $PhilipsMonitor
+workspace 10 output $PhilipsMonitor
 
-workspace 11 output $BenQMonitor
-workspace 12 output $BenQMonitor
-workspace 13 output $BenQMonitor
-workspace 14 output $BenQMonitor
-workspace 15 output $BenQMonitor
-workspace 16 output $PhilipsMonitor
-workspace 17 output $PhilipsMonitor
-workspace 18 output $PhilipsMonitor
-workspace 19 output $PhilipsMonitor
-workspace 20 output $PhilipsMonitor
+workspace 11 output $PhilipsMonitor
+workspace 12 output $PhilipsMonitor
+workspace 13 output $PhilipsMonitor
+workspace 14 output $PhilipsMonitor
+workspace 15 output $PhilipsMonitor
+workspace 16 output $BenQMonitor
+workspace 17 output $BenQMonitor
+workspace 18 output $BenQMonitor
+workspace 19 output $BenQMonitor
+workspace 20 output $BenQMonitor
 
 # switch to workspace
 bindsym $mod+1 workspace 1
@@ -160,12 +160,16 @@ bindsym Mod1+Shift+0 move container to workspace 20; workspace 20
 # start xfce-appfinder
 # Alt+F2
 bindsym mod1+F2 exec --no-startup-id xfce4-appfinder
+bindsym $mod+d exec --no-startup-id xfce4-appfinder
+bindsym mod1+d exec --no-startup-id xfce4-appfinder
 
 # start xlunch app launcher
 # bindsym mod1+F5 exec --no-startup-id xlunch --config ~/.config/xlunch/default.conf --input ~/.config/xlunch/entries.dsv
 
 # start rofi full
-bindsym $mod+d exec --no-startup-id "rofi -font 'Noto Sans 13' -theme-str 'window {width: 45%;height: 100%;}' -show drun"
+# Use both Super+d and Alt+d 
+# bindsym $mod+d exec --no-startup-id "rofi -font 'Noto Sans 13' -theme-str 'window {width: 45%;height: 100%;}' -show drun"
+# bindsym mod1+d exec --no-startup-id "rofi -font 'Noto Sans 13' -theme-str 'window {width: 45%;height: 100%;}' -show drun"
 
 # start rofi small
 # bindsym $mod+F12 exec --no-startup-id rofi -show drun -font "Noto Sans 13"
@@ -174,7 +178,7 @@ bindsym $mod+d exec --no-startup-id "rofi -font 'Noto Sans 13' -theme-str 'windo
 
 # Backup exit
 # Press ctrl+alt+x - check toolbar for next choices
-bindsym control+mod1+X mode "$mode_system"
+# bindsym control+mod1+X mode "$mode_system"
 
 set $mode_system System (k) lock, (l) logout, (u) suspend, (h) hibernate, (r) reboot, (s) shutdown
 mode "$mode_system" {
@@ -494,11 +498,11 @@ bindsym control+mod1+m exec --no-startup-id xfce4-settings-manager
 bindsym control+mod1+c exec --no-startup-id catfish;focus
 
 # arcolinux-logout
-bindsym control+mod1+k exec --no-startup-id arcolinux-logout
-bindsym control+mod1+l exec --no-startup-id arcolinux-logout
+# bindsym control+mod1+k exec --no-startup-id arcolinux-logout
+# bindsym control+mod1+l exec --no-startup-id arcolinux-logout
 
 # rofi theme selector
-bindsym control+mod1+r exec --no-startup-id rofi-theme-selector
+# bindsym control+mod1+r exec --no-startup-id rofi-theme-selector
 
 # arcolinux conflict
 # bindsym $mod+m exec --no-startup-id pragha;focus

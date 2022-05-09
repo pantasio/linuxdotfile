@@ -20,9 +20,20 @@ case $desktop in
 
     i3|/usr/share/xsessions/i3)
     if type "xrandr" > /dev/null; then
-      for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-        MONITOR=$m polybar --reload mainbar-i3 -c ~/.config/polybar/config &
-      done
+      MONITOR=1 polybar --reload mainbar-i3 -c ~/.config/polybar/config &
+      MONITOR=2 polybar --reload mainbar-i3-extra -c ~/.config/polybar/config &
+      
+      # for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
+      #   MONITOR=1 polybar --reload mainbar-i3 -c ~/.config/polybar/config &
+      #   MONITOR=2 polybar --reload mainbar-i3-extra -c ~/.config/polybar/config &
+      #   # if [$m == 1] then
+      #   # MONITOR=1 polybar --reload mainbar-i3 -c ~/.config/polybar/config &
+      #   # fi 
+
+      #   # if [$m == 2] then
+      #   # MONITOR=2 polybar --reload mainbar-i3-extra ~/.config/polybar/config &
+      #   # fi
+      # done
     else
     polybar --reload mainbar-i3 -c ~/.config/polybar/config &
     fi
