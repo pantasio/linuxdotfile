@@ -224,7 +224,7 @@ font-2 = "SauceCodePro Nerd Font:size=9;0"
 font-3 = "SauceCodePro Nerd Font:size=10;0"
 
 modules-left = i3 kernel
-modules-center = date
+modules-center = date temperature1
 modules-right = networkspeeddown networkspeedup wireless-network
 
 separator = |
@@ -2576,7 +2576,8 @@ thermal-zone = 0
 ; $ for i in /sys/class/hwmon/hwmon*/temp*_input; do echo "$(<$(dirname $i)/name): $(cat ${i%_*}_label 2>/dev/null || echo $(basename ${i%_*})) $(readlink -f $i)"; done
 ; to find path to desired file
 ; Default reverts to thermal zone setting
-hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon1/temp1_input
+; hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon1/temp1_input
+hwmon-path = /sys/class/graphics/fb0/device/hwmon/hwmon4/temp1_input
 
 warn-temperature = 70
 format = <ramp> <label>
@@ -2585,7 +2586,7 @@ format-background = ${colors.background}
 format-underline = #c72581
 format-warn = <ramp> <label-warn>
 format-warn-underline = #c7254f
-label = %temperature%
+label = GPU %temperature%
 label-warn =  %temperature%
 label-warn-foreground = #c7254f
 
