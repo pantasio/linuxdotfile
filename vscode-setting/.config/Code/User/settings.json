@@ -21,7 +21,7 @@
     // fc-list | grep 'SauceCodePro Nerd Font'
     //
     // The best font is: 'SauceCodePro Nerd Font', bc it dont missing some icon.
-    // "editor.fontFamily": "'FiraCode Nerd Font', 'CaskaydiaCove Nerd Font', 'Source Code Pro', Consolas, 'Courier New', monospace",
+    // "editor.fontFamily": "'FiraCode Nerd Font', 'CaskaydiaCove Nerd Font', 'Source Code Pro','Iosevka Nerd Font', 'Comic Code Demo' Consolas, 'Courier New', monospace",
     // "terminal.integrated.fontFamily": "'FiraCode Nerd Font', 'CaskaydiaCove Nerd Font', 'Source Code Pro', Consolas, 'Courier New', monospace",
     "editor.fontFamily": "'SauceCodePro Nerd Font', Consolas, 'Courier New', monospace",
     //  'Caskaydia Cove Nerd Font', 'SauceCodePro Nerd Font', 'FiraCode Nerd Font',

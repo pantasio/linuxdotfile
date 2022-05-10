@@ -8,7 +8,7 @@
 ;   https://github.com/jaagr/polybar/wiki/
 ;   https://github.com/jaagr/polybar/wiki/Configuration
 ;   https://github.com/jaagr/polybar/wiki/Formatting
-;
+;   https://github.com/adi1090x/polybar-themes
 ;=====================================================
 
 [global/wm]
@@ -127,7 +127,7 @@ font-3 = "Noto Sans Mono:size=10;0"
 
 modules-left = i3 xwindow
 modules-center = 
-modules-right = date networkspeeddown networkspeedup xkeyboard pulseaudio-control memory2 cpu2
+modules-right = date networkspeeddown networkspeedup pulseaudio-control memory2 cpu2
 ; temporary1-2 didnot work
 
 separator = |
@@ -219,18 +219,20 @@ module-margin-right = 3
 
 ;https://github.com/jaagr/polybar/wiki/Fonts
 font-0 = "Noto Sans:size=10;0"
-font-1 = "FontAwesome:size=10;0"
-font-2 = "Noto Sans:size=10;0"
-font-3 = "Noto Sans Mono:size=10;0"
+font-1 = "FontAwesome:size=9;0"
+font-2 = "SauceCodePro Nerd Font:size=9;0"
+font-3 = "SauceCodePro Nerd Font:size=10;0"
 
 modules-left = i3 kernel
-modules-center = 
-modules-right = wireless-network
+modules-center = date
+modules-right = networkspeeddown networkspeedup wireless-network
 
 separator = |
 
 ;dim-value = 1.0
 
+
+;This is setting for extent apps icon taskbar, ONLY ON MAIN I3 BAR
 ;tray-detached = false
 ;tray-offset-x = 0
 ;tray-offset-y = 0
@@ -1685,26 +1687,26 @@ fuzzy-match = false
 
 ; 
 ;nameworkspace
-ws-icon-0 = 1;
-ws-icon-1 = 2;
-ws-icon-2 = 3;
-ws-icon-3 = 4;
-ws-icon-4 = 5;
-ws-icon-5 = 6;
-ws-icon-6 = 7;
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
+ws-icon-5 = 6;
+ws-icon-6 = 7;
 ws-icon-7 = 8;
 ws-icon-8 = 9;
 ws-icon-9 = 10;
 ws-icon-10 = 11; 
 ws-icon-11 = 12; 
-ws-icon-12 = 13; 
-ws-icon-13 = 14; 
-ws-icon-14 = 15; 
+ws-icon-12 = 13;
+ws-icon-13 = 14; 
+ws-icon-14 = 15; 
 ws-icon-15 = 16; 
 ws-icon-16 = 17; 
-ws-icon-17 = 18; 
-ws-icon-18 = 19; 
-ws-icon-19 = 20;
+ws-icon-17 = 18; 
+ws-icon-18 = 19; 
+ws-icon-19 = 20;
 ws-icon-default = " "
 
 ; Available tags:

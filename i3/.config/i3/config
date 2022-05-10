@@ -21,6 +21,10 @@
 # 534   Super+Control+ c == VScode
 # 534   Super+Control+ b == bluebery
 
+
+#       Super+ALT+b  New windown horizontal this is defaul
+#       Super+Alt+v  Virtical
+
 ################# Define the $mod variable/key
 # Disable autostart picom
 # 775   Ctrl+Alt+o       == Picom Toogle
@@ -246,14 +250,15 @@ bindsym $mod+Shift+Right move right
 ################# moving around workspaces         
 
 # next/previous workspace
-
+# 2 way: Alt+Tab 
 bindsym Mod1+Tab workspace next
 bindsym Mod1+Shift+Tab workspace prev
-bindsym $mod+Tab workspace back_and_forth
-
-# navigate workspaces next / previous
+# Or Ctl+Alt+ arrow
 bindsym Mod1+Ctrl+Right workspace next
 bindsym Mod1+Ctrl+Left workspace prev
+
+# Swap workspace the last workspace
+bindsym $mod+Tab workspace back_and_forth
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
@@ -336,6 +341,9 @@ font pango:Noto Mono Regular 13
 
 # Assign application to start on a specific workspace
 # you can find the class with the program xprop
+
+# Dota 2
+assign [class="dota2"] → 15
 
 # Example - make browser start on workspace 3
 # assign [class="Firefox|Vivaldi-stable|Vivaldi-snapshot|Opera"]                      → 3
@@ -535,12 +543,12 @@ bindsym control+mod1+g exec --no-startup-id chromium;focus
 
 # Text Editor
 # bindsym $mod+F2 exec --no-startup-id geany;focus
-bindsym $mod+control+F2 exec --no-startup-id code;focus
-bindsym $mod+control+c exec --no-startup-id code;focus
+bindsym $mod+Control+F2 exec --no-startup-id code;focus
+bindsym $mod+Control+c exec --no-startup-id code;focus
 
 #Obsidian 
-bindsym $mod+control+F3 exec --no-startup-id obsidian;focus
-bindsym $mod+control+o exec --no-startup-id obsidian;focus
+bindsym $mod+Control+F3 exec --no-startup-id obsidian;focus
+bindsym $mod+Control+o exec --no-startup-id obsidian;focus
 
 # Bluetooth
 bindsym $mod+control+b exec --no-startup-id blueberry;focus
