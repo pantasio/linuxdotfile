@@ -198,8 +198,8 @@ mode "$mode_system" {
     bindsym Escape mode "default"
 }
 
-# ArcoLinux Logout
-bindsym $mod+Shift+e exec --no-startup-id arcolinux-logout
+# ArcoLinux Logout Update to archlinux-logout
+bindsym $mod+Shift+e exec --no-startup-id archlinux-logout
 # bindsym $mod+X exec --no-startup-id arcolinux-logout
 
 ################# reload changed configuration     
@@ -886,7 +886,7 @@ bindsym control+mod1+o exec --no-startup-id ~/.config/i3/scripts/picom-toggle.sh
 
     # Window color settings
     # class                 border  backgr. text    indicator
-    client.focused          #556064 #556064 #80FFF9 #FDF6E3
+    client.focused          #556064 #556064 #80FFF9 #80FFF9
     client.unfocused        #2F3D44 #2F3D44 #1ABC9C #454948
     client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #454948
     client.placeholder      #2F3D44 #2F3D44 #1ABC9C #454948

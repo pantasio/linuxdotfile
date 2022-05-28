@@ -1,0 +1,55 @@
+arch-install-scripts 24-2
+archiso 63-2
+archlinux-tweak-tool-git 22.05-156
+arcolinux-alacritty-git 22.05-01
+arcolinux-bin-git 22.05-01
+arcolinux-config-all-desktops-git 21.07-01
+arcolinux-conky-collection-git 22.02-04
+arcolinux-dconf-all-desktops-git 21.09-01
+arcolinux-desktop-trasher-git 22.02-01
+arcolinux-fish-git 22.05-03
+arcolinux-fonts-git 21.07-01
+arcolinux-grub-theme-vimix-git 20211231-11
+arcolinux-gtk3-sardi-arc-git 21.07-01
+arcolinux-hblock-git 3.3.2-2
+arcolinux-i3wm-git 22.05-04
+arcolinux-keyring 20230919-6
+arcolinux-kvantum-git 21.07-01
+arcolinux-kvantum-theme-arc-git 21.07-01
+arcolinux-local-applications-all-hide-git 22.05-01
+arcolinux-local-applications-git 22.04-01
+arcolinux-local-xfce4-git 21.07-01
+arcolinux-meta-logout 22.05-04
+arcolinux-mirrorlist-git 22.04-01
+arcolinux-neofetch-git 21.07-01
+arcolinux-nitrogen-git 21.07-01
+arcolinux-paru-git 21.07-01
+arcolinux-pipemenus-git 22.02-01
+arcolinux-polybar-git 22.01-04
+arcolinux-qt5-git 21.07-01
+arcolinux-rofi-git 21.09-02
+arcolinux-rofi-themes-git 21.07-01
+arcolinux-root-git 22.05-03
+arcolinux-sddm-chili-git 21.07-01
+arcolinux-sddm-fralonra-git 21.07-01
+arcolinux-sddm-futuristic-git 21.07-01
+arcolinux-sddm-materia-git 21.08-01
+arcolinux-sddm-redrock-git 21.07-01
+arcolinux-sddm-simplicity-git 21.09-04
+arcolinux-sddm-slice-git 21.08-01
+arcolinux-sddm-sugar-candy-git 21.07-02
+arcolinux-sddm-urbanlifestyle-git 21.07-01
+arcolinux-system-config-git 22.05-05
+arcolinux-systemd-services-git 21.08-05
+arcolinux-termite-themes-git 21.07-01
+arcolinux-variety-autostart-git 21.07-01
+arcolinux-variety-git 22.05-01
+arcolinux-volumeicon-git 21.07-01
+arcolinux-wallpapers-git 22.03-01
+arcolinux-welcome-app-git 22.05-13
+arcolinux-xfce-git 22.05-04
+arcolinux-zsh-git 22.05-03
+
+#Clear Cache directory: /var/cache/pacman/pkg/ and Database directory: /var/lib/pacman/
+sudo pacman -Scc
+

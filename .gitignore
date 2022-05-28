@@ -2,3 +2,8 @@
 doc/.obsidian/app.json
 doc/.obsidian/appearance.json
 doc/.obsidian/workspace
+
+#mpd
+musicplayer/.config/mpd/mpd.db
+musicplayer/.config/mpd/mpd.state
+musicplayer/.config/mpd/sticker.sql

@@ -60,7 +60,7 @@ wireless-interface = wlo1
 ; ; =======================
 
 ; Gotham theme ==========
-background = #0a0f14
+background = #021d29
 foreground = #99d1ce
 alert = #d26937
 volume-min = #2aa889
