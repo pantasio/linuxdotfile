@@ -15,12 +15,18 @@
 # Tab = TAB key
 
 ################# what key binding in config
+# Rule 1:       Super is config with i3wm and windown
+#               Super+Alt 
+#               
+# Rule 2:       Super+Ctrl  call apps
+
 # Super + s/b/z
 # Super+Control+ 
 # 533   Super+Control+ o == Obsidian
 # 534   Super+Control+ c == VScode
 # 534   Super+Control+ b == bluebery
-
+#       Super+Control+ W == Chrome
+#       Super+Control+ Shift W == Chrome --incognito
 
 #       Super+ALT+b  New windown horizontal this is defaul
 #       Super+Alt+v  Virtical
@@ -32,6 +38,10 @@
 # b
 # c
 # Key to rule them all : Super(Windows) or Alt key - see definition above
+
+
+
+
 # set Super key
 set $mod Mod4
 
@@ -253,9 +263,12 @@ bindsym $mod+Shift+Right move right
 # 2 way: Alt+Tab 
 bindsym Mod1+Tab workspace next
 bindsym Mod1+Shift+Tab workspace prev
+        
 # Or Ctl+Alt+ arrow
-bindsym Mod1+Ctrl+Right workspace next
-bindsym Mod1+Ctrl+Left workspace prev
+# bindsym Mod1+Ctrl+Right workspace next
+bindsym $mod+mod1+Right workspace next
+# bindsym Mod1+Ctrl+Left workspace prev
+bindsym $mod+mod1+Left workspace prev
 
 # Swap workspace the last workspace
 bindsym $mod+Tab workspace back_and_forth
@@ -536,10 +549,12 @@ bindsym control+mod1+p exec --no-startup-id pamac-manager
 # Browser
 bindsym $mod+F1 exec --no-startup-id exo-open --launch webbrowser;focus
 # qwerty/azerty conflict with w
-bindsym $mod+w exec --no-startup-id exo-open --launch webbrowser;focus
-bindsym control+mod1+f exec --no-startup-id firefox;focus
-bindsym control+mod1+v exec --no-startup-id vivaldi-stable;focus
-bindsym control+mod1+g exec --no-startup-id chromium;focus
+# bindsym $mod+w exec --no-startup-id exo-open --launch webbrowser;focus
+bindsym $mod+control+w exec --no-startup-id google-chrome-stable;focus
+bindsym $mod+control+shift+w exec --no-startup-id google-chrome-stable --incognito;focus
+# bindsym control+mod1+f exec --no-startup-id firefox;focus
+# bindsym control+mod1+v exec --no-startup-id vivaldi-stable;focus
+# bindsym control+mod1+g exec --no-startup-id chromium;focus
 
 # Text Editor
 # bindsym $mod+F2 exec --no-startup-id geany;focus
@@ -609,6 +624,7 @@ for_window [class="^Gnome-font-viewer$"] floating enable
 for_window [class="^Gpick$"] floating enable
 for_window [class="Hexchat"] floating disable
 for_window [class="Imagewriter"] floating enable
+for_window [class="feh"] floating enable
 for_window [class="Font-manager"] floating enable
 # for_window [class="qt5ct|Lxappearance] floating enable
 for_window [class="Nitrogen"] floating disable

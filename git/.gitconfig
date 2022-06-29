@@ -11,6 +11,10 @@
   email = hoang.lduc@gmail.com
   name = pantasio
   fullname = Le Duc Hoang
+
+[init]
+	defaultBranch = main
+
 [core]
   editor = vim
   whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
@@ -293,3 +297,4 @@
 # #   smudge = git-lfs smudge -- %f
 # #   process = git-lfs filter-process
 # #   required = true
+
