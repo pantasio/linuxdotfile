@@ -294,9 +294,9 @@ bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 # qwerty/azerty issue for letter z
-bindsym $mod+s layout stacking
-bindsym $mod+z layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+F10 layout stacking        # I still dont know how to use 
+bindsym $mod+F11 layout tabbed          # this is so usefull when i use multi VScode or Obsidian, just use winkey+arrow to swap 
+bindsym $mod+F12 layout toggle split    # this is ez to remember
 
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
