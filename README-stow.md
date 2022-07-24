@@ -3,8 +3,13 @@
 
 'stow --adopt -nvt ~ fish'
 
+## Reconfig i3wm but it didnt work
+After I add more file config i3wm, i3 folder didnot have new file, so just run
+```
+stow -vt ~ i3
+```
 
-
+## 
 
 
 
