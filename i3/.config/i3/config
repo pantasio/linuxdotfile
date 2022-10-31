@@ -131,6 +131,7 @@ bindsym $mod+Shift+c reload
 ################# Stopping an application          
 
 # kill focused window
+# bindsym Ctrl+Shift+q kill
 bindsym $mod+Shift+q kill
 # bindsym $mod+q kill
 
@@ -466,25 +467,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 20 # decrease
 # bar toggle, hide or show
 # bindsym $mod+b bar mode toggle
 
-################# border control                   
 
-# Border control
-hide_edge_borders both
-bindsym $mod+shift+b exec --no-startup-id i3-msg border toggle
-
-# changing border style
-# super+t in arcolinux is starting terminal
-bindsym $mod+t border normal
-bindsym $mod+y border pixel 2
-bindsym $mod+u border none
-
-# new_window pixel 1
-new_window normal
-# new_window none
-
-# new_float pixel 1
-new_float normal
-# new_float none
 
 ################# Popups  control                  
 
@@ -498,7 +481,7 @@ popup_during_fullscreen smart
 # delete or uncomment the following lines if you do not have it or do not
 # want it
 
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 3
 gaps inner 5
 gaps outer 5
 # smart_gaps on

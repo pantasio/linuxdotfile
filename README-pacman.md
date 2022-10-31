@@ -1,3 +1,8 @@
+#
+yay google-chrome visual-studio-code-bin
+
+##
+
 arch-install-scripts 24-2
 archiso 63-2
 archlinux-tweak-tool-git 22.05-156
