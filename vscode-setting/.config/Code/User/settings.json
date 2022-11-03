@@ -9,11 +9,16 @@
     "terminal.integrated.lineHeight": 1.2,
     "editor.fontSize": 14,
     "terminal.integrated.fontSize": 12,
+    "terminal.integrated.confirmOnExit": true,
+    //
+    //
     //
     //
     //@Win10
     // "editor.fontFamily": "'CaskaydiaCove NF', Consolas, 'Courier New', monospace",
     // "terminal.integrated.fontFamily": "'CaskaydiaCove NF', Consolas, 'Courier New', monospace",
+    //
+    //
     //
     //
     //@ArchLinux
@@ -27,6 +32,9 @@
     //  'Caskaydia Cove Nerd Font', 'SauceCodePro Nerd Font', 'FiraCode Nerd Font',
     "terminal.integrated.fontFamily": "'SauceCodePro Nerd Font', Consolas, 'Courier New', monospace",
     // 'Caskaydia Cove Nerd Font', 'SauceCodePro Nerd Font', 'FiraCode Nerd Font', 'Source Code Pro',
+    //
+    //
+    //
     //
     // @MacOS
     // "editor.fontFamily": "'CaskaydiaCove Nerd Font', Consolas, 'Courier New', monospace",

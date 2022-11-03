@@ -3,9 +3,12 @@
 abbr -a gs  git status
 abbr -a ga  git add
 abbr -a gaa git add .
-abbr -a gau git add -u
+abbr -a gau git add -u                  # stages modified and deleted files only, NOT new files
+
 abbr -a gc  git commit
 abbr -a gcm git commit -m
+abbr -a gcam git commit -am             # = "git add -a" + "git commit -m"
+
 abbr -a gamend git commit --amend
 abbr -a gcl git clone
 abbr -a gco git checkout

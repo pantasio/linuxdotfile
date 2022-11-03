@@ -13,6 +13,7 @@ SETUVAR _fish_abbr_gamend:git\x20commit\x20\x2d\x2damend
 SETUVAR _fish_abbr_gau:git\x20add\x20\x2du
 SETUVAR _fish_abbr_gc:git\x20commit
 SETUVAR _fish_abbr_gca:git\x20commit\x20\x2d\x2damend
+SETUVAR _fish_abbr_gcam:git\x20commit\x20\x2dam
 SETUVAR _fish_abbr_gcl:git\x20clone
 SETUVAR _fish_abbr_gcm:git\x20commit\x20\x2dm
 SETUVAR _fish_abbr_gco:git\x20checkout

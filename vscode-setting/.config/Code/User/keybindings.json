@@ -79,11 +79,16 @@
         "when": "listFocus && !inputFocus"
     },
     //#################################################################End}
+    //
+    // In Editor, toogle open/close filesExplorer on left side 
     {
         "key": "ctrl+left",
         "command": "workbench.action.toggleSidebarVisibility",
         "when": "editorTextFocus"
     },
+    //
+    //
+    // In editorTextFocus, move up/down the line
     {
         "key": "ctrl+k",
         "command": "list.focusUp",
@@ -94,6 +99,8 @@
         "command": "list.focusDown",
         "when": "listFocus && !inputFocus"
     },
+    //
+    //
     // {
     //     "key": "ctrl+shift+`",
     //     "command": "workbench.action.terminal.toggleMaximizedTerminal",
@@ -108,6 +115,9 @@
         "key": "ctrl+shift+`",
         "command": "workbench.action.toggleMaximizedPanel"
     },
+    //
+    // Can't use Ctrl+c Ctrl+x Ctrl+v anymore
+    // Pls use: Ctrl+Shift+c ... 
     {
         "key": "ctrl+shift+c",
         "command": "editor.action.clipboardCopyAction"
@@ -136,6 +146,8 @@
         "key": "ctrl+x",
         "command": "-editor.action.clipboardCutAction"
     },
+    //
+    //
     /*Dont know what to do*/
     {
         "key": "ctrl+b",
@@ -159,7 +171,22 @@
         "command": "editor.action.copyLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
     },
+    {
+        "key": "ctrl+alt+k",
+        "command": "editor.action.copyLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+alt+up",
+        "command": "editor.action.copyLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
     /* Add More way to move cursor
+        - Up Down Left Right
+        - HJKL in normal or Visual mode
+            + alt+j : move cursor to left
+            + alt+k : move cursor to right
+
     */
     {
         "key": "alt+j",
@@ -170,6 +197,23 @@
         "key": "left",
         "command": "cursorLeft",
         "when": "textInputFocus"
+    },
+    {
+        "key": "alt+k",
+        "command": "cursorRight",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "Right",
+        "command": "cursorRight",
+        "when": "textInputFocus"
+    },
+    // How to use: Move Cursor to the line -> Ctrl+shift+p -> Ctrl+Enter
+    // Run current line in a terminal
+    {
+        "key": "cmd+enter",
+        "command": "workbench.action.terminal.runSelectedText",
+        "when": "editorTextFocus && editorHasSelection"
     },
     //=============
     /*Disable Close VScode by press:
@@ -192,5 +236,19 @@
     {
         "key": "ctrl+w",
         "command": "-workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "-editor.action.insertLineAfter",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+enter",
+        "command": "-editor.action.insertLineBefore",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+q",
+        "command": "-workbench.action.quit"
     }
 ]
