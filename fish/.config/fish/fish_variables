@@ -6,6 +6,7 @@ SETUVAR Z_DATA:/home/bungbu/\x2elocal/share/z/data
 SETUVAR Z_DATA_DIR:/home/bungbu/\x2elocal/share/z
 SETUVAR Z_EXCLUDE:\x5e/home/bungbu\x24
 SETUVAR __fish_initialized:3400
+SETUVAR _fish_abbr_cpustress:ffmpeg\x20\x2dy\x20\x2df\x20rawvideo\x20\x2dvideo_size\x201920x1080\x20\x2dpixel_format\x20yuv420p\x20\x2dframerate\x2060\x20\x2di\x20/dev/urandom\x20\x2dc\x3av\x20libx265\x20\x2dpreset\x20placebo\x20\x2df\x20matroska\x20/dev/null
 SETUVAR _fish_abbr_ga:git\x20add
 SETUVAR _fish_abbr_gaa:git\x20add\x20\x2e
 SETUVAR _fish_abbr_gadog:git\x20log\x20\x2d\x2dall\x20\x2d\x2ddecorate\x20\x2d\x2doneline\x20\x2d\x2dgraph

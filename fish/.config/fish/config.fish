@@ -1,5 +1,8 @@
 # <=> 
-
+# Load Git alias to fish
+source ~/.config/fish/alias/git.fish
+source ~/.config/fish/alias/mics.fish
+source ~/.config/fish/alias/testtool.fish
 
 ########## Set swap Caplock and ESC
 setxkbmap -option caps:swapescape 
@@ -247,9 +250,7 @@ end
 # Or install it from the Arch User Repository: shell-color-scripts
 # colorscript random
 
-# Load Git alias to fish
-source ~/.config/fish/alias/git.fish
-source ~/.config/fish/alias/mics.fish
+
 
 ### SETTING THE STARSHIP PROMPT ###
 starship init fish | source
