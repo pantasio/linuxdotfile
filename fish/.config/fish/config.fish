@@ -19,7 +19,7 @@ end
 # First line removes the path; second line sets it.  Without the first line,
 # your path gets massive and fish becomes very slow.
 set -e fish_user_paths
-set -U fish_user_paths $HOME/.local/bin $HOME/Applications $fish_user_paths $HOME/Flutter-sdk/bin
+set -U fish_user_paths $HOME/.local/bin $HOME/Applications $fish_user_paths $HOME/Flutter-sdk/bin $HOME/.npm/.npm-global/bin
 
 ### EXPORT ###
 set fish_greeting                                 # Supresses fish's intro message
@@ -260,8 +260,14 @@ export STARSHIP_CACHE=$HOME/.config/starship/cache
 #-----------
 ### Flutter setting
 
+### SETTING for k3s
+export KUBECONFIG=/home/bungbu/.kube/config
 
 
+#-----------
+# setup LunarVim
+# Add PATH for Cargo
+export CARGOPATH=$HOME/.cargo/env
 
 
 

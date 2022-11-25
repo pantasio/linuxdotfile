@@ -122,3 +122,18 @@ alias per="ping 192.168.100.1"
 alias pbr="ping 192.168.50.1"
 
 ############################
+
+##########
+# play music backgroup
+alias music-backgroup="mpv /home/bungbu/Music/Jazz-Sexiest-Ladies-8Hours-oKkJY2JEwk0.mp3"
+
+############################
+
+##########
+# Copy me 
+
+
+
+
+
+############################

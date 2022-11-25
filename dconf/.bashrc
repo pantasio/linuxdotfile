@@ -349,3 +349,4 @@ neofetch
 # export QT_IM_MODULE=ibus
 # ibus-daemon -drxR
 # gõ tiếng việt hóa trị còn phải làm sao đây 
+. "$HOME/.cargo/env"
