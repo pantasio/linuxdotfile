@@ -1,3 +1,12 @@
+<!-- 
+! Alert 
+? Qu
+* some
+* @param Mypara
+todo  
+ -->
+# Config file and snippets
+Location file : $HOME/.config/Code
 Because We use Vim key in editor so we have some basic tutorial for you
 ### Moving around:
 j/k to Up/Down the line
@@ -20,6 +29,9 @@ A goto edit mode and move cursor end charactor
 o insert a new line immediately following the current line
 O insert a new line immediately before the current line
 
+### Visual mode 
+">" Better Indenting: make line / block <tab> or de<tab>
+"<"
 
 ### Copy
 y$ copy to EndOfLine. Tips: you move cursor at spacebar before > y$ > move cursor to EndOfLine A+ESC > p to paste 

@@ -275,7 +275,8 @@
     "settingsSync.ignoredExtensions": [],
     "terminal.explorerKind": "external",
     "terminal.external.linuxExec": "alacritty",
-    "editor.guides.bracketPairs": true
+    "editor.guides.bracketPairs": true,
+    "editor.tabSize": 2
     /* Evondev settings.jsona
     "editor.fontFamily": "SF Mono, Source Code Pro, Input Mono, Inconsolata,  Arial, Helvetica, sans-serif",
     "editor.wordWrap": "on",

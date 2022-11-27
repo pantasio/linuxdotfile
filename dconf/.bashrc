@@ -4,6 +4,14 @@ export VISUAL='nano'
 export HISTCONTROL=ignoreboth:erasedups
 export PAGER='most'
 
+# KDE config
+# XDG_CONFIG_HOME
+# KDEHOME
+# ~/.kde/share/config/kdeglobals
+# $HOME/.local/share/config/
+export XDG_CONFIG_HOME="$HOME/.config"
+
+
 #Ibus settings if you need them
 #type ibus-setup in terminal to change settings and start the daemon
 #delete the hashtags of the next lines and restart

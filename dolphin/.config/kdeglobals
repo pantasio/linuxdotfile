@@ -1,0 +1,17 @@
+[$Version]
+update_info=filepicker.upd:filepicker-remove-old-previews-entry
+
+[General]
+TerminalApplication=alacritty
+
+[Icons]
+Theme=oxygen
+
+[KDE]
+ShowDeleteCommand=false
+
+[KShortcutsDialog Settings]
+Dialog Size=600,480
+
+[PreviewSettings]
+MaximumRemoteSize=0

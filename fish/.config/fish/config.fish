@@ -28,6 +28,9 @@ set TERM "terminator"                         # Sets the terminal type
 set EDITOR "vim"                 # $EDITOR use Emacs in terminal
 set VISUAL "vim"              # $VISUAL use Emacs in GUI mode
 
+### KDE config
+set XDG_CONFIG_HOME "$HOME/.config"
+
 ### SET MANPAGER
 ### Uncomment only one of these!
 

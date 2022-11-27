@@ -1,5 +1,6 @@
 #######################################
 stow --adopt -nvt dconf
+```
 MV: .config/dconf/settings/2021-04-13-15-38-dump -> linuxdotfile/dconf/.config/dconf/settings/2021-04-13-15-38-dump
 LINK: .config/dconf/settings/2021-04-13-15-38-dump => ../../../linuxdotfile/dconf/.config/dconf/settings/2021-04-13-15-38-dump
 MV: .config/dconf/settings/2021-04-13-16-22-dump -> linuxdotfile/dconf/.config/dconf/settings/2021-04-13-16-22-dump
@@ -51,4 +52,4 @@ MV: .zshrc -> linuxdotfile/dconf/.zshrc
 LINK: .zshrc => linuxdotfile/dconf/.zshrc
 WARNING: in simulation mode so not modifying filesystem.
 ####end
-
+```
