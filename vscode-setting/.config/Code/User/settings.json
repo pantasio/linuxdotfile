@@ -276,7 +276,9 @@
     "terminal.explorerKind": "external",
     "terminal.external.linuxExec": "alacritty",
     "editor.guides.bracketPairs": true,
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "zenMode.hideTabs": false,
+    "editor.scrollBeyondLastColumn": 8
     /* Evondev settings.jsona
     "editor.fontFamily": "SF Mono, Source Code Pro, Input Mono, Inconsolata,  Arial, Helvetica, sans-serif",
     "editor.wordWrap": "on",

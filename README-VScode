@@ -56,7 +56,15 @@ r replace the current character with the next character typed, still in normal m
 
 example: this is 'new world and "the beauti" {the sea is dark}' [in your dream] (nightmare) cursor to end of word and goto edit mode from cursor to end of word and goto edit mode
 
+## Manage window
+Ctrl + 1 focus editor 1 
+Ctrl + 2 focus editor 2
 
+Ctrl + Shift + W  close file editing
+Ctrl + Shift + E  focus to file explorer
+
+## Zen mode
+ this is view like Vim editor
 ## KeyBinding
 
 =============
