@@ -16,12 +16,20 @@ abbr -a gb git branch
 abbr -a gbd git branch --delete 
 
 ##############################
-# Git Flow
+##### Git Flow
+
+### init 
+# git flow init -d
+# -d mean all default
 
 ### Feature
 # begin create feature
 # git flow feature start authentication
-abbr -a gffs git flow feature start
+# abbr -a gffs git flow feature start
+
+#alias gffs= "git branch %% \
+#git flow feature start"
+
 #   Summary of actions:
 #- A new branch 'feature/authentication' was created, based on 'develop'
 #- You are now on branch 'feature/authentication'
@@ -36,6 +44,9 @@ abbr -a gfff git flow feature finish
 #- Feature branch 'feature/authentication' has been removed
 #- You are now on branch 'develop'
 
+
+###
+#git flow feature publish MYFEATURE
 
 
 

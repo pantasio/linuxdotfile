@@ -151,12 +151,7 @@ else
   bind '$' __history_previous_command_arguments
 end
 
-# Function for creating a backup file
-# ex: backup file.txt
-# result: copies file as file.txt.bak
-function backup --argument filename
-    cp $filename $filename.bak
-end
+
 
 # Function for copying files and directories, even recursively.
 # ex: copy DIRNAME LOCATIONS
@@ -224,21 +219,6 @@ end
 
 
 
-# Merge Xresources
-# alias merge='xrdb -merge ~/.Xresources'
-
-# git
-# alias addup='git add -u'
-# alias addall='git add .'
-# alias branch='git branch'
-# alias checkout='git checkout'
-# alias clone='git clone'
-# alias commit='git commit -m'
-# alias fetch='git fetch'
-# alias pull='git pull origin'
-# alias push='git push origin'
-# alias tag='git tag'
-# alias newtag='git tag -a'
 
 
 
