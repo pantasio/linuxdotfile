@@ -1,7 +1,0 @@
-#! /usr/bin/bash
-
-# Move all working file with refix = original-
-# into package name
-etc/pacman.conf etc/original-pacman.conf 
-etc/pacman.d/endeavouros-mirrorlist etc/pacman.d/original-endeavouros-mirrorlist
-etc/pacman.d/mirrorlist etc/pacman.d/original-mirrorlist
