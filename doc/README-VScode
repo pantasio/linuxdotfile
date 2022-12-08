@@ -68,12 +68,16 @@ Ctrl + Shift + E  focus to file explorer
 ## KeyBinding
 
 =============
-== Ctrl + key
+==    Ctrl + key
 Ctrl + Left             .........       Toggle Primary sidebar Visible
 Ctrl + \                .........       Split screen virtical and tranfer file into it
 Ctrl + 1 or 2           .........       Change focus cursor space 1 or 2
+Ctrl + j/k              .........       Move line up/down
 
-
+=============
+== Ctrl + Alt + key
+Ctrl + Alt + left/right arrow ......... move editor file to left/right panel 
+Ctrl + Alt + up/down arrow    ......... copy current line up/down. 
 
 
 

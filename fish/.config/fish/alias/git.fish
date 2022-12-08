@@ -1,15 +1,51 @@
-# git
+# abbr = abbreviation = từ được viết tăt
 #abbr -a gs  git status -sb
 abbr -a gs  git status
 abbr -a ga  git add
 abbr -a gaa git add .
 abbr -a gau git add -u                  # stages modified and deleted files only, NOT new files
 
+# git commit
 abbr -a gc  git commit
 abbr -a gcm git commit -m
 abbr -a gcam git commit -am             # = "git add -a" + "git commit -m"
-
 abbr -a gamend git commit --amend
+
+# git branch
+abbr -a gb git branch
+abbr -a gbd git branch --delete 
+
+##############################
+# Git Flow
+
+### Feature
+# begin create feature
+# git flow feature start authentication
+abbr -a gffs git flow feature start
+#   Summary of actions:
+#- A new branch 'feature/authentication' was created, based on 'develop'
+#- You are now on branch 'feature/authentication'
+
+# Let code and have many commit. When you happy and have many successfully test,
+# and then wanna finish:
+# git flow feature finish authentication
+abbr -a gfff git flow feature finish
+
+#   Summary of actions:
+#- The feature branch 'feature/authentication' was merged into 'develop'
+#- Feature branch 'feature/authentication' has been removed
+#- You are now on branch 'develop'
+
+
+
+
+
+
+
+
+
+##############################
+
 abbr -a gcl git clone
 abbr -a gco git checkout
 abbr -a gp  git push
