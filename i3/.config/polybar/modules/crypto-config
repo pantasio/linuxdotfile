@@ -1,0 +1,16 @@
+[general]
+base_currency = USD
+display = price
+# display = both
+
+[bitcoin]
+icon = 
+
+[litecoin]
+icon = 
+
+[ardor]
+icon = 
+
+[ethereum]
+icon = 
