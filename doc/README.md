@@ -14,4 +14,6 @@ fc-list | grep CaskaydiaCove
 #### [[icon-mouse]]
 #### [[Rofi]]
 
-sudo reflector --country 'Singapore,Vietnam,Hong Kong,Japan' -l 10 --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist 
+sudo reflector --country 'Singapore,Vietnam,Hong Kong,Japan' -l 10 --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+we save mirrorlist at SystemConfig/mirrorlist
+

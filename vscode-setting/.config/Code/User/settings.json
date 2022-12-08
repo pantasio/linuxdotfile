@@ -278,7 +278,10 @@
     "editor.guides.bracketPairs": true,
     "editor.tabSize": 2,
     "zenMode.hideTabs": false,
-    "editor.scrollBeyondLastColumn": 8
+    "editor.scrollBeyondLastColumn": 8,
+    "markdownlint.customRules": [
+        "\"MD013\": false"
+    ]
     /* Evondev settings.jsona
     "editor.fontFamily": "SF Mono, Source Code Pro, Input Mono, Inconsolata,  Arial, Helvetica, sans-serif",
     "editor.wordWrap": "on",

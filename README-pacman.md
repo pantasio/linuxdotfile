@@ -2,6 +2,67 @@
 yay google-chrome visual-studio-code-bin
 
 ##
+```
+sudo pacman -Sl arcolinux_repo | grep installed
+```
+
+arcolinux_repo archlinux-logout-git 22.11-07 [installed]
+arcolinux_repo archlinux-logout-themes-git 22.11-07 [installed]
+arcolinux_repo archlinux-tweak-tool-git 22.12-01 [installed]
+arcolinux_repo arcolinux-alacritty-git 22.05-01 [installed]
+arcolinux_repo arcolinux-arc-kde 20220908-01 [installed]
+arcolinux_repo arcolinux-bin-git 22.12-01 [installed]
+arcolinux_repo arcolinux-common-git 21.07-01 [installed]
+arcolinux_repo arcolinux-config-all-desktops-git 22.07-01 [installed]
+arcolinux_repo arcolinux-conky-collection-git 22.02-04 [installed]
+arcolinux_repo arcolinux-dconf-all-desktops-git 22.07-01 [installed]
+arcolinux_repo arcolinux-desktop-trasher-git 22.11-10 [installed]
+arcolinux_repo arcolinux-fish-git 22.12-01 [installed]
+arcolinux_repo arcolinux-fonts-git 21.07-01 [installed]
+arcolinux_repo arcolinux-grub-theme-vimix-git 20220707-01 [installed]
+arcolinux_repo arcolinux-gtk3-sardi-arc-git 21.07-01 [installed]
+arcolinux_repo arcolinux-hblock-git 3.4.0-1 [installed]
+arcolinux_repo arcolinux-i3wm-git 22.06-04 [installed]
+arcolinux_repo arcolinux-keyring 20230919-6 [installed]
+arcolinux_repo arcolinux-kvantum-git 22.06-01 [installed]
+arcolinux_repo arcolinux-local-applications-all-hide-git 22.10-01 [installed]
+arcolinux_repo arcolinux-local-applications-git 22.04-01 [installed]
+arcolinux_repo arcolinux-local-xfce4-git 21.07-01 [installed]
+arcolinux_repo arcolinux-meta-logout 22.05-04 [installed]
+arcolinux_repo arcolinux-mirrorlist-git 22.12-01 [installed]
+arcolinux_repo arcolinux-neofetch-git 22.07-04 [installed]
+arcolinux_repo arcolinux-nitrogen-git 21.07-01 [installed]
+arcolinux_repo arcolinux-pamac-all 10.4.3-1 [installed]
+arcolinux_repo arcolinux-paru-git 21.07-01 [installed]
+arcolinux_repo arcolinux-pipemenus-git 22.02-01 [installed]
+arcolinux_repo arcolinux-polybar-git 22.06-01 [installed]
+arcolinux_repo arcolinux-qt5-git 21.07-01 [installed]
+arcolinux_repo arcolinux-rofi-git 21.09-02 [installed]
+arcolinux_repo arcolinux-rofi-themes-git 21.07-01 [installed]
+arcolinux_repo arcolinux-root-git 22.12-01 [installed]
+arcolinux_repo arcolinux-sddm-chili-git 22.06-01 [installed]
+arcolinux_repo arcolinux-sddm-fralonra-git 22.06-01 [installed]
+arcolinux_repo arcolinux-sddm-futuristic-git 22.06-04 [installed]
+arcolinux_repo arcolinux-sddm-materia-git 22.06-02 [installed]
+arcolinux_repo arcolinux-sddm-redrock-git 22.06-01 [installed]
+arcolinux_repo arcolinux-sddm-simplicity-git 22.09-02 [installed]
+arcolinux_repo arcolinux-sddm-slice-git 21.08-01 [installed]
+arcolinux_repo arcolinux-sddm-sugar-candy-git 22.06-02 [installed]
+arcolinux_repo arcolinux-sddm-urbanlifestyle-git 22.06-04 [installed]
+arcolinux_repo arcolinux-system-config-git 22.12-01 [installed]
+arcolinux_repo arcolinux-systemd-services-git 22.10-02 [installed]
+arcolinux_repo arcolinux-termite-themes-git 21.07-01 [installed]
+arcolinux_repo arcolinux-variety-autostart-git 21.07-01 [installed]
+arcolinux_repo arcolinux-variety-git 22.12-02 [installed]
+arcolinux_repo arcolinux-volumeicon-git 21.07-01 [installed]
+arcolinux_repo arcolinux-wallpapers-git 22.06-01 [installed]
+arcolinux_repo arcolinux-welcome-app-git 22.11-01 [installed]
+arcolinux_repo arcolinux-xfce-git 22.05-04 [installed]
+arcolinux_repo ufetch-arco-git 1:r167.21f22c2-1 [installed]
+
+
+
+##############
 
 arch-install-scripts 24-2
 archiso 63-2

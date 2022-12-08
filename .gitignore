@@ -1,3 +1,6 @@
+# Global file ex
+original-*
+
 # Obsidian
 doc/.obsidian/app.json
 doc/.obsidian/appearance.json
