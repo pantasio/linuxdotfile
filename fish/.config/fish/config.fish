@@ -5,7 +5,7 @@ source ~/.config/fish/alias/mics.fish
 source ~/.config/fish/alias/testtool.fish
 
 ########## Set swap Caplock and ESC
-setxkbmap -option caps:swapescape 
+setxkbmap -option caps:swapescape
 
 
 if status is-interactive
@@ -22,11 +22,11 @@ set -e fish_user_paths
 set -U fish_user_paths $HOME/.local/bin $HOME/Applications $fish_user_paths $HOME/Flutter-sdk/bin $HOME/.npm/.npm-global/bin
 
 ### EXPORT ###
-set fish_greeting                                 # Supresses fish's intro message
+set fish_greeting # Supresses fish's intro message
 #set TERM "xterm-256color"                         # Sets the terminal type
-set TERM "terminator"                         # Sets the terminal type
-set EDITOR "vim"                 # $EDITOR use Emacs in terminal
-set VISUAL "vim"              # $VISUAL use Emacs in GUI mode
+set TERM terminator # Sets the terminal type
+set EDITOR vim # $EDITOR use Emacs in terminal
+set VISUAL vim # $VISUAL use Emacs in GUI mode
 
 ### KDE config
 set XDG_CONFIG_HOME "$HOME/.config"
@@ -45,8 +45,8 @@ set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
 
 ### SET EITHER DEFAULT EMACS MODE OR VI MODE ###
 function fish_user_key_bindings
-  # fish_default_key_bindings
-  fish_vi_key_bindings
+    # fish_default_key_bindings
+    fish_vi_key_bindings
 end
 ### END OF VI MODE ###
 
@@ -116,7 +116,7 @@ end
 # Spark functions
 function letters
     cat $argv | awk -vFS='' '{for(i=1;i<=NF;i++){ if($i~/[a-zA-Z]/) { w[tolower($i)]++} } }END{for(i in w) print i,w[i]}' | sort | cut -c 3- | spark | lolcat
-    printf  '%s\n' 'abcdefghijklmnopqrstuvwxyz'  ' ' | lolcat
+    printf '%s\n' abcdefghijklmnopqrstuvwxyz ' ' | lolcat
 end
 
 function commits
@@ -125,30 +125,31 @@ end
 
 # Functions needed for !! and !$
 function __history_previous_command
-  switch (commandline -t)
-  case "!"
-    commandline -t $history[1]; commandline -f repaint
-  case "*"
-    commandline -i !
-  end
+    switch (commandline -t)
+        case "!"
+            commandline -t $history[1]
+            commandline -f repaint
+        case "*"
+            commandline -i !
+    end
 end
 
 function __history_previous_command_arguments
-  switch (commandline -t)
-  case "!"
-    commandline -t ""
-    commandline -f history-token-search-backward
-  case "*"
-    commandline -i '$'
-  end
+    switch (commandline -t)
+        case "!"
+            commandline -t ""
+            commandline -f history-token-search-backward
+        case "*"
+            commandline -i '$'
+    end
 end
 # The bindings for !! and !$
-if [ $fish_key_bindings = "fish_vi_key_bindings" ];
-  bind -Minsert ! __history_previous_command
-  bind -Minsert '$' __history_previous_command_arguments
+if [ $fish_key_bindings = fish_vi_key_bindings ]
+    bind -Minsert ! __history_previous_command
+    bind -Minsert '$' __history_previous_command_arguments
 else
-  bind ! __history_previous_command
-  bind '$' __history_previous_command_arguments
+    bind ! __history_previous_command
+    bind '$' __history_previous_command_arguments
 end
 
 
@@ -159,8 +160,8 @@ end
 function copy
     set count (count $argv | tr -d \n)
     if test "$count" = 2; and test -d "$argv[1]"
-	set from (echo $argv[1] | trim-right /)
-	set to (echo $argv[2])
+        set from (echo $argv[1] | trim-right /)
+        set to (echo $argv[2])
         command cp -r $from $to
     else
         command cp $argv
@@ -264,11 +265,11 @@ export CARGOPATH=$HOME/.cargo/env
 function set_mode_pre_execution --on-event fish_preexec
     set command (expr $argv : '\([^ ]*\).*')
     set -g __last_fish_bind_mode $fish_bind_mode
-    if test $command = 'node'
-        or test $command = 'nesh'
-        or test $command = 'bash'
-        or test $command = 'funced'
-        or echo $command | grep 'python' >/dev/null #^/dev/null
+    if test $command = node
+        or test $command = nesh
+        or test $command = bash
+        or test $command = funced
+        or echo $command | grep python >/dev/null #^/dev/null
         set -g fish_bind_mode insert
     else
         set -g fish_bind_mode default

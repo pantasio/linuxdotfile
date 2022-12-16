@@ -4,7 +4,12 @@
 * some
 * @param Mypara
 todo  
+TODO
  -->
+ # How to Update vscode
+ ```
+ yay -S visual-studio-code-bin
+ ```
 # Config file and snippets
 Location file : $HOME/.config/Code
 Because We use Vim key in editor so we have some basic tutorial for you

@@ -1,19 +1,19 @@
 # abbr = abbreviation = từ được viết tăt
 #abbr -a gs  git status -sb
-abbr -a gs  git status
-abbr -a ga  git add
+abbr -a gs git status
+abbr -a ga git add
 abbr -a gaa git add .
-abbr -a gau git add -u                  # stages modified and deleted files only, NOT new files
+abbr -a gau git add -u # stages modified and deleted files only, NOT new files
 
 # git commit
-abbr -a gc  git commit
+abbr -a gc git commit
 abbr -a gcm git commit -m
-abbr -a gcam git commit -am             # = "git add -a" + "git commit -m"
+abbr -a gcam git commit -am # = "git add -a" + "git commit -m"
 abbr -a gamend git commit --amend
 
 # git branch
 abbr -a gb git branch
-abbr -a gbd git branch --delete 
+abbr -a gbd git branch --delete
 
 ##############################
 ##### Git Flow
@@ -59,12 +59,12 @@ abbr -a gfff git flow feature finish
 
 abbr -a gcl git clone
 abbr -a gco git checkout
-abbr -a gp  git push
+abbr -a gp git push
 abbr -a gpl git pull
-abbr -a gd  git diff
+abbr -a gd git diff
 abbr -a gds git diff --staged
-abbr -a gr  git rebase -i HEAD~15
-abbr -a gf  git fetch
+abbr -a gr git rebase -i HEAD~15
+abbr -a gf git fetch
 abbr -a gfc git findcommit
 abbr -a gfm git findmessage
 

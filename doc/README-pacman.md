@@ -1,3 +1,21 @@
+
+
+# Install package
+sudo pacman -S [package-name1] [package-name-2]
+
+# Install local package: mean you have already download [package-name].pkg.tar.zst
+sudo pacman -U [location/package-name.pkg.tar.zst]
+# Uninstall 
+sudo pacman -R [package-name]
+
+# Search package
+pacman -Ss [package name]
+
+# 
+
+
+
+
 #
 yay google-chrome visual-studio-code-bin
 
