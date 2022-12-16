@@ -1,0 +1,24 @@
+[DetailsMode]
+IconSize=48
+
+[General]
+Version=202
+ViewPropsTimestamp=2022,12,16,18,56,57.711
+
+[Icons]
+Theme=WhiteSur-dark
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+
+[KPropertiesDialog]
+HDMI-A-0 HDMI-A-1 Height 1920x1080 HDMI-A-0=495
+HDMI-A-0 HDMI-A-1 Width 1920x1080 HDMI-A-0=402
+
+[MainWindow]
+ToolBarsMovable=Disabled
+
+[Open-with settings]
+CompletionMode=1
+History=code

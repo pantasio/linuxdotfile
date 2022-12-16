@@ -2,10 +2,10 @@
 update_info=filepicker.upd:filepicker-remove-old-previews-entry
 
 [General]
-TerminalApplication=alacritty
+TerminalApplication=Alacritty
 
 [Icons]
-Theme=oxygen
+Theme=WhiteSur-dark
 
 [KDE]
 ShowDeleteCommand=false
