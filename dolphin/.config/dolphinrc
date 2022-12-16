@@ -22,3 +22,6 @@ ToolBarsMovable=Disabled
 [Open-with settings]
 CompletionMode=1
 History=code
+
+[Search]
+Location=Everywhere
