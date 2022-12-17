@@ -8,266 +8,299 @@
 
 */
 [
-    //#####Begin{
-    // In Visual mode only
-    // unkeyblinding alt+ down or up
-    // Use alt+j or k to move line down or up
-    {
-        "key": "ctrl+j",
-        "command": "editor.action.moveLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "alt+down",
-        "command": "-editor.action.moveLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    // {
-    //     "key": "alt+k",
-    //     "command": "-keybindings.editor.recordSearchKeys",
-    //     "when": "inKeybindings && inKeybindingsSearch"
-    // },
-    {
-        "key": "ctrl+k",
-        "command": "editor.action.moveLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "alt+up",
-        "command": "-editor.action.moveLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    //#################################################################End}
-    //#####Begin{
-    {
-        "key": "ctrl+f2",
-        "command": "renameFile",
-        "when": "explorerViewletVisible && filesExplorerFocus"
-    },
-    {
-        "key": "enter",
-        "command": "-renameFile",
-        "when": "explorerViewletVisible && filesExplorerFocus"
-    },
-    {
-        "key": "enter",
-        "command": "list.select",
-        "when": "listFocus && !inputFocus"
-    },
-    //#################################################################End}
-    //
-    //
-    //#####BEGIN{
-    // {
-    //     "key": "ctrl+h",
-    //     "command": "workbench.action.focusLeftGroup",
-    //     "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
-    // },
-    // {
-    //     "key": "ctrl+h",
-    //     "command": "list.collapse",
-    //     "when": "listFocus && !inputFocus"
-    // },
-    // {
-    //     "key": "ctrl+l",
-    //     "command": "workbench.action.focusRightGroup",
-    //     "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
-    // },
-    // {
-    //     "key": "ctrl+l",
-    //     "command": "list.expand",
-    //     "when": "listFocus && !inputFocus"
-    // },
-    //#################################################################End}
-    //
-    // In Editor, toogle open/close filesExplorer on left side 
-    {
-        "key": "ctrl+left",
-        "command": "workbench.action.toggleSidebarVisibility",
-        "when": "editorTextFocus"
-    },
-    //
-    //
-    // In editorTextFocus, move up/down the line
-    {
-        "key": "ctrl+k",
-        "command": "list.focusUp",
-        "when": "listFocus && !inputFocus"
-    },
-    {
-        "key": "ctrl+j",
-        "command": "list.focusDown",
-        "when": "listFocus && !inputFocus"
-    },
-    //
-    //
-    // {
-    //     "key": "ctrl+shift+`",
-    //     "command": "workbench.action.terminal.toggleMaximizedTerminal",
-    //     "when": "terminal.active"
-    // },
-    {
-        "key": "ctrl+`",
-        "command": "workbench.action.terminal.toggleTerminal",
-        "when": "terminal.active"
-    },
-    {
-        "key": "ctrl+shift+`",
-        "command": "workbench.action.toggleMaximizedPanel"
-    },
-    //
-    // Can't use Ctrl+c Ctrl+x Ctrl+v anymore
-    // Pls use: Ctrl+Shift+c ... 
-    {
-        "key": "ctrl+shift+c",
-        "command": "editor.action.clipboardCopyAction"
-    },
-    {
-        "key": "ctrl+c",
-        "command": "-editor.action.clipboardCopyAction"
-    },
-    {
-        "key": "ctrl+shift+v",
-        "command": "editor.action.clipboardPasteAction"
-    },
-    {
-        "key": "ctrl+v",
-        "command": "-editor.action.clipboardPasteAction"
-    },
-    {
-        "key": "shift+insert",
-        "command": "-editor.action.clipboardPasteAction"
-    },
-    {
-        "key": "ctrl+shift+x",
-        "command": "editor.action.clipboardCutAction"
-    },
-    {
-        "key": "ctrl+x",
-        "command": "-editor.action.clipboardCutAction"
-    },
-    //
-    //
-    /*Dont know what to do*/
-    {
-        "key": "ctrl+b",
-        "command": "workbench.action.toggleSidebarVisibility",
-        "when": "!editorTextFocus"
-    },
-    {
-        "key": "ctrl+b",
-        "command": "-workbench.action.toggleSidebarVisibility"
-    },
-    /*
+  //#####Begin{
+  // In Visual mode only
+  // unkeyblinding alt+ down or up
+  // Use alt+j or k to move line down or up
+  {
+    "key": "ctrl+j",
+    "command": "editor.action.moveLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+down",
+    "command": "-editor.action.moveLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  // {
+  //     "key": "alt+k",
+  //     "command": "-keybindings.editor.recordSearchKeys",
+  //     "when": "inKeybindings && inKeybindingsSearch"
+  // },
+  {
+    "key": "ctrl+k",
+    "command": "editor.action.moveLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+up",
+    "command": "-editor.action.moveLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  //#################################################################End}
+  //#####Begin{
+  {
+    "key": "ctrl+f2",
+    "command": "renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  {
+    "key": "enter",
+    "command": "-renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  {
+    "key": "enter",
+    "command": "list.select",
+    "when": "listFocus && !inputFocus"
+  },
+  //#################################################################End}
+  //
+  //
+  //#####BEGIN{
+  // {
+  //     "key": "ctrl+h",
+  //     "command": "workbench.action.focusLeftGroup",
+  //     "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+  // },
+  // {
+  //     "key": "ctrl+h",
+  //     "command": "list.collapse",
+  //     "when": "listFocus && !inputFocus"
+  // },
+  // {
+  //     "key": "ctrl+l",
+  //     "command": "workbench.action.focusRightGroup",
+  //     "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+  // },
+  // {
+  //     "key": "ctrl+l",
+  //     "command": "list.expand",
+  //     "when": "listFocus && !inputFocus"
+  // },
+  //#################################################################End}
+  //
+  // In Editor, toogle open/close filesExplorer on left side
+  {
+    "key": "ctrl+left",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "editorTextFocus"
+  },
+  //
+  //
+  // In editorTextFocus, move up/down the line
+  {
+    "key": "ctrl+k",
+    "command": "list.focusUp",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "list.focusDown",
+    "when": "listFocus && !inputFocus"
+  },
+  //
+  //
+  // {
+  //     "key": "ctrl+shift+`",
+  //     "command": "workbench.action.terminal.toggleMaximizedTerminal",
+  //     "when": "terminal.active"
+  // },
+  {
+    "key": "ctrl+`",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
+  },
+  {
+    "key": "ctrl+shift+`",
+    "command": "workbench.action.toggleMaximizedPanel"
+  },
+  //
+  // Can't use Ctrl+c Ctrl+x Ctrl+v anymore
+  // Pls use: Ctrl+Shift+c ...
+  {
+    "key": "ctrl+shift+c",
+    "command": "editor.action.clipboardCopyAction"
+  },
+  {
+    "key": "ctrl+c",
+    "command": "-editor.action.clipboardCopyAction"
+  },
+  {
+    "key": "ctrl+shift+v",
+    "command": "editor.action.clipboardPasteAction"
+  },
+  {
+    "key": "ctrl+v",
+    "command": "-editor.action.clipboardPasteAction"
+  },
+  {
+    "key": "shift+insert",
+    "command": "-editor.action.clipboardPasteAction"
+  },
+  {
+    "key": "ctrl+shift+x",
+    "command": "editor.action.clipboardCutAction"
+  },
+  {
+    "key": "ctrl+x",
+    "command": "-editor.action.clipboardCutAction"
+  },
+  //
+  //
+  /*Dont know what to do*/
+  {
+    "key": "ctrl+b",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "!editorTextFocus"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "-workbench.action.toggleSidebarVisibility"
+  },
+  /*
     2 Way to Copy Line Down
     */
-    {
-        "key": "ctrl+alt+j",
-        "command": "editor.action.copyLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+alt+down",
-        "command": "editor.action.copyLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+alt+k",
-        "command": "editor.action.copyLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+alt+up",
-        "command": "editor.action.copyLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    //
-    // Why use it? when we can use H/L to move cursor
-    //
-    /* Add More way to move cursor
+  {
+    "key": "ctrl+alt+j",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+alt+down",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+alt+k",
+    "command": "editor.action.copyLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+alt+up",
+    "command": "editor.action.copyLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  //
+  // Why use it? when we can use H/L to move cursor
+  //
+  /* Add More way to move cursor
         - Up Down Left Right
         - HJKL in normal or Visual mode
             + alt+j : move cursor to left
             + alt+k : move cursor to right
 
     */
-    // {
-    //     "key": "alt+j",
-    //     "command": "cursorLeft",
-    //     "when": "textInputFocus"
-    // },
-    // {
-    //     "key": "left",
-    //     "command": "cursorLeft",
-    //     "when": "textInputFocus"
-    // },
-    // {
-    //     "key": "alt+k",
-    //     "command": "cursorRight",
-    //     "when": "textInputFocus"
-    // },
-    // {
-    //     "key": "Right",
-    //     "command": "cursorRight",
-    //     "when": "textInputFocus"
-    // },
-    //
-    //
-    // How to use: Move Cursor to the line -> Ctrl+shift+p -> Ctrl+Enter
-    // Run current line in a terminal
-    {
-        "key": "cmd+enter",
-        "command": "workbench.action.terminal.runSelectedText",
-        "when": "editorTextFocus && editorHasSelection"
-    },
-    //=============
-    /*Disable Close VScode by press:
+  // {
+  //     "key": "alt+j",
+  //     "command": "cursorLeft",
+  //     "when": "textInputFocus"
+  // },
+  // {
+  //     "key": "left",
+  //     "command": "cursorLeft",
+  //     "when": "textInputFocus"
+  // },
+  // {
+  //     "key": "alt+k",
+  //     "command": "cursorRight",
+  //     "when": "textInputFocus"
+  // },
+  // {
+  //     "key": "Right",
+  //     "command": "cursorRight",
+  //     "when": "textInputFocus"
+  // },
+  //
+  //
+  // How to use: Move Cursor to the line -> Ctrl+shift+p -> Ctrl+Enter
+  // Run current line in a terminal
+  {
+    "key": "cmd+enter",
+    "command": "workbench.action.terminal.runSelectedText",
+    "when": "editorTextFocus && editorHasSelection"
+  },
+  //=============
+  /*Disable Close VScode by press:
         - Ctrl+Shift+w
         - Alt+f4
     If you wanna close use i3wm: Ctrl+shift+q
     */
-    {
-        "key": "ctrl+shift+w",
-        "command": "-workbench.action.closeWindow"
-    },
-    {
-        "key": "alt+f4",
-        "command": "-workbench.action.closeWindow"
-    },
-    {
-        "key": "ctrl+shift+w",
-        "command": "workbench.action.closeActiveEditor"
-    },
-    {
-        "key": "ctrl+w",
-        "command": "-workbench.action.closeActiveEditor"
-    },
-    {
-        "key": "ctrl+enter",
-        "command": "-editor.action.insertLineAfter",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+shift+enter",
-        "command": "-editor.action.insertLineBefore",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+q",
-        "command": "-workbench.action.quit"
-    },
-    {
-        "key": "ctrl+shift+alt+down",
-        "command": "-editor.action.copyLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+shift+alt+up",
-        "command": "-editor.action.copyLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+shift+h",
-        "command": "-workbench.action.replaceInFiles"
-    }
+  // make hard close
+  {
+    "key": "ctrl+shift+w",
+    "command": "-workbench.action.closeWindow"
+  },
+  {
+    "key": "alt+f4",
+    "command": "-workbench.action.closeWindow"
+  },
+  // make hard to close editor
+  {
+    "key": "ctrl+shift+w",
+    "command": "workbench.action.closeActiveEditor"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "-workbench.action.closeActiveEditor"
+  },
+  // I use oO to create new line
+  {
+    "key": "ctrl+enter",
+    "command": "-editor.action.insertLineAfter",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+enter",
+    "command": "-editor.action.insertLineBefore",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  // Make hard to quit VScode
+  {
+    "key": "ctrl+q",
+    "command": "-workbench.action.quit"
+  },
+  {
+    "key": "ctrl+shift+alt+down",
+    "command": "-editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+alt+up",
+    "command": "-editor.action.copyLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  //
+  {
+    "key": "ctrl+shift+h",
+    "command": "workbench.action.replaceInFiles"
+  },
+  //
+  {
+    "key": "tab",
+    "command": "selectNextSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "shift+tab",
+    "command": "selectPrevSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "-extension.vim_ctrl+n",
+    "when": "editorTextFocus && vim.active && vim.use<C-n> && !inDebugRepl || vim.active && vim.use<C-n> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-n> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "extension.advancedNewFile"
+  },
+  {
+    "key": "ctrl+alt+n",
+    "command": "-newFile.createNewFile"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "-workbench.action.files.newUntitledFile"
+  }
 ]

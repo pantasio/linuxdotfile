@@ -1,288 +1,273 @@
 {
-    // Common Settings A-> B
-    "files.autoSave": "onFocusChange",
-    "editor.wordWrap": "on",
-    "editor.lineHeight": 22,
-    "editor.cursorWidth": 3,
-    "explorer.confirmDelete": false,
-    "editor.minimap.renderCharacters": false,
-    "terminal.integrated.lineHeight": 1.2,
-    "editor.fontSize": 14,
-    "terminal.integrated.fontSize": 12,
-    "terminal.integrated.confirmOnExit": true,
-    //
-    //
-    //
-    //
-    //@Win10
-    // "editor.fontFamily": "'CaskaydiaCove NF', Consolas, 'Courier New', monospace",
-    // "terminal.integrated.fontFamily": "'CaskaydiaCove NF', Consolas, 'Courier New', monospace",
-    //
-    //
-    //
-    //
-    //@ArchLinux
-    // Check your font available, Run this command:
-    // fc-list | grep 'SauceCodePro Nerd Font'
-    //
-    // The best font is: 'SauceCodePro Nerd Font', bc it dont missing some icon.
-    // "editor.fontFamily": "'FiraCode Nerd Font', 'CaskaydiaCove Nerd Font', 'Source Code Pro','Iosevka Nerd Font', 'Comic Code Demo' Consolas, 'Courier New', monospace",
-    // "terminal.integrated.fontFamily": "'FiraCode Nerd Font', 'CaskaydiaCove Nerd Font', 'Source Code Pro', Consolas, 'Courier New', monospace",
-    "editor.fontFamily": "'SauceCodePro Nerd Font', Consolas, 'Courier New', monospace",
-    //  'Caskaydia Cove Nerd Font', 'SauceCodePro Nerd Font', 'FiraCode Nerd Font',
-    "terminal.integrated.fontFamily": "'SauceCodePro Nerd Font', Consolas, 'Courier New', monospace",
-    // 'Caskaydia Cove Nerd Font', 'SauceCodePro Nerd Font', 'FiraCode Nerd Font', 'Source Code Pro',
-    //
-    //
-    //
-    //
-    // @MacOS
-    // "editor.fontFamily": "'CaskaydiaCove Nerd Font', Consolas, 'Courier New', monospace",
-    // "terminal.integrated.fontFamily": "'CaskaydiaCove Nerd Font', Consolas, 'Courier New', monospace",
-    //
-    // 
-    // VScode Terminal settings
-    // "terminal.integrated.fontFamily": "'FiraCode Nerd Font Mono', Consolas, 'Courier New', monospace",
-    // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-    // @sync os=windows
-    // VScode Terminal settings
-    // "terminal.integrated.fontFamily": "CaskaydiaCove NF",
-    // "terminal.integrated.defaultProfile.windows": "PowerShell",
-    // "terminalCursor.background": "#A89984",
-    "editor.fontLigatures": true,
-    "sync.gist": "b9e278ec67f02af324aa21b395e885f3",
-    "sync.autoUpload": true,
-    "sync.autoDownload": true,
-    "workbench.preferredDarkColorTheme": "Solarized Dark",
-    "workbench.preferredHighContrastColorTheme": "Solarized Dark",
-    "workbench.preferredLightColorTheme": "Solarized Dark",
-    "workbench.iconTheme": "material-icon-theme",
-    "sync.quietSync": true,
-    "json.maxItemsComputed": 50000,
-    "liveServer.settings.donotShowInfoMsg": true,
-    // Better commend setting
-    "better-comments.multilineComments": true,
-    "better-comments.highlightPlainText": false,
-    "better-comments.tags": [
-        {
-            "tag": "!",
-            "color": "#FF2D00",
-            "strikethrough": false,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": false,
-            "italic": false
-        },
-        {
-            "tag": "?",
-            "color": "#3498DB",
-            "strikethrough": false,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": false,
-            "italic": false
-        },
-        {
-            "tag": "//",
-            "color": "#474747",
-            "strikethrough": true,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": false,
-            "italic": false
-        },
-        {
-            "tag": "todo",
-            "color": "#FF8C00",
-            "strikethrough": false,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": false,
-            "italic": false
-        },
-        {
-            "tag": "*",
-            "color": "#98C379",
-            "strikethrough": false,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": false,
-            "italic": false
-        }
-    ],
-    /**
-    * Vim settings
-    **/
-    "vim.leader": "<space>",
-    "vim.easymotion": true,
-    "vim.incsearch": true,
-    // Use systemclipboard to copy outside VScode
-    "vim.useSystemClipboard": true,
-    "vim.hlsearch": true,
-    // insert mode -> normal mode
-    "vim.insertModeKeyBindings": [
-        {
-            "before": [
-                "j",
-                "j"
-            ],
-            "after": [
-                "<Esc>"
-            ]
-        }
-    ],
-    "editor.lineNumbers": "relative",
-    /* ================================ 
-        Shopify Liquid Template Snippets setting
-       ================================ */
-    "emmet.includeLanguages": {
-        "liquid": "html"
+  // Common Settings A-> B
+  "files.autoSave": "onFocusChange",
+  "editor.wordWrap": "on",
+  // "editor.tabSize": 2,
+  "editor.lineHeight": 25,
+  "editor.cursorWidth": 3,
+  "explorer.confirmDelete": false,
+  "editor.minimap.renderCharacters": false,
+  "terminal.integrated.lineHeight": 1.2,
+  "editor.fontSize": 14,
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.confirmOnExit": "always",
+  //
+  //
+  //
+  //
+  //@Win10
+  // "editor.fontFamily": "'CaskaydiaCove NF', Consolas, 'Courier New', monospace",
+  // "terminal.integrated.fontFamily": "'CaskaydiaCove NF', Consolas, 'Courier New', monospace",
+  //
+  //
+  //
+  //
+  //@ArchLinux
+  // Check your font available, Run this command:
+  // fc-list | grep 'SauceCodePro Nerd Font'
+  //
+  // The best font is: 'SauceCodePro Nerd Font', bc it dont missing some icon.
+  // "editor.fontFamily": "'FiraCode Nerd Font', 'CaskaydiaCove Nerd Font', 'Source Code Pro','Iosevka Nerd Font', 'Comic Code Demo' Consolas, 'Courier New', monospace",
+  // "terminal.integrated.fontFamily": "'FiraCode Nerd Font', 'CaskaydiaCove Nerd Font', 'Source Code Pro', Consolas, 'Courier New', monospace",
+  "editor.fontFamily": "'SauceCodePro Nerd Font', Consolas, 'Courier New', monospace",
+  //  'Caskaydia Cove Nerd Font', 'SauceCodePro Nerd Font', 'FiraCode Nerd Font',
+  "terminal.integrated.fontFamily": "'SauceCodePro Nerd Font', Consolas, 'Courier New', monospace",
+  // 'Caskaydia Cove Nerd Font', 'SauceCodePro Nerd Font', 'FiraCode Nerd Font', 'Source Code Pro',
+  //
+  //
+  //
+  //
+  // @MacOS
+  // "editor.fontFamily": "'CaskaydiaCove Nerd Font', Consolas, 'Courier New', monospace",
+  // "terminal.integrated.fontFamily": "'CaskaydiaCove Nerd Font', Consolas, 'Courier New', monospace",
+  //
+  //
+  // VScode Terminal settings
+  // "terminal.integrated.fontFamily": "'FiraCode Nerd Font Mono', Consolas, 'Courier New', monospace",
+  // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+  // @sync os=windows
+  // VScode Terminal settings
+  // "terminal.integrated.fontFamily": "CaskaydiaCove NF",
+  // "terminal.integrated.defaultProfile.windows": "PowerShell",
+  // "terminalCursor.background": "#A89984",
+  "editor.fontLigatures": true,
+  "sync.gist": "b9e278ec67f02af324aa21b395e885f3",
+  "sync.autoUpload": true,
+  "sync.autoDownload": true,
+  "workbench.preferredDarkColorTheme": "Solarized Dark",
+  "workbench.preferredHighContrastColorTheme": "Solarized Dark",
+  "workbench.preferredLightColorTheme": "Solarized Dark",
+  "workbench.iconTheme": "material-icon-theme",
+  "sync.quietSync": true,
+  "json.maxItemsComputed": 50000,
+  "liveServer.settings.donotShowInfoMsg": true,
+  // Prettier format
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // Better commend setting
+  "better-comments.multilineComments": true,
+  "better-comments.highlightPlainText": false,
+  "better-comments.tags": [
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
     },
-    /* ================================ 
+    {
+      "tag": "?",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "*",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    }
+  ],
+  "editor.lineNumbers": "relative",
+  /* ================================ 
+    Shopify Liquid Template Snippets setting
+    ================================ */
+  "emmet.includeLanguages": {
+    "liquid": "html"
+  },
+  /**
+   * Vim settings
+   **/
+  "vim.leader": "<space>",
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  // Use systemclipboard to copy outside VScode
+  "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+  "vim.useCtrlKeys": true,
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<tab>"],
+      "commands": ["workbench.action.nextEditor"]
+    },
+    {
+      "before": ["<S-tab>"],
+      "commands": ["workbench.action.previousEditor"]
+    }
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  /* ================================ 
                 In Visual mode
        ================================ */
-    // in visual mode, press v and selete many row
-    "vim.visualModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                ">"
-            ],
-            "commands": [
-                "editor.action.indentLines"
-            ]
-        },
-        {
-            "before": [
-                "<"
-            ],
-            "commands": [
-                "editor.action.outdentLines"
-            ]
-        }
-    ],
-    "vim.visualModeKeyBindings": [
-        // In visual mode iI aA oO goes to insert mode
-        // This setting for mistake some unknow key press.
-        {
-            "before": [
-                "i"
-            ],
-            "after": [
-                "<Esc>",
-                "i"
-            ]
-        },
-        {
-            "before": [
-                "I"
-            ],
-            "after": [
-                "<Esc>",
-                "I"
-            ]
-        },
-        {
-            "before": [
-                "a"
-            ],
-            "after": [
-                "<Esc>",
-                "a"
-            ]
-        },
-        {
-            "before": [
-                "A"
-            ],
-            "after": [
-                "<Esc>",
-                "A"
-            ]
-        },
-        {
-            "before": [
-                "o"
-            ],
-            "after": [
-                "<Esc>",
-                "o"
-            ]
-        },
-        {
-            "before": [
-                "O"
-            ],
-            "after": [
-                "<Esc>",
-                "O"
-            ]
-        }
-    ],
-    // Bind ( to 'i(' in operator pending mode makes 'y(' and 'c(' work like 'yi(' and 'ci(' respectively.
-    "vim.operatorPendingModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "("
-            ],
-            "after": [
-                "i("
-            ]
-        }
-    ],
+  // in visual mode, press v and selete many row
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    // In visual mode iI aA oO goes to insert mode
+    // This setting for mistake some unknow key press.
+    {
+      "before": ["i"],
+      "after": ["<Esc>", "i"]
+    },
+    {
+      "before": ["I"],
+      "after": ["<Esc>", "I"]
+    },
+    {
+      "before": ["a"],
+      "after": ["<Esc>", "a"]
+    },
+    {
+      "before": ["A"],
+      "after": ["<Esc>", "A"]
+    },
+    {
+      "before": ["o"],
+      "after": ["<Esc>", "o"]
+    },
+    {
+      "before": ["O"],
+      "after": ["<Esc>", "O"]
+    },
+    // Use 2 time ">" or "<" to indent, this is replace tab
+    {
+      "before": [">"],
+      "after": [">", "g", "v"]
+    },
+    {
+      "before": ["<"],
+      "after": ["<", "g", "v"]
+    }
+  ],
+  // Bind ( to 'i(' in operator pending mode makes 'y(' and 'c(' work like 'yi(' and 'ci(' respectively.
+  "vim.operatorPendingModeKeyBindingsNonRecursive": [
+    {
+      "before": ["("],
+      "after": ["i("]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["revealInExplorer"]
+    },
     // Split panel
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "<leader>",
-                "w"
-            ],
-            "commands": [
-                "workbench.action.splitEditor"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "t"
-            ],
-            "commands": [
-                "workbench.action.toggleSidebarVisibility"
-            ]
-        }
-    ],
-    // Setting color theme
-    "workbench.colorTheme": "pantasio",
-    // Setting programming language
-    "redhat.telemetry.enabled": false,
-    "remote.SSH.remotePlatform": {
-        "aws-blog": "linux"
+    {
+      "before": ["<leader>", "w"],
+      "commands": ["workbench.action.splitEditor"]
     },
-    // ssh remote setting
-    "remote.SSH.defaultForwardedPorts": [],
-    "editor.formatOnSave": true,
-    "terminal.integrated.cursorStyle": "line",
-    "editor.cursorBlinking": "phase",
-    "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.defaultProfile.linux": "fish",
-    "security.workspace.trust.untrustedFiles": "open",
-    "workbench.editorAssociations": {
-        "*.ps1": "default"
+    // leader == spacebar,
+    // h == home go to the first charactor of line
+    // l == end go to the last charactor of line
+    //
+    {
+      "before": ["<leader>", "h"],
+      "after": ["_"]
     },
-    "diffEditor.renderSideBySide": false,
-    "bracket-pair-colorizer-2.depreciation-notice": false,
-    "bracketPairColorizer.depreciation-notice": false,
-    "keyboard.dispatch": "keyCode",
-    "settingsSync.ignoredExtensions": [],
-    "terminal.explorerKind": "external",
-    "terminal.external.linuxExec": "alacritty",
-    "editor.guides.bracketPairs": true,
-    "editor.tabSize": 2,
-    "zenMode.hideTabs": false,
-    "editor.scrollBeyondLastColumn": 8,
-    "markdownlint.customRules": [
-        "\"MD013\": false"
-    ]
-    /* Evondev settings.jsona
+    {
+      "before": ["<leader>", "l"],
+      "after": ["$"]
+    },
+    {
+      "before": ["<leader>", "t"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    }
+  ],
+  //
+  //
+  //
+  //
+  //
+  //
+
+  // Setting color theme
+  "workbench.colorTheme": "pantasio",
+  // Setting programming language
+  "redhat.telemetry.enabled": false,
+  "remote.SSH.remotePlatform": {
+    "aws-blog": "linux"
+  },
+  // ssh remote setting
+  "remote.SSH.defaultForwardedPorts": [],
+  "terminal.integrated.cursorStyle": "line",
+  "editor.cursorBlinking": "phase",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.defaultProfile.linux": "fish",
+  "security.workspace.trust.untrustedFiles": "open",
+  "workbench.editorAssociations": {
+    "*.ps1": "default"
+  },
+  "diffEditor.renderSideBySide": false,
+  "bracket-pair-colorizer-2.depreciation-notice": false,
+  "bracketPairColorizer.depreciation-notice": false,
+  "keyboard.dispatch": "keyCode",
+  "settingsSync.ignoredExtensions": [],
+  "terminal.explorerKind": "external",
+  "terminal.external.linuxExec": "alacritty",
+  "editor.guides.bracketPairs": true,
+  "zenMode.hideTabs": false,
+  "editor.scrollBeyondLastColumn": 8,
+  "markdownlint.customRules": ["\"MD013\": false"]
+  /* Evondev settings.jsona
     "editor.fontFamily": "SF Mono, Source Code Pro, Input Mono, Inconsolata,  Arial, Helvetica, sans-serif",
     "editor.wordWrap": "on",
     "editor.lineHeight": 30,
@@ -341,7 +326,7 @@
     "editor.cursorBlinking": "solid"
      
     */
-    /*"workbench.colorCustomizations": {
+  /*"workbench.colorCustomizations": {
     "terminal.background":"#1D2021",
     "terminal.foreground":"#A89984",
     "terminalCursor.background":"#A89984",

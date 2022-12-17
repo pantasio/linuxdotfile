@@ -1,5 +1,5 @@
 [DetailsMode]
-IconSize=48
+IconSize=64
 
 [General]
 Version=202
@@ -7,6 +7,9 @@ ViewPropsTimestamp=2022,12,16,18,56,57.711
 
 [Icons]
 Theme=WhiteSur-dark
+
+[IconsMode]
+IconSize=80
 
 [KFileDialog Settings]
 Places Icons Auto-resize=false
@@ -25,3 +28,6 @@ History=code
 
 [Search]
 Location=Everywhere
+
+[Shortcut Schemes]
+Current Scheme=Default
