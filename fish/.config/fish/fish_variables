@@ -1,5 +1,8 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export ANDROID_SDK_ROOT:/opt/android\x2dsdk
+SETUVAR --export CHROME_EXECUTABLE:/usr/bin/google\x2dchrome\x2dstable
+SETUVAR --export JAVA_HOME:/usr/lib/jvm/java\x2d8\x2dopenjdk
 SETUVAR ZO_CMD:zo
 SETUVAR Z_CMD:z
 SETUVAR Z_DATA:/home/bungbu/\x2elocal/share/z/data
@@ -58,4 +61,4 @@ SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
-SETUVAR fish_user_paths:/home/bungbu/\x2elocal/bin\x1e/home/bungbu/Applications\x1e/home/bungbu/Flutter\x2dsdk/bin\x1e/home/bungbu/\x2enpm/\x2enpm\x2dglobal/bin
+SETUVAR fish_user_paths:/home/bungbu/\x2elocal/bin\x1e/home/bungbu/Applications\x1e/opt/android\x2dsdk/tools/bin\x1e/opt/android\x2dsdk/tools\x1e/opt/android\x2dsdk/platform\x2dtools\x1e/opt/android\x2dsdk/tools/emulator\x1e/home/bungbu/\x2enpm/\x2enpm\x2dglobal/bin

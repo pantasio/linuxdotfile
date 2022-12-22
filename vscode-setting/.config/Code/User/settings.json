@@ -259,14 +259,26 @@
   "diffEditor.renderSideBySide": false,
   "bracket-pair-colorizer-2.depreciation-notice": false,
   "bracketPairColorizer.depreciation-notice": false,
-  "keyboard.dispatch": "keyCode",
+  "keyboard.dispatch": "keyCode", // Fix error unexpert
   "settingsSync.ignoredExtensions": [],
   "terminal.explorerKind": "external",
   "terminal.external.linuxExec": "alacritty",
   "editor.guides.bracketPairs": true,
   "zenMode.hideTabs": false,
   "editor.scrollBeyondLastColumn": 8,
-  "markdownlint.customRules": ["\"MD013\": false"]
+  "markdownlint.customRules": ["\"MD013\": false"],
+  "editor.rulers": [
+    {
+      "column": 80 // spacing of 1st column from left
+    },
+    {
+      "column": 100, // spacing of 1st column from left
+      "color": "#38172b" // orange, Go Vols!
+    } // 2nd ruler with no color option
+  ],
+  "dart.env": {
+    "CHROME_EXECUTABLE": "/usr/bin/google-chrome-stable"
+  }
   /* Evondev settings.jsona
     "editor.fontFamily": "SF Mono, Source Code Pro, Input Mono, Inconsolata,  Arial, Helvetica, sans-serif",
     "editor.wordWrap": "on",

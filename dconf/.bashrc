@@ -4,6 +4,23 @@ export VISUAL='nano'
 export HISTCONTROL=ignoreboth:erasedups
 export PAGER='most'
 
+
+# Flutter Path
+#
+#export JAVA_OPTS='-XX:+IgnoreUnrecognizedVMOptions --add-modules java.se.ee'
+export JAVA_HOME='/usr/lib/jvm/java-8-openjdk'
+
+export ANDROID_SDK_ROOT='/opt/android-sdk'
+export PATH=$JAVA_HOME/bin:$PATH
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools/
+export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin/
+export PATH=$PATH:$ANDROID_SDK_ROOT/tools/emulator
+export PATH=$PATH:$ANDROID_SDK_ROOT/tools/
+
+export CHROME_EXECUTABLE=/usr/bin/google-chrome-stable
+
+
+
 # KDE config
 # XDG_CONFIG_HOME
 # KDEHOME

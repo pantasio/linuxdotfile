@@ -115,7 +115,8 @@
     "key": "ctrl+shift+`",
     "command": "workbench.action.toggleMaximizedPanel"
   },
-  //
+
+  //===============
   // Can't use Ctrl+c Ctrl+x Ctrl+v anymore
   // Pls use: Ctrl+Shift+c ...
   {
@@ -146,6 +147,7 @@
     "key": "ctrl+x",
     "command": "-editor.action.clipboardCutAction"
   },
+
   //
   //
   /*Dont know what to do*/
@@ -158,6 +160,7 @@
     "key": "ctrl+b",
     "command": "-workbench.action.toggleSidebarVisibility"
   },
+
   /*
     2 Way to Copy Line Down
     */
@@ -180,6 +183,36 @@
     "key": "ctrl+alt+up",
     "command": "editor.action.copyLinesUpAction",
     "when": "editorTextFocus && !editorReadonly"
+  },
+  // DO NOTHING
+  // ctrl+alt+shift
+  {
+    "key": "ctrl+shift+alt+down",
+    "command": "-editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+alt+up",
+    "command": "-editor.action.copyLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  //
+  // make 2 way to move editor to previousGroup
+  {
+    "key": "ctrl+alt+h",
+    "command": "workbench.action.moveEditorToPreviousGroup"
+  },
+  {
+    "key": "ctrl+alt+left",
+    "command": "workbench.action.moveEditorToPreviousGroup"
+  },
+  {
+    "key": "ctrl+alt+right",
+    "command": "workbench.action.moveEditorToNextGroup"
+  },
+  {
+    "key": "ctrl+alt+l",
+    "command": "workbench.action.moveEditorToNextGroup"
   },
   //
   // Why use it? when we can use H/L to move cursor
@@ -214,12 +247,31 @@
   //
   //
   // How to use: Move Cursor to the line -> Ctrl+shift+p -> Ctrl+Enter
+
+  //============
   // Run current line in a terminal
   {
-    "key": "cmd+enter",
+    "key": "ctrl+enter",
     "command": "workbench.action.terminal.runSelectedText",
     "when": "editorTextFocus && editorHasSelection"
   },
+  // make it better when seleted = 0 run this line in terminal
+  // I use oO to create new line
+  {
+    "key": "ctrl+enter",
+    "command": "-editor.action.insertLineAfter",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+enter",
+    "command": "-editor.action.insertLineBefore",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  //=========================================
+
+  //
+  //
+  // ================================================
   //=============
   /*Disable Close VScode by press:
         - Ctrl+Shift+w
@@ -244,32 +296,12 @@
     "key": "ctrl+w",
     "command": "-workbench.action.closeActiveEditor"
   },
-  // I use oO to create new line
-  {
-    "key": "ctrl+enter",
-    "command": "-editor.action.insertLineAfter",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+shift+enter",
-    "command": "-editor.action.insertLineBefore",
-    "when": "editorTextFocus && !editorReadonly"
-  },
   // Make hard to quit VScode
   {
     "key": "ctrl+q",
     "command": "-workbench.action.quit"
   },
-  {
-    "key": "ctrl+shift+alt+down",
-    "command": "-editor.action.copyLinesDownAction",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+shift+alt+up",
-    "command": "-editor.action.copyLinesUpAction",
-    "when": "editorTextFocus && !editorReadonly"
-  },
+
   //
   {
     "key": "ctrl+shift+h",
@@ -286,6 +318,7 @@
     "command": "selectPrevSuggestion",
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
   },
+  // Use advanceNewFile
   {
     "key": "ctrl+n",
     "command": "-extension.vim_ctrl+n",

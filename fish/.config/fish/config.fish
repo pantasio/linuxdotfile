@@ -7,6 +7,14 @@ source ~/.config/fish/alias/testtool.fish
 ########## Set swap Caplock and ESC
 setxkbmap -option caps:swapescape
 
+#-----------
+### Flutter setting
+# set -Ux JAVA_OPTS '-XX:+IgnoreUnrecognizedVMOptions --add-modules java.se.ee'
+# set -Ux JAVA_HOME /usr/lib/jvm/java-8-openjdk
+# set -Ux ANDROID_SDK_ROOT /opt/android-sdk
+# set -Ux CHROME_EXECUTABLE /usr/bin/google-chrome-stable 
+
+
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
@@ -19,7 +27,7 @@ end
 # First line removes the path; second line sets it.  Without the first line,
 # your path gets massive and fish becomes very slow.
 set -e fish_user_paths
-set -U fish_user_paths $HOME/.local/bin $HOME/Applications $fish_user_paths $HOME/Flutter-sdk/bin $HOME/.npm/.npm-global/bin
+set -U fish_user_paths $HOME/.local/bin $HOME/Applications $fish_user_paths $ANDROID_SDK_ROOT/tools/bin $ANDROID_SDK_ROOT/tools $ANDROID_SDK_ROOT/platform-tools $ANDROID_SDK_ROOT/tools/emulator $HOME/.npm/.npm-global/bin
 
 ### EXPORT ###
 set fish_greeting # Supresses fish's intro message
@@ -241,9 +249,10 @@ starship init fish | source
 export STARSHIP_CONFIG=$HOME/.config/starship/config.toml
 export STARSHIP_CACHE=$HOME/.config/starship/cache
 
-#-----------
-### Flutter setting
 
+
+
+#-----------
 ### SETTING for k3s
 export KUBECONFIG=/home/bungbu/.kube/config
 
