@@ -10,9 +10,10 @@ setxkbmap -option caps:swapescape
 #-----------
 ### Flutter setting
 # set -Ux JAVA_OPTS '-XX:+IgnoreUnrecognizedVMOptions --add-modules java.se.ee'
-# set -Ux JAVA_HOME /usr/lib/jvm/java-8-openjdk
-# set -Ux ANDROID_SDK_ROOT /opt/android-sdk
-# set -Ux CHROME_EXECUTABLE /usr/bin/google-chrome-stable 
+# java 8 dont need JAVA_OPTS
+set -x JAVA_HOME /usr/lib/jvm/java-8-openjdk
+set -x ANDROID_SDK_ROOT /opt/android-sdk
+set -x CHROME_EXECUTABLE /usr/bin/google-chrome-stable 
 
 
 
@@ -254,7 +255,7 @@ export STARSHIP_CACHE=$HOME/.config/starship/cache
 
 #-----------
 ### SETTING for k3s
-export KUBECONFIG=/home/bungbu/.kube/config
+export KUBECONFIG=$HOME/.kube/config
 
 
 #-----------
@@ -297,7 +298,7 @@ set -x fish_cursor_insert line
 set -x fish_cursor_replace_one underscore
 # ---------------------------------------------------------------
 ########## make terminal clear when load form bash
-cl
+clear
 # ⛔
 # 👍 
 # 🔴

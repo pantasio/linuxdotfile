@@ -39,8 +39,8 @@
 #i = init
 #c = commit -m
 #s = status
-  l = log --relative-date --graph --abbrev-commit -10
-  ll = log --relative-date --graph --abbrev-commit
+  # l = log --relative-date --graph --abbrev-commit -10
+  # ll = log --relative-date --graph --abbrev-commit
 # Work with git flow
 
 

@@ -69,4 +69,8 @@ abbr -a gfc git findcommit
 abbr -a gfm git findmessage
 
 # git log
-abbr -a gl git log --all --decorate --oneline --graph
+# abbr -a gl git log --relative-date --all --decorate --oneline --graph
+abbr -a gla git log --relative-date --all --decorate --graph
+# show log in 10 last commit
+# abbr -a gl10 git log --relative-date --all --decorate --oneline --graph --abbrev-commit -10
+abbr -a gl git log --relative-date --all --decorate --graph --abbrev-commit -10

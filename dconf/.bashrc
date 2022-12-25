@@ -7,7 +7,8 @@ export PAGER='most'
 
 # Flutter Path
 #
-#export JAVA_OPTS='-XX:+IgnoreUnrecognizedVMOptions --add-modules java.se.ee'
+# export JAVA_OPTS='-XX:+IgnoreUnrecognizedVMOptions --add-modules java.se.ee'
+# JAVA 8 Dont need JAVA_OPTS 
 export JAVA_HOME='/usr/lib/jvm/java-8-openjdk'
 
 export ANDROID_SDK_ROOT='/opt/android-sdk'
