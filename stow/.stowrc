@@ -1,0 +1,8 @@
+#! DID not work
+# I dont know why all below setting didn't work
+# This file shold empty
+--ignore tags 
+--ignore tags.lock 
+--ignore tags.temp 
+--ignore first-stow.sh \
+--ignore .stowrc

@@ -30,6 +30,12 @@ LINK: python.snippets.json => ../../../../WorkSpace/VScode-snippets/snippets/pyt
 LINK: docker.snippets.json => ../../../../WorkSpace/VScode-snippets/snippets/docker.snippets.json
 ```
 
+## Stow config:
+
+`.stow-global-ignore` in $HOME
+`.stow-local-ignore` in individual repo
+`.stowrc` Didn't work, need to learn more about this file
+
 # Some Module
 
 - hostname

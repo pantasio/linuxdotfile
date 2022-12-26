@@ -15,6 +15,11 @@ set -x JAVA_HOME /usr/lib/jvm/java-8-openjdk
 set -x ANDROID_SDK_ROOT /opt/android-sdk
 set -x CHROME_EXECUTABLE /usr/bin/google-chrome-stable 
 
+#------------
+# VScode snippets var
+set -x VSCODE_SNIPPET $HOME/.config/Code/User/snippets
+set -x SCR_SNIPPET $HOME/WorkSpace/VScode-snippets
+abbr -a vsnippet "rm -f $VSCODE_SNIPPET && ln -s $SCR_SNIPPET/snippets $VSCODE_SNIPPET"
 
 
 if status is-interactive

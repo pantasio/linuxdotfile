@@ -1,0 +1,12 @@
+# Comments and blank lines are allowed.
+
+\.git 				# Excludes any and all .git files/directories
+\.gitignore
+
+^/README._ 			# Excludes only top-level READMEs
+^/LICENSE._
+^/COPYING
+
+
+# Patterns with / are matched exactly (/ indicates the top of the directory being stowed)
+# If the pattern does not contain a forward slash, matching is based on basename

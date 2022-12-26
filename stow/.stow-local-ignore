@@ -1,0 +1,14 @@
+Working sample ignore file stow
+
+# This file in individual repo.
+
+\.git
+\.gitignore
+
+^/.stow-local-ignore
+^/.stowrc
+^/README._ # Excludes only top-level READMEs
+^/LICENSE._
+^/COPYING
+
+^/003-Daily #\* Excludes directory
