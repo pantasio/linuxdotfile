@@ -66,36 +66,3 @@ link: [firefox theme](https://color.firefox.com/?theme=XQAAAAIkAQAAAAAAAABBqYhm8
 ### Add polybar
 
 ### Install script -> $HOME/.local/bin
-
-### Fontawesome
-
-```
-firefox 
-firefox 
-Terminal   
-Terminal   
-Spotify 阮 阮
-Spotify 阮 阮
-;http://fontawesome.io/cheatsheet/
-;       v     
-;          "    
-ws-icon-0 = 1;
-ws-icon-1 = 2;
-ws-icon-2 = 3;
-ws-icon-3 = 4;
-ws-icon-4 = 5;
-ws-icon-5 = 6;
-ws-icon-6 = 7;
-ws-icon-7 = 8;
-ws-icon-8 = 9;
-ws-icon-9 = 10;
-ws-icon-default = " "
-```
-
-"🐍 "
-"📐"
-"💎 "
-tiếng việt thì rất là tuyệt
-662
-0422
-0427

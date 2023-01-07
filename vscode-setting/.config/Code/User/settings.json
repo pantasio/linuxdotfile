@@ -327,7 +327,15 @@
   // debugging the first time in a session. This setting tells VS Code to always
   // switch to the Debug Console when starting a session, so you can see the
   // programs output.
-  "debug.internalConsoleOptions": "openOnSessionStart"
+  "debug.internalConsoleOptions": "openOnSessionStart",
+  "markdown.preview.fontFamily": "'SauceCodePro Nerd Font', -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif",
+  "markdown-preview-enhanced.codeBlockTheme": "darcula.css",
+  "markdown-preview-enhanced.mermaidTheme": "default",
+  "markdown-preview-enhanced.previewTheme": "atom-dark.css",
+  "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": false,
+  "markdown.styles": [
+    "vscode-setting/.config/Code/User/CustomMarkdownStyles.css"
+  ]
 
   /* Evondev settings.jsona
     "editor.fontFamily": "SF Mono, Source Code Pro, Input Mono, Inconsolata,  Arial, Helvetica, sans-serif",

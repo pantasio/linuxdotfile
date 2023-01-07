@@ -16,6 +16,9 @@ alias .3='cd ../../..'
 alias .4='cd ../../../..'
 alias .5='cd ../../../../..'
 
+# File size
+alias fs="stat -f \"%z bytes\""
+
 # vim and emacs
 # alias vim='nvim'
 
