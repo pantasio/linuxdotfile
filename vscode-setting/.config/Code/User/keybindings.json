@@ -278,7 +278,9 @@
         - Alt+f4
     If you wanna close use i3wm: Ctrl+shift+q
     */
-  // make hard close
+  //
+  //
+  // make too Hard close file
   {
     "key": "ctrl+shift+w",
     "command": "-workbench.action.closeWindow"
@@ -307,7 +309,7 @@
     "key": "ctrl+shift+h",
     "command": "workbench.action.replaceInFiles"
   },
-  //
+  // Use tab to selete Suggestion
   {
     "key": "tab",
     "command": "selectNextSuggestion",
@@ -315,6 +317,16 @@
   },
   {
     "key": "shift+tab",
+    "command": "selectPrevSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "selectNextSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+k",
     "command": "selectPrevSuggestion",
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
   },
@@ -335,5 +347,16 @@
   {
     "key": "ctrl+n",
     "command": "-workbench.action.files.newUntitledFile"
+  },
+  // I still dont know setting Ctrl+h to delete charactor in insert mode
+  {
+    "key": "ctrl+h",
+    "command": "extension.vim_ctrl+h",
+    "when": "editorTextFocus && vim.active && vim.use<C-h> && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "-extension.vim_ctrl+h",
+    "when": "editorTextFocus && vim.active && vim.use<C-h> && !inDebugRepl"
   }
 ]
