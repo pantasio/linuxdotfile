@@ -74,3 +74,11 @@ abbr -a gla git log --relative-date --all --decorate --graph
 # show log in 10 last commit
 # abbr -a gl10 git log --relative-date --all --decorate --oneline --graph --abbrev-commit -10
 abbr -a gl git log --relative-date --all --decorate --graph --abbrev-commit -10
+
+
+####
+# Untrack file
+# File still in project but dont wanna track it anymore
+abbr -a guntrack git update-index --assume-unchanged FILE_NAME
+# Track it again
+abbr -a gtrack git update-index --no-assume-unchanged FILE_NAME 
