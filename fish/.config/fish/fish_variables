@@ -35,6 +35,8 @@ SETUVAR _fish_abbr_gp:git\x20push
 SETUVAR _fish_abbr_gpl:git\x20pull
 SETUVAR _fish_abbr_gr:git\x20rebase\x20\x2di\x20HEAD\x7e15
 SETUVAR _fish_abbr_gs:git\x20status
+SETUVAR _fish_abbr_gtrack:git\x20update\x2dindex\x20\x2d\x2dno\x2dassume\x2dunchanged\x20FILE_NAME
+SETUVAR _fish_abbr_guntrack:git\x20update\x2dindex\x20\x2d\x2dassume\x2dunchanged\x20FILE_NAME
 SETUVAR _fish_abbr_ramtest:stress\x20\x2dm\x201\x20\x2d\x2dvm\x2dbytes\x2018G
 SETUVAR _fish_abbr_vsnippet:rm\x20\x2df\x20/home/bungbu/\x2econfig/Code/User/snippets\x20\x26\x26\x20ln\x20\x2ds\x20/home/bungbu/WorkSpace/VScode\x2dsnippets/snippets\x20/home/bungbu/\x2econfig/Code/User/snippets
 SETUVAR _fisher_jethrokuan_2F_z_files:/home/bungbu/\x2econfig/fish/functions/__z\x2efish\x1e/home/bungbu/\x2econfig/fish/functions/__z_add\x2efish\x1e/home/bungbu/\x2econfig/fish/functions/__z_clean\x2efish\x1e/home/bungbu/\x2econfig/fish/functions/__z_complete\x2efish\x1e/home/bungbu/\x2econfig/fish/conf\x2ed/z\x2efish

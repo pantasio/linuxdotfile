@@ -13,5 +13,6 @@ doc/.obsidian/workspace
 musicplayer/.config/mpd/mpd.db
 musicplayer/.config/mpd/mpd.state
 musicplayer/.config/mpd/sticker.sql
+musicplayer/.config/mpd/playlists/*
 
 nextCommit.md

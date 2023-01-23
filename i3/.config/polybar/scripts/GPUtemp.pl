@@ -32,7 +32,6 @@ my $t_crit = $ENV{T_CRIT} || 90;
 my $chip = $ENV{SENSOR_CHIP} || "";
 my $temperature = -9999;
 my $label = "😀 ";
-
 sub help {
     print "Usage: temperature [-w <warning>] [-c <critical>] [--chip <chip>]\n";
     print "-w <percent>: warning threshold to become yellow\n";
@@ -47,16 +46,17 @@ GetOptions("help|h" => \&help,
            "chip=s" => \$chip);
 
 # Get chip temperature
-open (SENSORS, "sensors -u $chip |") or die;
+open (SENSORS, "inxi -s |") or die;
 while (<SENSORS>) {
-    if (/^\s+temp1_input:\s+[\+]*([\-]*\d+\.\d)/) {
-        $temperature = $1;
+    # if (/^\s+temp1_input:\s+[\+]*([\-]*\d+\.\d)/) {
+    if (/System\sTemperatures:\scpu:\s(\d+\.\d)\sC\smobo:\s(\d+\.\d)\sC\sgpu:\samdgpu\stemp:\s(\d+\.\d)\sC/) {
+        $temperature = $3;
         last;
     }
 }
 close(SENSORS);
 
-$temperature eq -9999 and die 'Cannot find temperature';
+# $temperature eq -9999 and die 'Cannot find temperature';
 
 if ($temperature < 45) {
   $label = 'g';
@@ -69,11 +69,6 @@ if ($temperature < 45) {
 } else {
   $label = 'g';
 }
-# Print short_text, full_text
-print "${label}";
-print " $temperature°C\n";
-print "${label}";
-print " $temperature°C\n";
 
 # Print color, if needed
 if ($temperature >= $t_crit) {
@@ -82,5 +77,10 @@ if ($temperature >= $t_crit) {
 } elsif ($temperature >= $t_warn) {
     print "#FFFC00\n";
 }
+# Print short_text, full_text
+print "${label}";
+print " $temperature°C\n";
+# print "${label}";
+# print " $temperature°C\n";
 
 exit 0;

@@ -30,9 +30,9 @@ binmode(STDOUT, ":utf8");
 my $t_warn = $ENV{T_WARN} || 70;
 my $t_crit = $ENV{T_CRIT} || 90;
 my $chip = $ENV{SENSOR_CHIP} || "";
-my $temperature = -9999;
+my $CPUtemperature = -9999;
 my $label = "😀 ";
-
+my $string = " ";
 sub help {
     print "Usage: temperature [-w <warning>] [-c <critical>] [--chip <chip>]\n";
     print "-w <percent>: warning threshold to become yellow\n";
@@ -47,39 +47,40 @@ GetOptions("help|h" => \&help,
            "chip=s" => \$chip);
 
 # Get chip temperature
-open (SENSORS, "sensors -u $chip |") or die;
+open (SENSORS, "inxi -s |") or die;
 while (<SENSORS>) {
-    if (/^\s+temp2_input:\s+[\+]*([\-]*\d+\.\d)/) {
-        $temperature = $1;
+    # if (/^\s+temp1_input:\s+[\+]*([\-]*\d+\.\d)/) {
+    if (/System\sTemperatures:\scpu:\s(\d+\.\d)\sC\smobo:\s(\d+\.\d)\sC\sgpu:\samdgpu\stemp:\s(\d+\.\d)\sC/) {
+        $CPUtemperature = $1;
         last;
     }
 }
 close(SENSORS);
 
-$temperature eq -9999 and die 'Cannot find temperature';
+# $CPUtemperature eq -9999 and die 'Cannot find temperature';
 
-if ($temperature < 45) {
+if ($CPUtemperature < 45) {
   $label = '';
-} elsif ($temperature < 55) {
+} elsif ($CPUtemperature < 55) {
   $label = '';
-} elsif ($temperature < 65) {
+} elsif ($CPUtemperature < 65) {
   $label = '';
-} elsif ($temperature < 75) {
+} elsif ($CPUtemperature < 75) {
   $label = '';
 } else {
-  $label = '';
+  $label = 'g';
 }
 # Print short_text, full_text
 print "${label}";
-print " $temperature°C\n";
+print " $CPUtemperature°C\n";
 print "${label}";
-print " $temperature°C\n";
+print " $CPUtemperature°C\n";
 
 # Print color, if needed
-if ($temperature >= $t_crit) {
+if ($CPUtemperature >= $t_crit) {
     print "#FF0000\n";
     exit 33;
-} elsif ($temperature >= $t_warn) {
+} elsif ($CPUtemperature >= $t_warn) {
     print "#FFFC00\n";
 }
 
