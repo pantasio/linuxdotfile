@@ -30,7 +30,7 @@ binmode(STDOUT, ":utf8");
 my $t_warn = $ENV{T_WARN} || 70;
 my $t_crit = $ENV{T_CRIT} || 90;
 my $chip = $ENV{SENSOR_CHIP} || "";
-my $temperature = -9999;
+my $temperature = -99;
 my $label = "😀 ";
 sub help {
     print "Usage: temperature [-w <warning>] [-c <critical>] [--chip <chip>]\n";
@@ -56,7 +56,7 @@ while (<SENSORS>) {
 }
 close(SENSORS);
 
-# $temperature eq -9999 and die 'Cannot find temperature';
+# $temperature eq -99 and die 'Cannot find temperature';
 
 if ($temperature < 45) {
   $label = 'g';
@@ -80,7 +80,7 @@ if ($temperature >= $t_crit) {
 # Print short_text, full_text
 print "${label}";
 print " $temperature°C\n";
-# print "${label}";
-# print " $temperature°C\n";
+print "${label}";
+print " $temperature°C\n";
 
 exit 0;

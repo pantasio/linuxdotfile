@@ -1,8 +1,8 @@
 ## Stow example command
 
-'stow -nvt ~ fish'
-
-'stow --adopt -nvt ~ fish'
+`stow -nvt ~ fish`
+`stow --adopt -nvt ~ fish`
+`stow -vt $HOME/WorkSpace/Perl Obsidian-core`
 
 ## Reconfig i3wm but it didnt work
 

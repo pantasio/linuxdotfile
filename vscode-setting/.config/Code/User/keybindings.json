@@ -1,3 +1,6 @@
+// sample commend stype
+// todo
+// ! warning
 // Place your key bindings in this file to override the defaults
 /*
     In Visual mode:    
@@ -359,4 +362,22 @@
     "command": "-extension.vim_ctrl+h",
     "when": "editorTextFocus && vim.active && vim.use<C-h> && !inDebugRepl"
   }
+  // {
+  //   "key": "ctrl+j",
+  //   "command": "-workbench.action.togglePanel"
+  // },
+  // // Ctrl+ j/k to move cursor left/right in terminal workspace
+  // // Up: \u001b[{n}A
+  // // Down: \u001b[{n}B
+  // // Right: \u001b[{n}C
+  // // Left: \u001b[{n}D
+
+  // {
+  //   "key": "ctrl+j",
+  //   "command": "workbench.action.terminal.sendSequence",
+  //   "args": {
+  //     "text": "\u001b[{n}D"
+  //   },
+  //   "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  // }
 ]

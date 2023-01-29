@@ -335,7 +335,8 @@
   "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": false,
   "markdown.styles": [
     "vscode-setting/.config/Code/User/CustomMarkdownStyles.css"
-  ]
+  ],
+  "editor.tabSize": 2
 
   /* Evondev settings.jsona
     "editor.fontFamily": "SF Mono, Source Code Pro, Input Mono, Inconsolata,  Arial, Helvetica, sans-serif",

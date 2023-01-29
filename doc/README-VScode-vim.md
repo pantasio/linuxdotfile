@@ -1,7 +1,5 @@
 ## When edit the line
 
-Ctrl+h --- delete charactor
-
 ## Move cursor
 
 ### Ctrl+Home
@@ -14,7 +12,8 @@ Di chuyển con trỏ xuống cuối file (like G) mà vẫn giữ mode của co
 
 ### Ctrl+h
 
-Đang ở trong insert mode, Ctrl+h để xóa kí tự phía trước (giống backspace)
+Đang ở trong insert mode, hay cả ở terminal:
+Ctrl+h để xóa kí tự phía trước (giống backspace)
 
 ### Ctrl+Alt+ h/l
 
