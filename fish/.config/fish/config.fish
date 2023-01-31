@@ -33,7 +33,7 @@ end
 # First line removes the path; second line sets it.  Without the first line,
 # your path gets massive and fish becomes very slow.
 set -e fish_user_paths
-set -U fish_user_paths $HOME/.local/bin $HOME/Applications $fish_user_paths $ANDROID_SDK_ROOT/tools/bin $ANDROID_SDK_ROOT/tools $ANDROID_SDK_ROOT/platform-tools $ANDROID_SDK_ROOT/tools/emulator $HOME/.npm/.npm-global/bin
+set -U fish_user_paths $HOME/.local/bin $HOME/Applications $fish_user_paths $ANDROID_SDK_ROOT/tools/bin $ANDROID_SDK_ROOT/tools $ANDROID_SDK_ROOT/platform-tools $ANDROID_SDK_ROOT/tools/emulator $HOME/.npm/.npm-global/bin /opt/flutter/bin/
 
 ### EXPORT ###
 set fish_greeting # Supresses fish's intro message

@@ -1,4 +1,4 @@
-#!/usr/bin/env perl
+#!/usr/bin/perl
 # Copyright 2014 Pierre Mavro <deimos@deimos.fr>
 # Copyright 2014 Vivien Didelot <vivien@didelot.org>
 # Copyright 2014 Andreas Guldstrand <andreas.guldstrand@gmail.com>
@@ -47,13 +47,16 @@ GetOptions("help|h" => \&help,
 
 # Get chip temperature
 open (SENSORS, "inxi -s |") or die;
+# open (SENSORS, "sensors -u $chip |") or die;
 while (<SENSORS>) {
-    # if (/^\s+temp1_input:\s+[\+]*([\-]*\d+\.\d)/) {
+    # if (/temp1_input:\s+(\d+\.\d)/) {
     if (/System\sTemperatures:\scpu:\s(\d+\.\d)\sC\smobo:\s(\d+\.\d)\sC\sgpu:\samdgpu\stemp:\s(\d+\.\d)\sC/) {
+        # $temperature = $1;
         $temperature = $3;
+        # say("$temperature");
         last;
     }
-}
+};
 close(SENSORS);
 
 # $temperature eq -99 and die 'Cannot find temperature';
@@ -80,7 +83,7 @@ if ($temperature >= $t_crit) {
 # Print short_text, full_text
 print "${label}";
 print " $temperature°C\n";
-print "${label}";
-print " $temperature°C\n";
+# print "${label}";
+# print " $temperature°C\n";
 
 exit 0;

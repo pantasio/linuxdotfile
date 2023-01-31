@@ -3,6 +3,9 @@ include $HOME/.config/i3/i3workspace.conf
 include $HOME/.config/i3/i3app.conf
 
 #################
+################# Change icon of workspace
+# /home/bungbu/linuxdotfile/i3/.config/polybar/wm/i3wm.ini
+
 ################# Start of all the settings
 
 # KEY DEFINITIONS TO REMEMBER
