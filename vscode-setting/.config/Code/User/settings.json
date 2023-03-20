@@ -328,15 +328,27 @@
   // switch to the Debug Console when starting a session, so you can see the
   // programs output.
   "debug.internalConsoleOptions": "openOnSessionStart",
+  // 
+
+  // ########################
+  // markdown preview setting
+  // ########################
+
   "markdown.preview.fontFamily": "'SauceCodePro Nerd Font', -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif",
   "markdown-preview-enhanced.codeBlockTheme": "darcula.css",
   "markdown-preview-enhanced.mermaidTheme": "default",
   "markdown-preview-enhanced.previewTheme": "atom-dark.css",
   "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": false,
   "markdown.styles": [
-    "vscode-setting/.config/Code/User/CustomMarkdownStyles.css"
+    "$HOME/.config/Code/User/CustomMarkdownStyles.css"
   ],
-  "editor.tabSize": 2
+  // #########################
+
+  "editor.tabSize": 2,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "gitlens.views.contributors.showStatistics": true
 
   /* Evondev settings.jsona
     "editor.fontFamily": "SF Mono, Source Code Pro, Input Mono, Inconsolata,  Arial, Helvetica, sans-serif",

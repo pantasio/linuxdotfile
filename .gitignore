@@ -16,3 +16,5 @@ musicplayer/.config/mpd/sticker.sql
 musicplayer/.config/mpd/playlists/*
 
 nextCommit.md
+tmp/
+markdownstyles.css
