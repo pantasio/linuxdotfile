@@ -85,7 +85,7 @@
   //
   // In Editor, toogle open/close filesExplorer on left side
   {
-    "key": "ctrl+left",
+    "key": "ctrl+Right",
     "command": "workbench.action.toggleSidebarVisibility",
     "when": "editorTextFocus"
   },
@@ -151,22 +151,9 @@
     "command": "-editor.action.clipboardCutAction"
   },
 
-  //
-  //
-  /*Dont know what to do*/
-  {
-    "key": "ctrl+b",
-    "command": "workbench.action.toggleSidebarVisibility",
-    "when": "!editorTextFocus"
-  },
-  {
-    "key": "ctrl+b",
-    "command": "-workbench.action.toggleSidebarVisibility"
-  },
-
   /*
     2 Way to Copy Line Down
-    */
+  */
   {
     "key": "ctrl+alt+j",
     "command": "editor.action.copyLinesDownAction",
@@ -252,7 +239,7 @@
   // How to use: Move Cursor to the line -> Ctrl+shift+p -> Ctrl+Enter
 
   //============
-  // Run current line in a terminal
+  // Setele text and  Run in a terminal
   {
     "key": "ctrl+enter",
     "command": "workbench.action.terminal.runSelectedText",

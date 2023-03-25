@@ -4,6 +4,21 @@ OS base system: ArchLinux
 
 ## System app:
 
+some thing in your eyes,  
+paragrap
+
+### aaaa
+
+#### bbbbbbbb
+
+##### cccccccccc
+
+```
+python code here with some comment
+```
+
+`inline comment`
+
 What apps I use daily:
 
 - Terminal: I use [terminator](https://terminator-gtk3.readthedocs.io/en/latest/), bash + fish shell, [Starship](https://starship.rs/) theme for fish
@@ -66,3 +81,11 @@ link: [firefox theme](https://color.firefox.com/?theme=XQAAAAIkAQAAAAAAAABBqYhm8
 ### Add polybar
 
 ### Install script -> $HOME/.local/bin
+
+### Markdown style
+
+in linuxdotfiles:
+
+```
+ln -s ./mdstyle/markdownstyles.css .
+```
