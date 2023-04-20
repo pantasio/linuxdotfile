@@ -10,11 +10,74 @@
 
 
 */
+
+/* -------------------------------------------------------
+?     ===== sample keybinding =========
+  *  Multi command
+  {
+  "key": "ctrl+alt+c",
+  "command": "runCommands",
+  "args": {
+    "commands": [
+      "editor.action.copyLinesDownAction",
+      "cursorUp",
+      "editor.action.addCommentLine",
+      "cursorDown"
+    ]
+  }
+  },
+  *  Multi command with argument
+  {
+  "key": "ctrl+n",
+  "command": "runCommands",
+  "args": {
+    "commands": [
+      {
+        "command": "workbench.action.files.newUntitledFile",
+        "args": {
+          "languageId": "typescript"
+        }
+      },
+      {
+        "command": "editor.action.insertSnippet",
+        "args": {
+          "langId": "typescript",
+          "snippet": "class ${1:ClassName} {\n\tconstructor() {\n\t\t$0\n\t}\n}"
+        }
+      }
+    ]
+  }
+  },
+*/
+
+/*
+?     ===== sample keybinding =========
+-----------------  END ---------------------------------*/
+
 [
+  /* -------------------------------------------------------
+  ?     ===== Disable keybinding =========
+     
+  */
+  {
+    "key": "ctrl+o",
+    "command": "-workbench.action.files.openFile",
+    "when": "true"
+  },
+  // Disable create new vscode
+  {
+    "key": "ctrl+shift+n",
+    "command": "-workbench.action.newWindow"
+  },
+
+  /*
+  ?     ===== Disable keybinding =========
+  -----------------  END ---------------------------------*/
+
   //#####Begin{
   // In Visual mode only
   // unkeyblinding alt+ down or up
-  // Use alt+j or k to move line down or up
+  // Use ctrl+j or k to move line down or up
   {
     "key": "ctrl+j",
     "command": "editor.action.moveLinesDownAction",
@@ -47,6 +110,7 @@
     "command": "renameFile",
     "when": "explorerViewletVisible && filesExplorerFocus"
   },
+  // Disable Enter to rename file
   {
     "key": "enter",
     "command": "-renameFile",
@@ -85,13 +149,13 @@
   //
   // In Editor, toogle open/close filesExplorer on left side
   {
-    "key": "ctrl+Right",
+    "key": "ctrl+right",
     "command": "workbench.action.toggleSidebarVisibility",
     "when": "editorTextFocus"
   },
   //
   //
-  // In editorTextFocus, move up/down the line
+  // In selete option, move up/down to chose the option
   {
     "key": "ctrl+k",
     "command": "list.focusUp",
@@ -109,6 +173,9 @@
   //     "command": "workbench.action.terminal.toggleMaximizedTerminal",
   //     "when": "terminal.active"
   // },
+  /* -------------------------------------------------------
+       ?===== Control terminal =========
+  */
   {
     "key": "ctrl+`",
     "command": "workbench.action.terminal.toggleTerminal",
@@ -118,21 +185,41 @@
     "key": "ctrl+shift+`",
     "command": "workbench.action.toggleMaximizedPanel"
   },
+  /*
+       ?===== Control terminal =========
+  -----------------  END ---------------------------------*/
 
-  //===============
-  // Can't use Ctrl+c Ctrl+x Ctrl+v anymore
-  // Pls use: Ctrl+Shift+c ...
+  /* -------------------------------------------------------
+  ?     ===== Copy Cut Paste =========
+  Don't use Ctrl+c Ctrl+x Ctrl+v, We use: Ctrl+Shift+c ...
+  */
+  // 2 way to copy: selete text in visual mode, use yang (y) or ctrl+shift+C
   {
     "key": "ctrl+shift+c",
-    "command": "editor.action.clipboardCopyAction"
+    "command": "runCommands",
+    "args": {
+      "commands": ["editor.action.clipboardCopyAction", "extension.vim_escape"]
+    }
   },
+  // Paste under cursor
+  {
+    "key": "ctrl+shift+v",
+    "command": "runCommands",
+    "args": {
+      "commands": ["editor.action.clipboardPasteAction", "extension.vim_escape"]
+    }
+  },
+  {
+    "key": "ctrl+shift+x",
+    "command": "runCommands",
+    "args": {
+      "commands": ["editor.action.clipboardCutAction", "extension.vim_escape"]
+    }
+  },
+  // Disable key
   {
     "key": "ctrl+c",
     "command": "-editor.action.clipboardCopyAction"
-  },
-  {
-    "key": "ctrl+shift+v",
-    "command": "editor.action.clipboardPasteAction"
   },
   {
     "key": "ctrl+v",
@@ -143,17 +230,30 @@
     "command": "-editor.action.clipboardPasteAction"
   },
   {
-    "key": "ctrl+shift+x",
-    "command": "editor.action.clipboardCutAction"
-  },
-  {
     "key": "ctrl+x",
     "command": "-editor.action.clipboardCutAction"
   },
 
   /*
+  ?     ===== Copy Cut Paste =========
+  -----------------  END ---------------------------------*/
+
+  //
+  //
+  /*Dont know what to do*/
+  {
+    "key": "ctrl+b",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "!editorTextFocus"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "-workbench.action.toggleSidebarVisibility"
+  },
+
+  /*
     2 Way to Copy Line Down
-  */
+    */
   {
     "key": "ctrl+alt+j",
     "command": "editor.action.copyLinesDownAction",
@@ -205,41 +305,23 @@
     "command": "workbench.action.moveEditorToNextGroup"
   },
   //
-  // Why use it? when we can use H/L to move cursor
   //
-  /* Add More way to move cursor
-        - Up Down Left Right
-        - HJKL in normal or Visual mode
-            + alt+j : move cursor to left
-            + alt+k : move cursor to right
-
-    */
-  // {
-  //     "key": "alt+j",
-  //     "command": "cursorLeft",
-  //     "when": "textInputFocus"
-  // },
-  // {
-  //     "key": "left",
-  //     "command": "cursorLeft",
-  //     "when": "textInputFocus"
-  // },
-  // {
-  //     "key": "alt+k",
-  //     "command": "cursorRight",
-  //     "when": "textInputFocus"
-  // },
-  // {
-  //     "key": "Right",
-  //     "command": "cursorRight",
-  //     "when": "textInputFocus"
-  // },
+  //
+  /* {
+    "key": "alt+q", // whatever keybinding you want
+    "command": "editor.action.insertSnippet",
+    "args": {
+      "name": "Variable Declaration Comment"
+    },
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+ */
   //
   //
   // How to use: Move Cursor to the line -> Ctrl+shift+p -> Ctrl+Enter
 
   //============
-  // Setele text and  Run in a terminal
+  // Run current line in a terminal
   {
     "key": "ctrl+enter",
     "command": "workbench.action.terminal.runSelectedText",
@@ -257,20 +339,13 @@
     "command": "-editor.action.insertLineBefore",
     "when": "editorTextFocus && !editorReadonly"
   },
-  //=========================================
-
-  //
-  //
-  // ================================================
-  //=============
-  /*Disable Close VScode by press:
+  /*
+  ?     ===== make it harder to close file =========
+  Disable Close VScode by press:
         - Ctrl+Shift+w
         - Alt+f4
-    If you wanna close use i3wm: Ctrl+shift+q
-    */
-  //
-  //
-  // make too Hard close file
+  If you wanna close use i3wm: Ctrl+shift+q
+  */
   {
     "key": "ctrl+shift+w",
     "command": "-workbench.action.closeWindow"
@@ -279,7 +354,7 @@
     "key": "alt+f4",
     "command": "-workbench.action.closeWindow"
   },
-  // make hard to close editor
+  // Close editor
   {
     "key": "ctrl+shift+w",
     "command": "workbench.action.closeActiveEditor"
@@ -293,8 +368,11 @@
     "key": "ctrl+q",
     "command": "-workbench.action.quit"
   },
+  /*
+  ?     ===== make it harder to close file =========
+  -----------------  END ---------------------------------*/
 
-  //
+  // Replace in File
   {
     "key": "ctrl+shift+h",
     "command": "workbench.action.replaceInFiles"
@@ -320,7 +398,17 @@
     "command": "selectPrevSuggestion",
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
   },
-  // Use advanceNewFile
+  /* -------------------------------------------------------
+  ? START     ===== Dont Use Advanced New File =========
+       
+  */
+  
+       
+  /*
+  ?     ===== Dont Use Advanced New File =========
+  -----------------  END ---------------------------------*/
+  
+  /* // Use advanceNewFile
   {
     "key": "ctrl+n",
     "command": "-extension.vim_ctrl+n",
@@ -328,7 +416,7 @@
   },
   {
     "key": "ctrl+n",
-    "command": "extension.advancedNewFile"
+    "command": "newFile.createNewFile"
   },
   {
     "key": "ctrl+alt+n",
@@ -337,7 +425,7 @@
   {
     "key": "ctrl+n",
     "command": "-workbench.action.files.newUntitledFile"
-  },
+  }, */
   // I still dont know setting Ctrl+h to delete charactor in insert mode
   {
     "key": "ctrl+h",
@@ -348,7 +436,60 @@
     "key": "ctrl+h",
     "command": "-extension.vim_ctrl+h",
     "when": "editorTextFocus && vim.active && vim.use<C-h> && !inDebugRepl"
+  },
+
+  /* -------------------------------------------------------
+  ?     ===== File Utils keybinding =========
+       
+  */
+  {
+    "key": "ctrl+d",
+    "command": "fileutils.removeFile",
+    "when": "filesExplorerFocus"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "fileutils.renameFile",
+    "when": "filesExplorerFocus"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "fileutils.newFile"
+  },
+  {
+    "key": "ctrl+x",
+    "command": "fileutils.moveFile",
+    "when": "filesExplorerFocus"
+  },
+
+  /*
+  ?     ===== File Utils keybinding =========
+  -----------------  END ---------------------------------*/
+
+  /* -------------------------------------------------------
+  ?     ===== Swap default comment line with block comment =========
+       
+  */
+  {
+    "key": "ctrl+/",
+    "command": "editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+/",
+    "command": "-editor.action.commentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  // Disable
+  {
+    "key": "ctrl+shift+a",
+    "command": "-editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
   }
+  /*
+  ?     ===== Swap default comment line with block comment =========
+  -----------------  END ---------------------------------*/
+
   // {
   //   "key": "ctrl+j",
   //   "command": "-workbench.action.togglePanel"

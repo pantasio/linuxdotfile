@@ -328,7 +328,7 @@
   // switch to the Debug Console when starting a session, so you can see the
   // programs output.
   "debug.internalConsoleOptions": "openOnSessionStart",
-  // 
+  //
 
   // ########################
   // markdown preview setting
@@ -339,9 +339,7 @@
   "markdown-preview-enhanced.mermaidTheme": "default",
   "markdown-preview-enhanced.previewTheme": "atom-dark.css",
   "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": false,
-  "markdown.styles": [
-    "$HOME/.config/Code/User/CustomMarkdownStyles.css"
-  ],
+  "markdown.styles": ["./MarkdownStyles.css"],
   // #########################
 
   "editor.tabSize": 2,

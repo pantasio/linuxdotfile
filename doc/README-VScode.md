@@ -63,22 +63,21 @@ x delete character.
 ~ switch lower and upper cases and move cursor to next character in normal mode
 r replace the current character with the next character typed, still in normal mode
 
-example: this is 'new world and "the beauti" {the sea is dark}' [in your dream] (nightmare) cursor to end of word and goto edit mode from cursor to end of word and goto edit mode
+example: this is 'new world and "the beauti" {the sea is dark}' [in your dream] (nightmare) 
+cursor to end of word and goto edit mode from cursor to end of word and goto edit mode
 
 ## Manage window
-
 Ctrl + 1 focus editor 1
 Ctrl + 2 focus editor 2
 
-Ctrl + Shift + W close file editing
-Ctrl + Shift + E focus to file explorer
+Ctrl + Shift + W        close file editing
+Ctrl + Shift + E        focus to file explorer
+Spacebar + T       toggleSidebarVisibility
 
 ## Zen mode
-
 this is view like Vim editor
 
 ## KeyBinding
-
 =============
 == Ctrl + key
 Ctrl + Left ......... Toggle Primary sidebar Visible

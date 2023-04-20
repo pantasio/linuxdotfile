@@ -168,6 +168,10 @@ p {
   color: var(--text-normal);
   font-family: "SauceCodePro Nerd Font";
   -webkit-font-smoothing: antialiased;
+  orphans: 3;
+  widows: 3;
+  margin-top: 1.4em;
+  margin-bottom: 1.4em;
 }
 
 ul,
