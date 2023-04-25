@@ -69,6 +69,31 @@
     "key": "ctrl+shift+n",
     "command": "-workbench.action.newWindow"
   },
+  {
+    "key": "ctrl+d",
+    "command": "-list.focusPageDown",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "-extension.vim_ctrl+d",
+    "when": "editorTextFocus && vim.active && vim.use<C-d> && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+u",
+    "command": "-list.focusPageUp",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "ctrl+u",
+    "command": "-extension.vim_ctrl+u",
+    "when": "editorTextFocus && vim.active && vim.use<C-u> && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+u",
+    "command": "-cursorUndo",
+    "when": "textInputFocus"
+  },
 
   /*
   ?     ===== Disable keybinding =========
@@ -477,7 +502,7 @@
   },
   {
     "key": "ctrl+shift+/",
-    "command": "-editor.action.commentLine",
+    "command": "editor.action.commentLine",
     "when": "editorTextFocus && !editorReadonly"
   },
   // Disable
@@ -485,7 +510,13 @@
     "key": "ctrl+shift+a",
     "command": "-editor.action.blockComment",
     "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "-editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus"
   }
+  
   /*
   ?     ===== Swap default comment line with block comment =========
   -----------------  END ---------------------------------*/
