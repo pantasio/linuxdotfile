@@ -25,7 +25,7 @@ abbr -a gbd git branch --delete
 ### Feature
 # begin create feature
 # git flow feature start authentication
-# abbr -a gffs git flow feature start
+abbr -a gffs git flow feature start
 
 #alias gffs= "git branch %% \
 #git flow feature start"
@@ -78,7 +78,7 @@ abbr -a gl git log --relative-date --all --decorate --graph --abbrev-commit -10
 
 ####
 # Untrack file
-# File still in project but dont wanna track it anymore
-abbr -a guntrack git update-index --assume-unchanged FILE_NAME
+# File still in project but dont wanna track File-Name anymore
+abbr -a guntrack git update-index --assume-unchanged 
 # Track it again
-abbr -a gtrack git update-index --no-assume-unchanged FILE_NAME 
+abbr -a gtrack git update-index --no-assume-unchanged  
