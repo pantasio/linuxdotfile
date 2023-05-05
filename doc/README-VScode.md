@@ -30,7 +30,7 @@ w/b = word / back moving cursor in the same line
 gg move cursor to Begin - on top of file
 G move cursor to End - bottom of file
 
-- Move Line Up/Down : Ctrl + j/k TIPS: you wanna move multi-line at the same time, visual mode and selete line then move them.
+- Move Line Up/Down : Ctrl + j/k TIPS: you wanna move multi-line at the same time, visual mode and selected line then move them.
 
 ### Insert Mode
 

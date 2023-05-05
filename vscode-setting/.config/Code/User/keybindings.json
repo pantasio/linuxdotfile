@@ -180,7 +180,7 @@
   },
   //
   //
-  // In selete option, move up/down to chose the option
+  // In selected option, move up/down to chose the option
   {
     "key": "ctrl+k",
     "command": "list.focusUp",
@@ -218,7 +218,7 @@
   ?     ===== Copy Cut Paste =========
   Don't use Ctrl+c Ctrl+x Ctrl+v, We use: Ctrl+Shift+c ...
   */
-  // 2 way to copy: selete text in visual mode, use yang (y) or ctrl+shift+C
+  // 2 way to copy: selected text in visual mode, use yang (y) or ctrl+shift+C
   {
     "key": "ctrl+shift+c",
     "command": "runCommands",
@@ -352,7 +352,7 @@
     "command": "workbench.action.terminal.runSelectedText",
     "when": "editorTextFocus && editorHasSelection"
   },
-  // make it better when seleted = 0 run this line in terminal
+  // make it better when selectedd = 0 run this line in terminal
   // I use oO to create new line
   {
     "key": "ctrl+enter",
@@ -402,7 +402,7 @@
     "key": "ctrl+shift+h",
     "command": "workbench.action.replaceInFiles"
   },
-  // Use tab to selete Suggestion
+  // Use tab to selected Suggestion
   {
     "key": "tab",
     "command": "selectNextSuggestion",

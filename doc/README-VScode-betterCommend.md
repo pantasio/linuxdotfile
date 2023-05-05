@@ -13,4 +13,4 @@ TODO: is
  -->
 
 Ctrl+/          ......  toggle comment line or multi-line
-Ctrl+Shift+/    ......  Comment seleted text  
+Ctrl+Shift+/    ......  Comment selectedd text  

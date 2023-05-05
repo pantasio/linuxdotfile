@@ -150,7 +150,7 @@
   /* ================================ 
                 In Visual mode
        ================================ */
-  // in visual mode, press v and selete many row
+  // in visual mode, press v and selected many row
   "vim.visualModeKeyBindingsNonRecursive": [
     {
       "before": [">"],
@@ -346,7 +346,24 @@
   "[python]": {
     "editor.formatOnType": true
   },
-  "gitlens.views.contributors.showStatistics": true
+  "gitlens.views.contributors.showStatistics": true,
+  /* -------------------------------------------------------
+	* START     ===== Spell Check =========
+			 
+	*/
+  "cSpell.showCommandsInEditorContextMenu": false,
+	"cSpell.language": "en,en-US,vi",
+	"cSpell.userWords": [
+		"Commandline",
+		"Dont",
+		"fileutils",
+		"icontheme",
+		"pantasio"
+	]
+			 
+	/*
+	*     ===== Spell Check =========
+	-----------------  END ---------------------------------*/
 
   /* Evondev settings.jsona
     "editor.fontFamily": "SF Mono, Source Code Pro, Input Mono, Inconsolata,  Arial, Helvetica, sans-serif",
