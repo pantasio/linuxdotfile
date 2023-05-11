@@ -5,6 +5,7 @@ alias efag='vim ~/.config/fish/alias/git.fish'
 
 ### ALIASES ###
 alias clear='/bin/clear; echo; echo; seq 1 (tput cols) | sort -R | spark | lolcat; echo; echo'
+alias lgit='lazygit'
 
 # root privileges
 alias doas="doas --"
