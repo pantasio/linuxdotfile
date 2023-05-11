@@ -120,6 +120,7 @@ echo 'pg          google.com' && \
 echo 'per         router ER' && \
 echo 'pwifi       your wifi mercusys AC10' && \
 echo 'pbr         Bright from Internet'"
+
 alias pg="ping 1.1.1.1"
 alias pwifi="echo '👍 ping you wifi' && ping -c 5 192.168.100.2"
 alias per="ping 192.168.100.1"
