@@ -7,6 +7,11 @@ source ~/.config/fish/alias/testtool.fish
 ########## Set swap Caplock and ESC
 setxkbmap -option caps:swapescape
 
+
+######### Set Some path variables
+set DOTFILE "$HOME/linuxdotfile/"
+
+
 #-----------
 ### Flutter setting
 # set -Ux JAVA_OPTS '-XX:+IgnoreUnrecognizedVMOptions --add-modules java.se.ee'
@@ -19,6 +24,8 @@ set -x CHROME_EXECUTABLE /usr/bin/google-chrome-stable
 # VScode snippets var
 set -x VSCODE_SNIPPET $HOME/.config/Code/User/snippets
 set -x SCR_SNIPPET $HOME/WorkSpace/VScode-snippets
+
+# ReCreate link when Snippet is updated.
 abbr -a vsnippet "rm -f $VSCODE_SNIPPET && ln -s $SCR_SNIPPET/snippets $VSCODE_SNIPPET"
 
 

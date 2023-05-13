@@ -1,0 +1,38 @@
+os:
+  editPreset: 'lvim' # see 'Configuring File Editing' section
+  edit: 'lvim {{filename}}'
+  editAtLine: 'lvim --line={{line}} {{filename}}'
+  editAtLineAndWait: 'lvim --block --line={{line}} {{filename}}'
+  editInTerminal: true
+  open: ''
+  openLink: ''
+git:
+  paging:
+    colorArg: always
+    useConfig: true
+gui:
+  showFileTree: true
+  showIcons: true
+  theme:
+    activeBorderColor:
+      - '#1eaeff'
+      - bold
+    inactiveBorderColor:
+    - "#cdd6f4" # Text
+    optionsTextColor:
+      - "#89b4fa" # Blue
+    selectedLineBgColor:
+      - "#313244" # Surface0
+    selectedRangeBgColor:
+      - "#313244" # Surface0
+    cherryPickedCommitBgColor:
+      - "#94e2d5" # Teal
+    cherryPickedCommitFgColor:
+      - "#89b4fa" # Blue
+    unstagedChangesColor:
+      - red       # Red
+  authorColors:
+    # use red for John Smith
+    'pantasio': '#27b35f'
+    # use blue for other authors
+    '*': '#0000ff'
