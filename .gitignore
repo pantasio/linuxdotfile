@@ -17,4 +17,12 @@ musicplayer/.config/mpd/playlists/*
 
 nextCommit.md
 tmp/
-MarkdownStyles.css
+mdstyles.css
+
+# HUGO site
+.vscode
+node_modules
+public
+resources
+.netlify
+.hugo_build.lock

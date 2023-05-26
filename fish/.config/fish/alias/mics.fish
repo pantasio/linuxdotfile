@@ -20,6 +20,9 @@ alias .5='cd ../../../../..'
 # File size
 alias fs="stat -f \"%z bytes\""
 
+# Quit = exit
+alias quit="exit"
+
 # vim and emacs
 # alias vim='nvim'
 
@@ -83,7 +86,25 @@ alias gpg-check="gpg2 --keyserver-options auto-key-retrieve --verify"
 # receive the key of a developer
 alias gpg-retrieve="gpg2 --keyserver-options auto-key-retrieve --receive-keys"
 
-# youtube-dl
+# yt-dlp
+alias ydl720="yt-dlp -f 'bv*[height=720]+ba' "
+alias ydl1080="yt-dlp -f 'bv*[height=1080]+ba' "
+## include Twitch, Vimeo, Twitter, Instagram
+#
+alias ydla="yt-dlp --extract-audio --audio-quality 0 "
+alias ydlmp3="yt-dlp --extract-audio --audio-format mp3 --audio-quality 0 "
+alias ydlm4a="yt-dlp --extract-audio --audio-format m4a --audio-quality 0 "
+alias ydlacc="yt-dlp --extract-audio --audio-format acc --audio-quality 0 "
+# download in file
+# yt-dlp -a filename
+#
+# Download subtitle 
+# yt-dlp --write-subs --sub-langs en
+#
+## Update yt-dlp
+alias ydl-U="yt-dlp -U"
+
+
 alias yta-aac="youtube-dl --extract-audio --audio-format aac "
 alias yta-best="youtube-dl --extract-audio --audio-format best "
 alias yta-flac="youtube-dl --extract-audio --audio-format flac "

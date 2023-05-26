@@ -28,6 +28,21 @@ set -x SCR_SNIPPET $HOME/WorkSpace/VScode-snippets
 # ReCreate link when Snippet is updated.
 abbr -a vsnippet "rm -f $VSCODE_SNIPPET && ln -s $SCR_SNIPPET/snippets $VSCODE_SNIPPET"
 
+# mdstles
+# Go into project
+set -x MDSTYLES $DOTFILE/MarkdownStyles/mdstyles.css
+abbr -a mdstyle "ln -s $MDSTYLES ."
+
+#-------------
+# Make ln to new project
+# go into new Obsidian project,  
+set -x OBSIDIANVN $HOME/WorkSpace/Obsidian/Obsidian-core
+
+abbr -a obsidianln "ln -s $OBSIDIANVN/.obsidian/ . && 
+ln -s $OBSIDIANVN/002-Obsidian/ ./002-Obsidian && 
+mkdir -p ./003-Daily &&
+echo DONE"
+
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
@@ -309,6 +324,8 @@ set -x fish_cursor_insert line
 set -x fish_cursor_replace_one underscore
 # ---------------------------------------------------------------
 ########## make terminal clear when load form bash
+
+# ------
 clear
 # ⛔
 # 👍 
