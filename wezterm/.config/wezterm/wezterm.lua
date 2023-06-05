@@ -3,10 +3,10 @@ local wezterm = require("wezterm")
 -- local launch_menu = {}
 -- local default_shell = "/bin/zsh"
 local padding = {
-	left = "1cell",
-	right = "1cell",
-	top = "0.5cell",
-	bottom = "0.5cell",
+	left = "0.2cell",
+	right = "0.2cell",
+	top = "0.2cell",
+	bottom = "0.2cell",
 }
 
 -- Reload the configuration every ten minutes
@@ -48,11 +48,11 @@ return {
 		{
 			intensity = "Bold",
 			font = font_with_fallback({
-				family = "FiraCode Nerd Font",
+				family = "SFMono Nerd Font Mono",
 				harfbuzz_features = {
 					"zero",
 				},
-				weight = "Medium",
+				weight = "DemiBold",
 			}),
 		},
 		{
