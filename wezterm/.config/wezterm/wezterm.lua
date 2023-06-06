@@ -6,7 +6,7 @@ local padding = {
 	left = "0.2cell",
 	right = "0.2cell",
 	top = "0.2cell",
-	bottom = "0.2cell",
+	bottom = "0.2px",
 }
 
 -- Reload the configuration every ten minutes
@@ -33,11 +33,26 @@ local function get_theme()
 	end
 end
 
+-- 
+--
+-- local config = {
+--
+-- }
+--
+-- return config
+
 return {
+  max_fps = 144,
 	bidi_enabled = true,
 	bidi_direction = "AutoLeftToRight",
-	color_scheme = get_theme(),
-	font = font_with_fallback({
+	-- color_scheme = get_theme(),
+	color_scheme = 'Ayu Mirage',
+
+  --
+  -- Font
+	line_height = 1.30,
+	font_size = 10.5,
+  font = font_with_fallback({
 		-- family = "FiraCode Nerd Font",
 		family = "SFMono Nerd Font Mono",
 		harfbuzz_features = {
@@ -75,6 +90,16 @@ return {
 			}),
 		},
 	},
+
+  -- Tab bar
+    enable_tab_bar = true,
+    hide_tab_bar_if_only_one_tab = true,
+    show_tab_index_in_tab_bar = true,
+    tab_bar_at_bottom = true,
+    tab_max_width = 25,
+
+
+
 	-- leader = { key = "a", mods = "CTRL" },
 	-- keys = {
 	-- 	-- Send "CTRL-A" to the terminal when pressing CTRL-A, CTRL-A
@@ -109,17 +134,18 @@ return {
 	use_dead_keys = false,
 	window_padding = padding,
 	window_decorations = "RESIZE",
-	hide_tab_bar_if_only_one_tab = true,
 	selection_word_boundary = " \t\n{}[]()\"'`,;:@",
 	-- disable_default_key_bindings = true,
-	line_height = 1.30,
-	font_size = 10.5,
 	window_background_opacity = 0.85,
 	bold_brightens_ansi_colors = false,
+
+  scrollback_lines = 3500,
+  enable_scroll_bar = true,
+
+
 	-- swap_backspace_and_delete = false,
 	-- term = "wezterm",
-	-- freetype_load_target = "Light",
-	
+	-- freetype_load_target = "Light",	
 	-- unicode_version = 15,
 	-- window_close_confirmation = 'NeverPrompt',
   	-- window_padding = {
