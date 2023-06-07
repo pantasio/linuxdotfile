@@ -1,3 +1,4 @@
+-- Special key: <ESC> <CR> <cmd> 
 -- n, v, i, t = mode names
 
 local M = {}
@@ -14,10 +15,10 @@ M.general = {
     ["<A-k>"] = {"<Esc>:m .-2<CR>==gi","Move line up in insert mode"},
 
     -- navigate within insert mode
-    ["<C-h>"] = { "<Left>", "move left" },
-    ["<C-l>"] = { "<Right>", "move right" },
-    ["<C-j>"] = { "<Down>", "move down" },
-    ["<C-k>"] = { "<Up>", "move up" },
+    ["<C-h>"] = { "<BS>", "move left" },
+    ["<C-l>"] = { "<Del>", "move right" },
+    ["<C-j>"] = { "<Left>", "move down" },
+    ["<C-k>"] = { "<Right>", "move up" },
   },
   -- normal mode
   n = {
@@ -27,6 +28,10 @@ M.general = {
     ["<C-l>"] = { "<C-w>l", "window right" },
     ["<C-j>"] = { "<C-w>j", "window down" },
     ["<C-k>"] = { "<C-w>k", "window up" },
+
+    -- Copy line down
+    ["<C-A-j>"] = { ":copy .<Enter>" , "copy line down" },
+    ["<C-A-k>"] = { ":copy .-1<Enter>" , "copy line up" },
 
     -- Move current line / block with Alt-j/k a la vscode.
     ["<A-j>"] = { ":m .+1<CR>==", "Move line/block down" },
