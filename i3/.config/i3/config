@@ -306,6 +306,11 @@ exec --no-startup-id pamac-tray
 # network
 exec --no-startup-id nm-applet
 
+# Clipboard
+exec_always --no-startup-id "copyq"
+bindsym $mod+z exec "copyq -e 'if (visible()) hide(); else showAt(960, 840)'" 
+
+
 # num lock activated
 exec_always --no-startup-id numlockx on
 

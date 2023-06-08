@@ -17,8 +17,8 @@ M.general = {
     -- navigate within insert mode
     ["<C-h>"] = { "<BS>", "move left" },
     ["<C-l>"] = { "<Del>", "move right" },
-    ["<C-j>"] = { "<Left>", "move down" },
-    ["<C-k>"] = { "<Right>", "move up" },
+    ["<C-j>"] = { "<Left>", "Arrow Left" },
+    ["<C-k>"] = { "<Right>", "Arrow Right" },
   },
   -- normal mode
   n = {
@@ -26,16 +26,16 @@ M.general = {
     -- switch between windows
     ["<C-h>"] = { "<C-w>h", "window left" },
     ["<C-l>"] = { "<C-w>l", "window right" },
-    ["<C-j>"] = { "<C-w>j", "window down" },
-    ["<C-k>"] = { "<C-w>k", "window up" },
+    -- ["<C-j>"] = { "<C-w>j", "window down" },
+    -- ["<C-k>"] = { "<C-w>k", "window up" },
 
     -- Copy line down
     ["<C-A-j>"] = { ":copy .<Enter>" , "copy line down" },
     ["<C-A-k>"] = { ":copy .-1<Enter>" , "copy line up" },
 
     -- Move current line / block with Alt-j/k a la vscode.
-    ["<A-j>"] = { ":m .+1<CR>==", "Move line/block down" },
-    ["<A-k>"] = { ":m .-2<CR>==", "Move line/block up"},
+    ["<C-j>"] = { ":m .+1<CR>==", "Move line/block down" },
+    ["<C-k>"] = { ":m .-2<CR>==", "Move line/block up"},
 
     -- save
     ["<C-s>"] = { "<cmd> w <CR>", "save file" },
@@ -64,6 +64,8 @@ M.general = {
   --terminal mode
   t = {
     ["<C-x>"] = { vim.api.nvim_replace_termcodes("<C-\\><C-N>", true, true, true), "escape terminal mode" },
+    -- try to autoComplete
+    ["<C-j>"] = { "<Left>", "Arrow Left" },
   },
   --
   -- visual mode

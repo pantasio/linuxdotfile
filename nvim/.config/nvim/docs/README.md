@@ -16,3 +16,17 @@ cmp keybinding map
 <C-Space> Complete
 <C-e> Close
 <CR> Confirm Close
+
+## Nvimtree
+read more: [read online](https://docs.rockylinux.org/books/nvchad/nvchad_ui/nvimtree/)
+
+## Terminal 
+
+<A-i> Float term
+<A-h> toggle term below buffer
+
+
+### Command mode
+Paste something into command mode: <kbd>Ctrl+r</kbd> then <kbd>*</kbd>.
+
+ 
