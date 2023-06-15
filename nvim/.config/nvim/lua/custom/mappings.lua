@@ -1,5 +1,6 @@
 -- Special key: <ESC> <CR> <cmd> 
 -- n, v, i, t = mode names
+-- C ctrl S shift M super
 
 local M = {}
 
@@ -19,6 +20,8 @@ M.general = {
     ["<C-l>"] = { "<Del>", "move right" },
     ["<C-j>"] = { "<Left>", "Arrow Left" },
     ["<C-k>"] = { "<Right>", "Arrow Right" },
+    -- Paste form clipboard
+    ["<C-S-v>"] = {"<Esc>\"*p<CR>==gi","Paste form clipbard"},
   },
   -- normal mode
   n = {
@@ -28,6 +31,10 @@ M.general = {
     ["<C-l>"] = { "<C-w>l", "window right" },
     -- ["<C-j>"] = { "<C-w>j", "window down" },
     -- ["<C-k>"] = { "<C-w>k", "window up" },
+   
+    -- make move faster
+    -- ["jj"] = { "3j", "go down 7 line" },
+    -- ["kk"] = { "3k", "go up 7 line" },
 
     -- Copy line down
     ["<C-A-j>"] = { ":copy .<Enter>" , "copy line down" },
@@ -66,6 +73,7 @@ M.general = {
     ["<C-x>"] = { vim.api.nvim_replace_termcodes("<C-\\><C-N>", true, true, true), "escape terminal mode" },
     -- try to autoComplete
     ["<C-j>"] = { "<Left>", "Arrow Left" },
+    ["<C-k>"] = { "<Up>", "Arrow Up" },
   },
   --
   -- visual mode
@@ -75,6 +83,8 @@ M.general = {
   -- Move current line / block with Alt-j/k ala vscode.
     ["<A-j>"] = {":m '>+1<CR>gv-gv",""},
     ["<A-k>"] = {":m '<-2<CR>gv-gv",""},
+    -- -- Copy text to clipbard
+    -- ["<C-S-c>"] = {"<Esc>\"+y<CR>==gv","Paste form clipbard"},
   },
 
   -- command mode

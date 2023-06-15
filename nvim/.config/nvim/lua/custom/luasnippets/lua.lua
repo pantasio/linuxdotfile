@@ -68,11 +68,8 @@ local function cs(trigger, nodes, opts) --{{{
 	table.insert(target_table, snippet) -- insert snippet into appropriate table
 end --}}}
 
--- 
---
---
 -- Start Refactoring --
-
+-- Start Refactoring --
 cs("CMD", { -- [CMD] multiline vim.cmd{{{
 	t({ "vim.cmd[[", "  " }), -- 1 phan tu la 1 dong, 
 	i(1, "write something"),
@@ -209,36 +206,19 @@ local {} = {}
 	"jj"
 ) --}}}
 
--- -- Tutorial Snippets go here --
+
+
+-- -- -- Tutorial Snippets go here --
 -- local myFirstSnippet = s("myFirstSnippet", {
 --   t("Hi! this is my first snippet in LuaSnippet Tutorial."),
 --   i(1, " give me sometext"),
 --   t({"", "Another line go down."})
 -- })
 -- table.insert(snippets, myFirstSnippet)
+--
 
 
-cs({
-    trigger = {
-        trig = "hello",
-        priority = 200,
-        docstring = "what the fuck",
-    },
-    nodes = fmt(
-        [=[
-hello {}
-]=],
-        {
-            i(1, "world"),
-        }
-    ),
-    target_table = snippets,
-    pattern = { "*.lua" },
-    keymaps = { "<C-j>h" },
-})
-
-
-
+-- End Refactoring --
 -- End Refactoring --
 
 return snippets, autosnippets

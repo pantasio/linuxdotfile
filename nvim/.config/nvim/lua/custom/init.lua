@@ -18,6 +18,8 @@ vim.api.nvim_create_autocmd({ "BufEnter", "CursorHold", "CursorHoldI", "FocusGai
   pattern = { "*" },
 })
 
+-- Line Spacing
+vim.opt.linespace = 3
 
 -- Setting for Neovide
 if vim.g.neovide then
@@ -29,5 +31,10 @@ if vim.g.neovide then
   --SFMono Nerd Font Mono Medium
   vim.o.guifont = "SFMono Nerd Font Mono:h11"
   -- vim.cmd [[set guifont=Sauce\ Code\ Pro\ Nerd:h12,mini-file-icons]]
+  -- Padding
+  vim.g.neovide_padding_top = 0
+  vim.g.neovide_padding_bottom = 0
+  vim.g.neovide_padding_right = 0
+  vim.g.neovide_padding_left = 0
 end
 
