@@ -6,6 +6,8 @@ OS base system: ArchLinux
 Terminal: Wezterm bc easy to write vietnamese language.
 Editor: NeoVim with Nvchad profile, 
     abzcoding profile in lunaVim is too much function and unstable, so I will upgrade Nvchad later.
+
+Wezterm paru
 ```json
 
 
