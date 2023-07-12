@@ -1,3 +1,7 @@
+TODO:
+ - in insert mode, aa editor at end-of-line
+
+
 Note: base on Nvchad 
 
 default <Leader> = space

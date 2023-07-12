@@ -1,6 +1,5 @@
-Working sample ignore file stow
-
-# This file in individual repo.
+## Working sample ignore file stow
+## This file in individual repo.
 
 \.git
 \.gitignore
@@ -10,5 +9,7 @@ Working sample ignore file stow
 ^/README._ # Excludes only top-level READMEs
 ^/LICENSE._
 ^/COPYING
+^/nextCommit.md
+
 
 ^/003-Daily #\* Excludes directory
