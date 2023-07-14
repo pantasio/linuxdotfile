@@ -16,8 +16,8 @@ M.general = {
     ["<A-k>"] = {"<Esc>:m .-2<CR>==gi","Move line up in insert mode"},
 
     -- navigate within insert mode
-    ["<C-h>"] = { "<BS>", "move left" },
-    ["<C-l>"] = { "<Del>", "move right" },
+    ["<C-h>"] = { "<BS>", "Backspace delete char" },
+    ["<C-l>"] = { "<Del>", "delete char" },
     ["<C-j>"] = { "<Left>", "Arrow Left" },
     ["<C-k>"] = { "<Right>", "Arrow Right" },
     -- Paste form clipboard

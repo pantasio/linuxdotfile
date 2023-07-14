@@ -1,6 +1,6 @@
 local options = {
   filters = {
-    dotfiles = false,
+    dotfiles = true,
     exclude = { vim.fn.stdpath "config" .. "/lua/custom" },
   },
   disable_netrw = true,
@@ -18,9 +18,10 @@ local options = {
     width = 30,
     preserve_window_proportions = true,
   },
+  -- try to show filename in .gitignore but dont work??
   git = {
     enable = false,
-    ignore = true,
+    ignore = false,
   },
   filesystem_watchers = {
     enable = true,

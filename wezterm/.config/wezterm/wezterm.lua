@@ -1,5 +1,8 @@
 local wezterm = require("wezterm")
 
+-- this config dont work
+local disable_default_key_bindings = true
+
 -- local launch_menu = {}
 -- local default_shell = "/bin/zsh"
 local padding = {
@@ -36,17 +39,30 @@ end
 -- 
 --
 -- local config = {
---
+
 -- }
 --
 -- return config
-
+-- 
+--
+--
+--
+--
+-- IMPORTANT INFOMATION
+-- when you read in office documents
+-- add your config below
+-- -----------------------------------------------------
+-- ====================================================
+--
+--
 return {
   max_fps = 144,
 	bidi_enabled = true,
 	bidi_direction = "AutoLeftToRight",
 	-- color_scheme = get_theme(),
-	color_scheme = 'Ayu Mirage',
+  color_scheme = 'Night Owl (Gogh)',
+
+  warn_about_missing_glyphs = false,
 
   --
   -- Font
@@ -74,7 +90,7 @@ return {
 			italic = true,
 			intensity = "Bold",
 			font = font_with_fallback({
-				family = "Iosevka Nerd Font",
+				family = "Iosevka Nerd Font Propo",
 				-- family = "Dank Mono",
 				weight = "Medium",
 				italic = true,
@@ -84,7 +100,7 @@ return {
 			italic = true,
 			font = font_with_fallback({
 				-- family = "Dank Mono",
-				family = "Iosevka Nerd Font",
+				family = "Iosevka Nerd Font Propo",
 				weight = "Regular",
 				italic = true,
 			}),
