@@ -1,6 +1,7 @@
 # <=> 
 # Load Git alias to fish
 source ~/.config/fish/alias/git.fish
+source ~/.config/fish/alias/docker.fish
 source ~/.config/fish/alias/mics.fish
 source ~/.config/fish/alias/testtool.fish
 
@@ -11,6 +12,25 @@ setxkbmap -option caps:swapescape
 ######### Set Some path variables
 set DOTFILE "$HOME/linuxdotfile/"
 
+#-----------
+### tldr setting
+# tips: we use fish for local only, but bash is online, 
+# can download if tldr dont have
+
+set -x TLDR_COLOR_NAME cyan
+set -x TLDR_COLOR_DESCRIPTION white
+set -x TLDR_COLOR_EXAMPLE green
+set -x TLDR_COLOR_COMMAND red
+set -x TLDR_COLOR_PARAMETER white
+set -x TLDR_LANGUAGE en
+set -x TLDR_CACHE_ENABLED 1
+set -x TLDR_CACHE_MAX_AGE 720
+# setting tldr for local only
+set -x TLDR_PAGES_SOURCE_LOCATION "file:////home/bungbu/.config/tldr/"
+set -x TLDR_DOWNLOAD_CACHE_LOCATION ""
+# default online
+#set -x TLDR_PAGES_SOURCE_LOCATION "https://raw.githubusercontent.com/tldr-pages/tldr/main/pages"
+#set -x TLDR_DOWNLOAD_CACHE_LOCATION "https://tldr-pages.github.io/assets/tldr.zip"
 
 #-----------
 ### Flutter setting
